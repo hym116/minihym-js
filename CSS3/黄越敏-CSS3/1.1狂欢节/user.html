@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">  
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>畅思广告-Chance Club</title>
+    <script type="text/javascript">
+        var scale = 1, ratio = 1;
+        (function() {
+            if (window.devicePixelRatio === 2 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.5; ratio = 2;
+            }else if (window.devicePixelRatio === 3 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.65; ratio = 2;
+            }
+            var text = '<meta name="viewport" content="width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', user-scalable=no" />';
+            document.write(text);
+        })();
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body style="margin:0;">
+
+<h1 style="width:0; height:0; overflow:hidden; position: absolute;">webapp
+<img class="logo" id="logo" src="./images/logo.jpg?v=0723" style="width:0; height:0; overflow:hidden; position:absolute;" alt="logo">
+</h1>
+
+<div id="bg" style="display:block;"><div id="loading"></div><span style=""></span></div>
+<!-- up arrw -->
+<div class="uparrw" id="uparrw" style="display:none;">
+    <div class="icon_uparrw" id="icon_uparrw"></div>
+    <div class="cur"></div>
+</div>
+
+<div style="height:0px;overflow:hidden;"><audio src="./audio/11.mp3" loop="loop" autoplay></audio></div>
+<a href="javascript:playPause();">
+    <div class="icon_audio border_anim">
+        <span class="iconaudio1"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio2"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio3"><s class="icon_audio_anim"></s></span>
+    </div>
+</a>
+
+<div class="content">
+    <div class="mainlogo" id="mainlogo"></div>
+    <img src="" alt=""  style="position: absolute;visibility: hidden;"/>
+    <div class="tabs" id="scene" style="display:none;">
+        <ul>
+            <li class="tab0">
+                <div class="bg sprite"></div>
+                <div class="layer" data-depth="0.30">
+                    <div class="sprite sprite1"></div>
+                </div>
+                <div class="layer" data-depth="0.50">
+                    <div class="sprite sprite2"><div class="floatupdown"></div></div>
+                </div>
+                <!--流星-->
+                <div class="sprite3 sprite">
+                    <div class="light light1"></div>
+                    <div class="light light2"></div>
+                    <div class="light light3"></div>
+                    <div class="light light4"></div>
+                    <div class="light light5"></div>
+                    <div class="light light6"></div>
+                    <div class="light light7"></div>
+                    <div class="light light8"></div>
+                    <div class="light light9"></div>
+                </div>
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab1">
+                <div class="layer" data-depth="0.20"><div class="bg sprite"></div></div>
+                <!--<div class="layer" data-depth="0.25"><div class="sprite1 sprite"></div></div>-->
+                <div class="layer" data-depth="0.35"><div class="sprite2 sprite"></div></div>
+                <div class="layer" data-depth="0.45"><div class="sprite3 sprite"><div class="floatupdown"></div></div></div>
+                <!--<div class="layer" data-depth="0.40"> <div class="sprite4 sprite"></div> </div>-->
+                <!--<div class="layer" data-depth="0.30"> <div class="sprite5 sprite"></div> </div>-->
+                <!--<div class="layer" data-depth="0.70"> <div class="sprite6 sprite"></div> </div>-->
+                <!--<div class="layer" data-depth="0.50"> <div class="sprite7 sprite"></div> </div>-->
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab2">
+                <div><div class="bg sprite"></div></div>
+                <div class="layer" data-depth="0.20">
+                    <div class="sprite1 sprite"><div class="floatleftright"></div></div>
+                </div>
+                <div class="layer" data-depth="0.55">
+                    <div class="sprite2 sprite"><div class="floatupdown"></div></div>
+                </div>
+                <div class="layer" data-depth="0.20">
+                    <div class="sprite3 sprite"></div>
+                </div>
+                <div class="layer" data-depth="0.35">
+                    <div class="sprite4 sprite"><div class="floatupdown"></div></div>
+                </div>
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab3">
+                <div><div class="bg sprite"></div></div>
+                <div class="layer" data-depth="0.20"><div class="sprite1 sprite"></div></div>
+                <div class="layer" data-depth="0.30"><div class="sprite2 sprite"></div></div>
+                <div class="layer" data-depth="0.40"><div class="sprite3 sprite"></div></div>
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab4">
+                <div class="bg sprite"></div>
+                <div><div class="sprite1 sprite"></div></div>
+                <div><div class="sprite2 sprite">• 单机休闲游戏的蓝海</div></div>
+                <div><div class="sprite3 sprite">• 捕鱼达人3是怎么炼成的</div></div>
+                <div><div class="sprite4 sprite">• Chartboost本地化的三大战略</div></div>
+                <div><div class="sprite5 sprite">• 流量变现的秘密</div></div>
+                <div><div class="sprite6 sprite">• 第三方SDK接入新模式</div></div>
+                <div><div class="sprite7 sprite">• 热门手游推广案例分享</div></div>
+                <div><div class="sprite8 sprite">• 抽奖</div></div>
+                <div class="layer" data-depth="0.70"><div class="sprite9 sprite"></div></div>
+                <div class="tips"></div>
+            </li>
+
+             <li class="tab5">
+                <div><div class="bg sprite"></div></div>
+                <div><div class="sprite1 sprite">主办方：</div></div>
+                <div><div class="sprite2 sprite">协办方：</div></div>
+                <div><div class="sprite3 sprite">支持媒体：</div></div>
+
+                <div><div class="sprite4 sprite"></div></div>
+                <div><div class="sprite5 sprite"></div></div>
+                <div><div class="sprite6 sprite"></div></div>
+                <div><div class="sprite7 sprite"></div></div>
+                <div><div class="sprite8 sprite"></div></div>
+                <div><div class="sprite9 sprite"></div></div>
+                <div><div class="sprite10 sprite"></div></div>
+                <div class="tips"></div>
+            </li>
+
+           <li class="tab6">
+                <div ><div class="bg sprite"></div></div>
+                <div ><div class="sprite1 sprite">tab6</div></div>
+                <div ><div class="sprite4 sprite"></div></div>
+                <div ><div class="sprite2 sprite"></div></div>
+                <div ><div class="sprite3 sprite"></div></div>
+                <a class="sprite5 sprite" href="http://www.huodongxing.com/go/chance" title="马上报名"></a>
+           </li>
+        </ul>
+    </div>
+</div>
+<div id="debugbox" style="height:0;width:0;overflow:hidden;">debugbox</div>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/weixin.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

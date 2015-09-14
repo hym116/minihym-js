@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>3d</title>
+	<style type="text/css">
+	body{
+		background: #333;
+	}
+		.pic{
+			margin: 100px auto;
+			width: 480px;
+			height: 360px;
+			text-align: center;
+			overflow: hidden;
+		    position: relative;
+		    color: #fff;
+		}
+		.pic img{
+			
+		
+		opacity:0.8;	
+		-webkit-transform:scale(1.1);	
+		 -webkit-transition:0.4s ease all;
+		}
+		.pic:hover img{
+		-webkit-transform:scale(1);
+		opacity: 0.6;
+		}
+		
+		.pic h2{
+		position: absolute;
+		top: 20%;
+		font-size: 50px;
+		left: 20%;
+		-webkit-transition:0.4s ease all;
+		-webkit-transform: translate3d(0,20px,0) ;
+		}
+		.pic:hover h2{
+			
+		-webkit-transform: translate3d(0,0,0);	
+		}
+		.pic p{
+		width: 400px;
+		position: absolute;
+		top: 50%;
+		left: 8%;
+		opacity: 0;
+		font-weight: bold;
+		border: 1px solid #fff;
+		padding-top: 30px;
+		height: 60px;
+		-webkit-transition:0.4s ease all;
+		-webkit-transform: translate3d(0,20px,0) scale(1.1);
+		}
+		.pic:hover p{
+			
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0) scale(1);
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="pic">
+		<img src="31.jpg"/>
+		<h2>BEAUTY&nbsp;HYM</h2>
+		<p>She thanks and love everyone </br>she meet in her life</p>
+		
+	</div>
+</body>
+</html>

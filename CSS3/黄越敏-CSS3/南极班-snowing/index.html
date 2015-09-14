@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">  
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>南极！南极！我们该一起上船了！</title>
+    <script type="text/javascript">
+        var scale = 1, ratio = 1;
+        (function() {
+            if (window.devicePixelRatio === 2 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.5; ratio = 2;
+            }
+            if (window.devicePixelRatio === 3 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.667; ratio = 3;
+            }
+            
+            var text = '<meta id="aa" name="viewport" content="width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', user-scalable=no" />';
+            document.write(text);
+        })();
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css?111">
+    <script type="text/javascript" src="js/ThreeCanvas.js"></script>
+	<script type="text/javascript" src="js/Snow.js?4444"></script>
+</head>
+<body style="margin:0;" onLoad="init()">
+	
+
+<h1 style="width:0; height:0; overflow:hidden; position: absolute;">webapp
+<img class="logo" id="logo" src="img/00_1.png" style="width:0; height:0; overflow:hidden; position:absolute;" alt="logo">
+</h1>
+
+<div id="bg" style="display:block;"><div id="loading"><div class="spinner"></div></div><span style=""></span></div>
+<!-- up arrw -->
+<div class="uparrw" id="uparrw" style="display:none;">
+    <div class="icon_uparrw" id="icon_uparrw"></div>
+    <div class="cur"></div>
+</div>
+
+<div style="height:0px;overflow:hidden;"><audio src="music.mp3" loop="loop" autoplay></audio></div>
+<a href="javascript:playPause();">
+    <div class="icon_audio border_anim">
+        <span class="iconaudio1"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio2"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio3"><s class="icon_audio_anim"></s></span>
+    </div>
+</a>
+
+<div class="content">
+    <div class="mainlogo" id="mainlogo"></div>
+    <div class="tabs" id="scene" style="display:none;">
+    	
+        <ul class="tab-list">
+            <li class="tab0 tab" id="tab0">
+            	
+            	<img class="title" src="img/00_2.png" alt="" />
+            	<div class="tips"></div>
+            </li>
+
+            <li class="tab1 tab" id="">
+            	<img class="img2 img from-r" src="img/01_2.png" alt="" />
+            	<img class="img3 img from-l" src="img/01_3.png" alt="" />
+            	<div class="tips"></div>
+            </li>
+
+            <li class="tab2 tab">
+            	<img class="img1 img from-t" src="img/02_1.png" alt="" />
+            	<img class="img2 img from-b" src="img/02_2.png" alt="" />
+            	<div class="tips"></div>
+            </li>
+
+            <li class="tab3 tab">
+            	<img class="img1 img from-t" src="img/03_1.png" alt="" />
+            	<img class="img2 img from-t" src="img/03_2.png" alt="" />
+            	<div class="tips"></div>
+            </li>
+            
+          
+            
+            <li class="tab3a tab">
+            	<img class="tabstitle" src="img/mem_title.png"/>
+            	<ul class="members members1">
+            		<li><img src="img/members/1.png" alt="" /></li>
+                    <li><img src="img/members/2.png" alt="" /></li>
+                    <li><img src="img/members/3.png" alt="" /></li>
+                  <!--   <li><img src="img/members/6.png" alt="" /></li>
+                    <li><img src="img/members/7.png" alt="" /></li>
+                    <li><img src="img/members/8.png" alt="" /></li>
+                    <li><img src="img/members/9.png" alt="" /></li>
+                    <li><img src="img/members/10.png" alt="" /></li>
+                    <li><img src="img/members/11.png" alt="" /></li>
+                    <li><img src="img/members/12.png" alt="" /></li> -->
+            		
+            		<a ><img class="left-btn"  src="img/left.png"/></a>
+            		<a ><img class="right-btn"  src="img/right.png"/></a>
+            	</ul>
+            	
+            	<div class="tips"></div>
+            </li>
+            
+            <li class="tab3b tab">
+            	<div class="tc">
+            	<img class="tabstitle" src="img/mem_club.png"/>
+            	</div>
+            	<ul class="members members2">
+            		<li>
+            			
+            			<div class="m-members">
+            				<table border="" cellspacing="" cellpadding="" class="wryh">
+            				<tr><td  width="100px">常慧芳</td><td>深圳市冠豪工业设备有限公司</td><td width="80px">创始人</td></tr>
+            				<tr><td>李红</td><td>杭州市下城区晶奇女子美容</td><td>创始人</td></tr>
+            				<tr><td>何秋良</td><td>广州市晶灵宝石有限公司</td><td>创始人</td></tr>
+            				<tr><td>张凡</td><td>东莞市环网网络科技有限公司</td><td>创始人</td></tr>
+            				<tr><td>门振春</td><td>青岛海名国际会展公司</td><td>创始人</td></tr>
+            				<tr><td>徐楠</td><td>广州合鹰创基商贸有限公司</td><td>创始人</td></tr>
+            				<tr><td>余晓兴</td><td>广州市美尚广告有限公司</td><td>创始人</td></tr>
+            				<tr><td>段纯海</td><td>上海聚振投资有限公司</td><td>创始人</td></tr>
+            				<tr><td>王斌</td><td>上海哥斯拉软件科技有限公司</td><td>创始人</td></tr>
+            				<tr><td>陈超</td><td>艾瑞咨询</td><td>创始人</td></tr>
+            				<tr><td>章语宣</td><td>上海罗莎林商务咨询有限公司</td><td>创始人</td></tr>
+            				<tr><td>徐华炜</td><td>卡根（北京）汽车用品有限公司</td><td>创始人</td></tr>
+            				<tr><td>施小波</td><td>苏文电能</td><td>创始人</td></tr>
+            				<tr><td>何焕傍</td><td>海南燕归来旅行有限公司</td><td>创始人</td></tr>
+            				<tr><td>范永刚</td><td>河南博雅之道电子商务有限公司</td><td>创始人</td></tr>
+            				
+            				
+            				</table>
+            			
+            			</div>
+
+            		</li>
+                    <li>
+                    	<div class="m-members">
+            				<table border="" cellspacing="" cellpadding="">
+            				<tr><td  width="100px">汤晓明</td><td>上海科轻起重机有限公司</td><td>创始人</td></tr>
+            				<tr><td>杨建军</td><td>零度智控（北京）智能科技有限公司</td><td>创始人</td></tr>
+            				<tr><td>王硕</td><td>零度智控（北京）智能科技有限公司</td><td>创始人</td></tr>
+            				<tr><td>杜青波</td><td>零度智控（北京）智能科技有限公司</td><td>创始人</td></tr>
+							<tr><td>刘松涛</td><td>聚成股份创始人</td><td>创始人</td></tr>
+							<tr><td>樊晓艳</td><td>北京幸福兔文化传媒有限公司</td><td>创始人</td></tr>
+							<tr><td>李彤彦</td><td>北京华清三垣投资管理有限公司</td><td>创始人</td></tr>
+							<tr><td>王垚</td><td>常州钟楼投资担保有限公司</td><td>创始人</td></tr>
+							<tr><td>张倩</td><td>北京克拉精灵珠宝有限公司</td><td>创始人</td></tr>
+							<tr><td>宋文艳</td><td>武汉越秀创始人</td><td>创始人</td></tr>
+							<tr><td>石海</td><td>折腾科技创始人</td><td>创始人</td></tr>
+							<tr><td>陈继芳</td><td>义乌市福川企业管理有限公司</td><td>创始人</td></tr>
+							<tr><td>张海燕</td><td>天图资本</td><td>合伙人</td></tr>
+							<tr><td>李抒音</td><td>深圳声霸科技有限公司</td><td>创始人</td></tr>
+							<tr><td>张学文</td><td>上海惠雅医疗科技有限公司</td><td>创始人</td></tr>
+
+
+							
+
+            				</table>
+            			
+            			</div>
+                    </li>
+                    <li>
+                    	<div class="m-members">
+            				<table border="" cellspacing="" cellpadding="">
+            				
+            				<tr><td  width="100px">胡嘉林</td><td>宁波精艺阀门管件有限公司</td><td width="100px">创始人</td></tr>
+            				<tr><td>范小米</td><td>宁波范小米化妆品有限公司 </td><td>创始人</td></tr>
+            				<tr><td>葛炳肖</td><td>浙江筑望科技有限公司</td><td>创始人</td></tr>
+							<tr><td>毛奇耀</td><td>宁波八方集团股份有限公司</td><td>创始人</td></tr>
+							<tr><td>卢睿泽</td><td>云学堂</td><td>创始人</td></tr>
+							<tr><td>董乔玉</td><td>广州无极限科技有限公司</td><td>创始人</td></tr>
+							<tr><td>董志新</td><td >广州无极限科技有限公司</td><td>创始人</td></tr>
+							<tr><td>卢洁</td><td>上海置道液压控制技术有限公司</td><td>创始人</td></tr>
+							<tr><td>汪涵</td><td>湖南卫视主持人</td><td>主持人</td></tr>
+							<tr><td>郭洪源</td><td>燕喜堂药店连锁集团</td><td>创始人</td></tr>
+							<tr><td>奚鸣</td><td>媚妩科技</td><td>创始人</td></tr>
+							<tr><td>沈克敏</td><td>杭州质造</td><td>创始人</td></tr>
+							<tr><td>张琪雯</td><td>华辰未来资产</td><td>总经理</td></tr>
+							<tr><td>张珺</td><td>尚格展览股份有限公司</td><td>创始人</td></tr>
+							<tr><td>刘晓霞</td><td>菲勒电子</td><td>创始人</td></tr>
+
+
+            				</table>
+            			
+            			</div>
+                    </li>
+                  <!--   <li><img src="img/members/6.png" alt="" /></li>
+                    <li><img src="img/members/7.png" alt="" /></li>
+                    <li><img src="img/members/8.png" alt="" /></li>
+                    <li><img src="img/members/9.png" alt="" /></li>
+                    <li><img src="img/members/10.png" alt="" /></li>
+                    <li><img src="img/members/11.png" alt="" /></li>
+                    <li><img src="img/members/12.png" alt="" /></li> -->
+            		
+            		<a ><img class="left-btn"  src="img/left.png"/></a>
+            		<a ><img class="right-btn"  src="img/right.png"/></a>
+            	</ul>
+            	
+            	<div class="tips"></div>
+            </li>
+            
+            <li class="tab4 tab">
+            	<img class="img1 img from-b" src="img/04_1.png" alt="" />
+            	<!-- <img class="img2 img from-b" src="img/04_2.png" alt="" /> -->
+            	<img class="img3 img from-big" src="img/04_3.png" alt="" />
+            	<div class="tips"></div>
+            </li>
+
+            <li class="tab5 tab">
+            	<img class="img1 img from-t" src="img/05_1.png" alt="" />
+            	<img class="img2 img from-t" src="img/05_2.png" alt="" />
+            	<img class="img3 img from-t" src="img/05_3.png" alt="" />
+            	<div class="tips"></div>
+            </li>
+
+           	<li class="tab6 tab">
+           		<img class="img1 img from-l" src="img/06_1.png" alt="" />
+            	<img class="img2 img from-l" src="img/06_2.png" alt="" />
+            	<img class="img3 img from-l" src="img/06_3.png" alt="" />
+            	<img class="img4 img from-l" src="img/06_4.png" alt="" />
+            	<div class="tips"></div>
+           	</li>
+           	<li class="tab7 tab">
+           		<img class="img1 img from-t" src="img/07_1.png" alt="" />
+            	<img class="img2 img from-t" src="img/07_2.png" alt="" />
+            	<a href="http://hmy.iheima.com/zhuanti/antarctic/baoming.html"><img class="img3 img from-big" src="img/07_3.png" alt="" /></a>
+            	<a href="xingcheng.html" class="xingcheng">详细行程</a>
+            	
+            	<img src="img/1ulogo.png" alt="" style="position:absolute;bottom:10px;right:0px;"/>
+            	
+           	</li>
+        </ul>
+    </div>
+</div>
+<div id="debugbox" style="height:0;width:0;overflow:hidden;">debugbox</div>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/weixin.js?t=005"></script>
+<script type="text/javascript" src="./js/index.js?007"></script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+body {
+  background: #f9f9f9;
+}
+a {
+  color: #8d8d8d;
+}
+.header-wrap {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  font-size: 12px;
+  line-height: 70px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.header-wrap .header {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header-wrap .header .logo {
+  float: left;
+  width: 170px;
+  height: 27px;
+  margin-top: 21px;
+  background: url(images/logo.png) no-repeat;
+}
+.header-wrap .header .righttips div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-wrap .header .common-question {
+  padding-left: 18px;
+  background: url(images/icons/uc-icon.png) 0 -25px no-repeat;
+}
+.header-wrap .uc-header-private {
+  width: 210px;
+}
+.header-wrap .uc-header-private .avatar-wrap {
+  width: 154px;
+  height: 50px;
+  padding-right: 32px;
+  line-height: 50px;
+  margin-right: 20px;
+  border-right: 1px solid #e7e7e7;
+}
+.header-wrap .uc-header-private .avatar-wrap .avadar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-right: 18px;
+  text-align: center;
+  background: #e2e2e2 url(images/avadar.png) no-repeat center center;
+  background-size: 55% 55%;
+}
+.header-wrap .uc-header-private .avatar-wrap .avadar img {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+}
+.header-wrap .uc-header-private .exit-btn {
+  width: 16px;
+  height: 25px;
+  background: url(images/icons/uc-icon.png) no-repeat;
+}
+#footer {
+  color: #848484;
+  text-align: center;
+  line-height: 70px;
+}
+.main {
+  width: 524px;
+  margin: auto;
+  padding-top: 95px;
+}
+.main .tips {
+  color: #999;
+  line-height: 40px;
+  text-align: center;
+}
+.main .tips a {
+  color:#221815;
+}
+.main .tips a:hover{
+  color: #e3063e;
+}
+.main h1 {
+  color: #434343;
+  font-size: 20px;
+  text-align: center;
+  padding: 40px 0;
+}
+.content {
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  padding-top: 40px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.content .formitem {
+  width: 322px;
+  height: 40px;
+  margin: auto;
+  /*position: relative;*/
+}
+/*.content .formitem .input_icon{
+  width: 66px;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(images/icons/login-icons.png) no-repeat;
+  background-position: 17px 12px;
+}*/
+.content .formitem input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+}
+.content .formitem input:focus {
+  border-color: #919191;
+}
+.content .no-tips {
+  color: #666666;
+  font-size: 16px;
+  padding-top: 15px;
+  text-align: center;
+}
+.main .avatar-wrap {
+  width: 150px;
+  margin: auto;
+  position: relative;
+}
+.main .avatar-wrap .nickname {
+  display: block;
+  width: 100%;
+  line-height: 25px;
+  text-align: center;
+}
+.main .avatar-wrap .registertime {
+  display: block;
+  width: 100%;
+  line-height: 8px;
+  text-align: center;
+}
+.main .avatar-wrap .nickname a {
+  color: #666666;
+}
+.main .avatar-wrap .sex-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  box-shadow: 0px 0.5px 0px 1px #e2e2e2;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.main .avatar-wrap .sex-icon.male{
+  background: #ffffff url(images/icons/uc-icon.png) 11px -340px no-repeat;
+}
+.main .avatar-wrap .sex-icon.female{
+    background: #ffffff url(images/icons/uc-icon.png) 12px -310px no-repeat;
+}
+.main .avatar-wrap .avatar {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 75px;
+  background-size: 50%;
+}
+.main .avatar-wrap .avatar img {
+  width: 144px;
+  height: 144px;
+  display: block;
+  border-radius: 72px;
+  border: 5px solid #fff;
+  box-shadow: 0 1px 1px 1px #ddd;
+}
+.main .btn-wrap {
+  width: 322px;
+  margin: auto;
+  padding-top: 55px;
+}
+.main .btn-wrap button {
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+}
+.main .btn-wrap .old-num {
+  margin-top: 16px;
+}
+.icheckbox_polaris,
+.iradio_polaris {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 36px;
+  background: url(images/icons/polaris1.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.icheckbox_polaris {
+  background-position: 0 0;
+}
+.icheckbox_polaris.hover {
+  background-position: -26px 0;
+  color: #434343;
+}
+.icheckbox_polaris.checked {
+  background-position: -52px 0;
+}
+.iradio_polaris {
+  background-position: -77px 0;
+}
+.iradio_polaris.hover {
+  background-position: -103px 0;
+}
+.iradio_polaris.checked {
+  background-position: -129px 0;
+}
+.main.confirm-phone .content {
+  height: 390px;
+  padding-top: 70px;
+}
+.main.confirm-phone .tips {
+  width: 245px;
+  line-height: 22px;
+  text-align: center;
+  margin: auto;
+  color: #565656;
+  padding-bottom: 25px;
+}
+.main.oldnum .content{
+  height: 390px;
+  padding-top: 80px;
+}
+.main.oldnum .content .formitem.password{
+  margin-top: 25px;
+}
+.main.oldnum #num{
+  padding-left: 45px;
+  background:url(images/icons/uc-icon.png) 12px -371px no-repeat;
+}
+.main.oldnum #psd{
+  padding-left: 45px;
+  background:url(images/icons/uc-icon.png) 14px -643px no-repeat;
+}
+/*.main.oldnum #psd:focus{
+  background-position: 14px -678px;
+}*/
+.main.confirm-phone .why-tips {
+  width: 322px;
+  margin: auto;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 10px;
+  background: url(images/icons/uc-icon.png) 192px -444px no-repeat;
+}
+.main.confirm-phone .why-tips a {
+  color:#221815;
+}
+.main.confirm-phone .why-tips a:hover{
+  color: #e3063e;
+}
+.main.confirm-phone #validinput {
+  width: 180px;
+}
+.main.confirm-phone .validbtn {
+  width: 128px;
+  height: 40px;
+}
+.main.confirm-phone .btn-wrap {
+  padding-top: 25px;
+}
+.main.qq-info {
+  width: 726px;
+}
+.main.qq-info .content {
+  height: 540px;
+  padding-top: 58px;
+}
+.main.qq-info .content .no-tips {
+  color: #221815;
+  padding-top: 20px;
+  font-size: 12px;
+}
+.main.qq-info .content .choose-box {
+  color: #919191;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main.qq-info .content .choose-box div {
+  padding-bottom: 3px;
+  margin-bottom: -5px;
+}
+.main.qq-info .content .choose-box label {
+  vertical-align: middle;
+}
+.main.qq-info .content .btn-wrap {
+  padding-top: 10px;
+}
+.main.qq-info .two-avatar-wrap {
+  width: 510px;
+  margin: auto;
+}
+.main.qq-info .center-arrow {
+  width: 210px;
+  height: 60px;
+  margin-top: 35px;
+  background: url(images/icons/uc-icon.png) 75px -475px no-repeat;
+}
+.main.binded-otherqq .content {
+  height: 500px;
+  padding-top: 80px;
+}
+.main.binded-otherqq .two-avatar-wrap {
+  margin-bottom: 70px;
+}
+.main.changebind {
+  width: 890px;
+}
+.main.changebind .content {
+  height: 650px;
+}
+.main.changebind .content .three-avatar-wrap {
+  width: 416px;
+  margin: auto;
+}
+.main.changebind .content .three-avatar-wrap .left-avatar-wrap {
+  padding-top: 105px;
+}
+.main.changebind .content .three-avatar-wrap .middle-arrow {
+  width: 116px;
+  padding-top: 60px;
+}
+.main.changebind .content .three-avatar-wrap .middle-arrow .top-arrow {
+  height: 22px;
+  margin-bottom: 200px;
+  background: url(images/icons/uc-icon.png) 24px -545px no-repeat;
+}
+.main.changebind .content .three-avatar-wrap .middle-arrow .bottom-arrow {
+  height: 22px;
+  background: url(images/icons/uc-icon.png) 24px -570px no-repeat;
+}
+.main.changebind .content .three-avatar-wrap .right-avatar-top {
+  margin-bottom: 30px;
+}
+.main.changebind #remian-past {
+  margin-top: 16px;
+}
+.main.inputphone .content {
+  height: 390px;
+  padding-top: 70px;
+}
+.main.inputphone .content .tips {
+  color: #999;
+}
+.main.inputphone .content .tips a {
+  color: #221815;
+}
+.main.inputphone .content .tips a:hover{
+  color: #e3063e;
+}
+.main.inputphone .content .formitem.valid input {
+  width: 200px;
+  height: 40px;
+}
+.main.inputphone .content .formitem.valid .validcode-img {
+  width: 106px;
+  height: 40px;
+  margin-left: 16px;
+}
+.main.inputphone .content .formitem.valid .validcode-img img {
+  width: 106px;
+  height: 40px;
+}
+.main.inputphone .content .formitem.phonenum-wrap {
+  margin-bottom: 52px;
+}
+.main.inputphone .content .formitem.phonenum-wrap .phone-number {
+  width: 212px;
+  height: 40px;
+  margin-left: 16px;
+}
+.main.inputphone .content .formitem.phonenum-wrap .select-wrap {
+  width: 92px;
+  border: 1px solid #e2e2e2;
+  height: 40px;
+  position: relative;
+  background: url(images/select-triangle.png) 68px 0 no-repeat;
+  border-radius: 5px;
+}
+.main.inputphone .content .formitem.phonenum-wrap .select-wrap select {
+  width: 92px;
+  height: 40px;
+  border: 0;
+  position: absolute;
+  z-index: 100;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.main.inputphone .content .formitem.phonenum-wrap .select-wrap .selected-item {
+  width: 92px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  padding-left: 20px;
+  position: absolute;
+}
+.main.validphone .content {
+  height: 360px;
+  padding-top: 80px;
+}
+.main.validphone .content .valid {
+  margin-top: 30px;
+}
+.main.validphone .content .valid input {
+  width: 185px;
+}
+.main.validphone .content .valid .getvalidcode {
+  width: 126px;
+  height: 40px;
+  margin-left: 10px;
+}
+.main.validphone .content .tips span {
+  color: #e60039;
+}
+.main.validphone .btn-wrap {
+  padding-top: 45px;
+}
+.main.setpassword .content .formitem.password-wrap {
+  margin-top: 16px;
+}
+.main.setpassword .content .tips {
+  color: #434343;
+}
+.main.setpassword .content .tips.tips-title {
+  color: #e60039;
+  font-size: 16px;
+  line-height: 30px;
+  padding-bottom: 40px;
+}
+.main.setpassword .content input {
+  text-align: center;
+}
+.main.setpassword .content .btn-wrap {
+  padding-top: 45px;
+}
+.main.newnum-success .content {
+  height: 390px;
+}
+.main.newnum-success .content .safephone span {
+  color: #e60039;
+}
+.main.newnum-success .content .btn-wrap {
+  padding-top: 15px;
+}
+.main.confirmnum .content {
+  height: 505px;
+  padding-top: 55px;
+}
+.main.confirmnum .content .tips {
+  color: #221815;
+  padding-top: 30px;
+}
+.main.confirmnum .content .notmine {
+  margin-top: 16px;
+}
+.main.confirmnum .content .btn-wrap {
+  padding-top: 30px;
+}
+.main.resetpassword .content {
+  height: 500px;
+}
+.main.resetpassword .content .password-wrap {
+  margin: 32px auto 16px;
+}
+.main.resetpassword .content .tips {
+  color: #434343;
+}
+.main.resetpassword .content .btn-wrap {
+  padding-top: 20px;
+}
+.main.resetpassword .content input {
+  text-align: center;
+}
+.main.registsuccess .content {
+  height: 390px;
+  padding-top: 110px;
+}
+.main.registsuccess .content .success-title {
+  width: 270px;
+  height: 40px;
+  margin: auto;
+  color: #221815;
+  padding-left: 55px;
+  line-height: 40px;
+  font-size: 20px;
+  background: url(images/icons/uc-icon.png) 0 -600px no-repeat;
+}
+.main.registsuccess .content .return {
+  width: 142px;
+  height: 40px;
+  display: block;
+  margin: auto;
+}
+.main.registsuccess .content .tips {
+  color: #221815;
+}
+.main.registsuccess .content .tips span {
+  color: #e60039;
+}
+.main.pageerror {
+  width: 507px;
+  height: 278px;
+  margin: auto;
+  position: relative;
+  margin-top: 100px;
+  background: url(images/pageerror.png);
+}
+.main.pageerror a {
+  display: block;
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  right: 120px;
+  bottom: 50px;
+}
+.main.pageerror .error { 
+color: #c6c6c6;
+  position: absolute;
+  font-size: 40px;
+  right: 74px;
+  top: 118px;
+}

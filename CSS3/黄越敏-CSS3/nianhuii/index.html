@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">  
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>南极18天就是一生</title>
+    <script type="text/javascript">
+        var scale = 1, ratio = 1;
+        (function() {
+            if (window.devicePixelRatio === 2 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.5; ratio = 2;
+            }
+            if (window.devicePixelRatio === 3 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.667; ratio = 3;
+            }
+            
+            var text = '<meta id="aa" name="viewport" content="width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', user-scalable=no" />';
+            document.write(text);
+        })();
+    </script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/jquery.particleground.min.js" type="text/javascript" charset="utf-8"></script>
+   	<link rel="stylesheet" type="text/css" href="http://cdn.iheima.com/base/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/index.css?111">
+    <link rel="stylesheet" type="text/css" href="css/nianhui.css"/>
+
+</head>
+<body style="margin:0;">
+	
+
+<h1 style="width:0; height:0; overflow:hidden; position: absolute;">webapp
+<img class="logo" id="logo" src="img/00_1.png" style="width:0; height:0; overflow:hidden; position:absolute;" alt="logo">
+</h1>
+
+<div id="bg" style="display:block;"><div id="loading"><div class="spinner"></div></div><span style=""></span></div>
+<!-- up arrw -->
+<div class="uparrw" id="uparrw" style="display:none;">
+    <div class="icon_uparrw" id="icon_uparrw"></div>
+    <div class="cur"></div>
+</div>
+
+<div style="height:0px;overflow:hidden;"><audio src="music.mp3" loop="loop" autoplay></audio></div>
+<a href="javascript:playPause();">
+    <div class="icon_audio border_anim">
+        <span class="iconaudio1"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio2"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio3"><s class="icon_audio_anim"></s></span>
+    </div>
+</a>
+
+<div class="content">
+    <div class="mainlogo" id="mainlogo"></div>
+    <div class="tabs" id="scene" >
+        <ul>
+            <li class="tab0" >
+            	<div class="layer" data-depth="0.50">
+            		<div class="bg">
+            		</div>
+            	</div>
+            	<div class="layer" data-depth="0.10">
+            		<div id="particles" ></div>
+            	</div>
+            	<div class="layer" data-depth="0.00">
+            		<img class="mt30" src="img/01_1.png" alt="" />
+	            	<div class="tec-circles">
+	            		<img src="img/01_r1.png"/>
+	            		<img src="img/01_r2.png"/>
+	            		<img src="img/01_r3.png"/>
+	            	</div>
+	            	<div class="tc">
+	            		<img src="img/01_2.png"/>
+	            	</div>
+            	</div>
+            </li>
+                 </ul>
+    </div>
+</div>
+<div id="debugbox" style="height:0;width:0;overflow:hidden;">debugbox</div>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/weixin.js?t=005"></script>
+<script type="text/javascript" src="./js/index.js?007"></script>
+    <script type="text/javascript">
+    (function(){
+    	$(document).ready(function() {
+		  $('#particles').particleground({
+		    dotColor: '#fbffff',
+		    lineColor: '#206998',
+		    proximity: 100,
+		    curvedLines : true,
+		    density: 12000,
+		    parallax: false,
+		    particleRadius:5
+		  });
+		});
+    })(jQuery);
+    	
+    </script>
+</body>
+</html>

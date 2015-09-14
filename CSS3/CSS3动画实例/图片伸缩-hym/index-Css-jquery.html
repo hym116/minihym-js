@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>图片伸缩</title>
+    <script src="../jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+	     *{
+	     	margin: 0;
+	     	padding: 0;
+	     	
+	     }
+	     li{
+	     	list-style: none;
+	     }
+	     .ul_items li{
+	     	
+	     	height: 35px;
+	     	line-height: 35px;
+	     	padding:0 80px;
+	     }
+		#box{
+			overflow: hidden;
+			width: 923px;
+			height: 343px;
+			position: relative;
+			margin: 50px auto;
+		}
+		.ul_items{
+			
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: #162631;
+			opacity: 0.8;
+			height:35px;
+			color: #fff;
+		}
+		#box ul li{
+			float: left;
+		}
+		.pa{
+			position: absolute;
+			bottom: 0;
+			width: 231px;
+			display: none;
+		}
+		.pic1{
+			left:0
+		}
+		.pic2{
+			left:231px;
+		}
+		.pic3{
+			left:462px;
+		}
+		.pic4{
+			left:693px;
+		}
+		.bg{
+		}
+		
+		.ul_box{
+			width: 2769px
+       }
+       .ul_box{
+        	 -webkit-animation: shown 3s  infinite;
+        }
+       @-webkit-keyframes shown{
+       	0%{
+       		-webkit-transform: translateX(0);
+       	}
+       50%{
+       	-webkit-transform: translateX(-923px);
+       }
+       100%{
+       		-webkit-transform: translateX(-1846px);
+       }
+       }
+
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div id="box">
+			<ul class="ul_box">
+				<li><img class="bg" src="1.png"/></li>
+				<li><img class="bg" src="2.png"/></li>
+				<li><img class="bg" src="3.png"/></li>
+			</ul>
+			
+		
+			
+			<img class="pic1 pa" src="01.png"/>
+			<img class="pic2 pa" src="03.png"/>
+			<img class="pic3 pa" src="02.png"/>
+			<img class="pic4 pa" src="04.png"/>
+			<ul class="ul_items">
+				<li>
+					拿铁咖啡
+				
+				</li>
+				<li>摩卡咖啡</li>
+				<li>原味酸奶</li>
+				<li>草霉酸奶</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+//	function showtime(){
+//					setTimeout(function(){$(".bg").eq(0).fadeIn().siblings(".bg").hide()},0);	
+//					setTimeout(function(){$(".bg").eq(1).fadeIn().siblings(".bg").hide()},3000)	
+//					setTimeout(function(){$(".bg").eq(2).fadeIn().siblings(".bg").hide()},6000)	
+//			}
+//		$(function(){
+//			
+//			setInterval("showtime()",9000);
+//			showtime();
+//			$("ul li").hover(function(){
+//				
+//				$index=$(this).index();
+//				
+//				$pa=$(".pa");
+//				
+//				$pa.eq($index).slideDown();
+//			},function(){
+//				$pa.eq($index).slideUp();
+//			})
+//		})
+$(function(){
+	//setTimeout(function(){$(".ul_box").addClass("current")},1000)
+//	
+//		function showtime(){
+//					setTimeout(function(){$(".ul_box").addClass("current")},1000)
+//					$(".ul_box").removeClass("current");
+//					//alert(1);
+//			}
+//		
+//	//)
+//	setInterval(showtime,3000)
+
+	
+})
+	</script>
+</body>
+</html>

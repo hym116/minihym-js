@@ -1,0 +1,49 @@
+
+.wrap {
+    color:#221815;
+    padding:165px;
+    min-height: 607px;
+    font-size: 13px;
+}
+.title{
+   height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 48px;
+    display: inline-block;
+    background:url(../images/arrow-right.png) no-repeat 0 -145px;
+}
+.tips{
+    line-height: 60px;
+}
+.succ button{
+    margin-top: 10px;
+}
+#second{
+    color:#e60039;
+}
+.title.failtitle{
+    height: 50px;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 72px;
+    background:url(../images/arrow-right.png) no-repeat 0 -206px;
+}
+.sign-fail{
+    color:#ff4861;
+    font-size: 30px;
+}
+.errortitle{
+    padding:0;
+    color: #434343;
+    font-size: 24px;
+    background:none;
+}
+.sign-error{
+    color: #000;
+    font-size: 30px;
+}
+.error404 button{
+    margin-top: 20px;
+}

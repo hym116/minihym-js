@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/uc-indextest.css">
+    <script type="text/javascript" src="js/modules/libs/jquery/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/modules/libs/icheck/icheck.js"></script>
+      <script type="text/javascript" src="js/modules/libs/validform/Validform_v5.3.2.js"></script>
+    <script type="text/javascript" src="js/modules/libs/imgcut.js"></script>
+    <script type="text/javascript" src="js/modules/libs/uploadpreview.js"></script>
+    <!-- <script type="text/javascript" src="js/modules/app/uc-index.js"></script> -->
+     <link rel="stylesheet" type="text/css" href="styles/safety.css">
+</head>
+<body>
+<!-- 页面顶部信息 -->
+    <div class="header-wrap">
+        <div class="header cf">
+            <div class="logo fl"></div>
+            <div class="righttips fr">
+            <div class="uc-header-private">
+                <div class="avatar-wrap cf">
+                    <a class="avadar">
+                        <img src="images/head-pic.jpg" alt="">
+                    </a>
+                    <span class="v-line"></span>
+                    
+                    <ul class="menu">
+                        <li class="item num-safety"><a href="">账号安全</a></li>
+                        <li class="item property-safety">  <a href="">财产安全</a></li>
+                        <li class="item truename-verify"><a href="">实名认证</a></li>
+                        <li class="item set-id"><a href="">设置账户</a></li>
+                        <li class="item exit"><a href="">退出登录</a></li>
+                    </ul>
+                    <div class="user-menu" id="user-menu">
+                        <b><i></i></b>
+                    </div>
+                </div>
+            </div>
+                    <a class="common-question" href="">常见问题</a>
+            </div>
+
+        </div>
+    </div>
+<!-- 主体内容 -->
+    <div class="main-wrap">
+        <div class="respons_wp main">
+   
+            <h1 class="main-title">本页面信息将在您的个人中心中显示</h1>
+            <div class="main-content-wrap cf">
+            <!-- 侧边菜单 -->
+                <ul class="left-menu fl">
+                    <li class="item1">账号安全</li>
+                    <li class="item2 active">个人信息</li>
+                    <li class="item3">财产安全</li>
+                    <li class="item4">实名认证</li>
+                </ul>
+                <div class="right-con-wrap fl">
+                <!-- 账号安全 -->
+                    <div class="rightcontent num-safety fl">
+                    <ul class="right-content">
+                        <li class="safe-stage">
+                            <ul class="stage">
+                                <li class="stage-left">
+                                    <span class="big-tip">安全等级：</span>
+                                    <span class="red-txt mark">80</span>分</li>
+                                <li class="stage-center">
+                                    <div class="red-bar-box cf">
+                                        <span class="line fl"></span>
+                                        <span class="red-point fl"></span>
+                                    </div>
+                                    
+                                </li>
+                                <li class="stage-right">
+                                    存在<span class="red-txt terms">2</span>项风险
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="terms-icons term1"></div>
+                            <div class="description">
+                                <div class="description-top">
+                                    安全手机<span class="bind-state bind-already">已绑定</span>
+                                </div>
+                                <div class="description-bottom">
+                                    
+                                </div>
+                            </div>
+
+                            <a href="#" class="btns btn-modify">修改</a>
+                        </li>
+                        <li class="safe-email">
+                            <div class="terms-icons term2"></div>
+                            <div class="description">
+                                <div class="description-top">
+                                    安全邮箱<span class="bind-state bind-not">未绑定</span>
+                                </div>
+                                <div class="description-bottom">
+                                    安全邮箱将可用于登录和修改密码
+                                </div>
+                            </div>
+
+                            <a href="#" class="btns btn-bind">绑定</a>
+                        </li>
+                    
+
+                        <li class="other ">
+                           <div class="other-top">
+                                <div class="terms-icons term3"></div>
+                                <div class="description">
+                                    <div class="description-top">
+                                        其他绑定
+                                    </div>
+                                    <div class="description-bottom">
+                                        用于绑定您的微信／微博／QQ
+                                    </div>
+                                </div>
+
+                                <a class="btns btn-bind">绑定</a>
+                                <!-- special-btn-bind-->
+                            </div>
+                            <ul class="third-party">
+                                <li>
+                                    <div class="description-top third-party-description">
+                                        <div class="third-logo wechat"></div>
+                                        微信<span class="bind-state bind-not">未绑定</span>
+                                    </div>
+
+                                    <a href="#" class="btns btn-bind">绑定</a>
+                                </li>
+
+                                <li>
+                                    <div class="description-top third-party-description">
+                                        <div class="third-logo qq"></div>
+                                        QQ<span class="bind-state bind-already">已绑定</span>
+                                    </div>
+
+                                    <a href="#" class="btns btn-bind">修改</a>
+                                </li>
+
+                                <li>
+                                    <div class="description-top third-party-description">
+                                        <div class="third-logo weibo"></div>
+                                        微博<span class="bind-state bind-not">未绑定</span>
+                                    </div>
+
+                                    <a href="#" class="btns btn-bind">绑定</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="safe-question">
+                            <div class="terms-icons term4"></div>
+                            <div class="description">
+                                <div class="description-top">
+                                    保密问题<span  class="bind-state bind-not">未绑定</span>
+                                </div>
+                                <div class="description-bottom">
+                                    密保问题用于安全验证
+                                </div>
+                            </div>
+
+                            <a href="#" class="btns btn-bind">绑定</a>
+                        </li>
+
+                        <li>
+                            <div class="terms-icons term5"></div>
+                            <div class="description">
+                                <div class="description-top">
+                                    账号密码
+                                </div>
+                                <div class="description-bottom">
+                                    用于保护账号信息和登陆安全
+                                </div>
+                            </div>
+
+                            <a href="#" class="btns btn-bind">修改</a>
+                        </li>
+
+                        <li class="bind-card">
+                            <div class="terms-icons term6"></div>
+                            <div class="description">
+                                <div class="description-top">
+                                    银行卡<span class="bind-state bind-not">未绑定</span>
+                                </div>
+                                <div class="description-bottom">
+                                    用于绑定支付时您使用的银行卡
+                                </div>
+                            </div>
+
+                            <a href="#" class="btns btn-bind">绑定</a>
+                        </li>
+                </ul>
+
+                    </div>
+                    <!-- 个人信息 -->
+                    <div class="rightcontent active personal-info">
+                        <form action="" id="personal-info">
+                        <!-- 头像 -->
+                            <div class="formitem mod-avadar">
+                               <label for="nickname" class="avatar-label fl">头像</label>
+                               <div class="big-avatar">
+                                   <div class="avatar-img" id="viewDiv">
+                                       
+                                   </div>
+                                   <span>大头像</span>
+                               </div>
+                               <div class="small-avatar">
+                                   <div class="avatar-img" id="viewDiv1">
+                                       
+                                   </div>
+                                   <span>小头像</span>
+                               </div>
+                               <div class="mod-btn">修改头像</div>
+                            </div>
+                            <!--昵称 -->
+                            <div class="formitem nickname cf">
+                                <label for="nickname" class="fl">昵称</label>
+                                <input type="text" name="nickname" class="fl" id="nickname" datatype="*2-10" errormsg="您好，昵称至少2个字符,最多10个字符！"/>
+                            </div>
+                            <!-- 性别 -->
+                            <div class="formitem sex cf">
+                                <label for="">性别</label>
+                                <span class="man">  
+                                <input type="radio" name="sex"  id="man" checked />
+                                男
+                                </span>
+                                <span class="woman">  
+                                <input type="radio" name="sex" id="woman"/>
+                                女
+                                </span>
+                                <span class="secret">  
+                                <input type="radio" name="sex" id="secret"/>
+                                保密
+                                </span>
+                              
+                            </div>
+                            <!-- 生日 -->
+                            <div class="formitem birthday cf">
+                                <label for="" class="reset-label fl">生日</label>
+                                <div class="select-wrap year fl">
+                                    <select id="year" class="reset_select">
+                                    </select>
+                                    <div class="selected-item">选择年</div>
+                                </div>
+                                <div class="select-wrap month fl">
+                                    <select id="month" class="reset_select">
+                                    </select>
+                                    <div class="selected-item">选择月</div>
+                                </div>
+                                <div class="select-wrap day fl">
+                                    <select id="day" class="reset_select">
+                                    </select>
+                                    <div class="selected-item">选择日</div>
+                                </div>
+
+                            </div>
+                            <!-- 城市 -->
+                            <div class="formitem place cf">
+                                <label for="" class="reset-label fl">城市</label>
+                                <div class="select-wrap province fl">
+                                    <select id="province" class="reset_select" datatype="*" >
+                                        <option value="北京">北京</option>
+                                        <option value="河北">河北</option>
+                                        <option value="河南">河南</option>
+                                    </select>
+                                    <div class="selected-item">选择省</div>
+                                </div>
+                                <div class="select-wrap city fl">
+                                    <select id="city" class="reset_select">
+                                        <option value="北京">北京</option>
+                                        <option value="石家庄">石家庄</option>
+                                        <option value="郑州">郑州</option>
+                                    </select>
+                                    <div class="selected-item">选择市</div>
+                                </div>
+
+                            </div>
+                            <!-- 行业 -->
+                            <div class="formitem industry">
+                                <label for="" class="reset-label fl">行业</label>
+                                <div class="select-wrap business fl">
+                                    <select id="business" class="reset_select">
+                                        <option value="IT互联网">IT互联网</option>
+                                        <option value="医疗健康">医疗健康</option>
+                                        <option value="生物技术">生物技术</option>
+                                    </select>
+                                    <div class="selected-item">IT互联网</div>
+                                </div>
+                            </div>
+                            <!-- 公司 -->
+                            <div class="formitem company cf">
+                                <label for="company" class="fl">公司</label>
+                                <input type="text" name="company" class="fl" id="company"/>
+                            </div>
+                            <!-- 职位 -->
+                            <div class="formitem ocupation cf">
+                                <label for="nickname" class="fl">职位</label>
+                                <input type="text" name="ocupation" class="fl" id="ocupation" />
+                            </div>
+                            <!-- 提交 -->
+                            <a class="submit-wrap">
+                                <button class="pinkbtn">提交</button>
+                            </a>
+                            <!-- 修改头像 mask-->
+                            <div class="edit-img-wrap">
+                                <input type="hidden" name="oavatar" id="oavatar" value="http://test.idaiyan.cn/uploads/20150506/2015050610170410000.jpg">
+                                <input type="hidden" name="ocutpos" id="ocutpos" value='{"x":"207","y":"32","w":"253","h":"254"}'>
+                                <div class="img_wrap">
+                                <!-- content -->
+                                <div class="closebtn">
+                                    <span></span>
+                                </div>
+                                    <div class="por_img cf">
+                                        <div class="por_content cf">
+                                        <div class="avatar_editor_main">
+                                        <div class="avatar_editor_control_wrap">
+                                           <div id="avatar_editor_control">
+                                              <div class="avatar_editor_show">
+                                                    <div id="bgDiv">
+                                                        <div id="dragDiv">
+                                                            <div id="rRightDown"> </div>
+                                                            <div id="rLeftDown"> </div>
+                                                            <div id="rRightUp"> </div>
+                                                            <div id="rLeftUp"> </div>
+                                                            <div id="rRight"> </div>
+                                                            <div id="rLeft"> </div>
+                                                            <div id="rUp"> </div>
+                                                            <div id="rDown"> </div>
+                                                        </div>
+                                                    </div>
+                                              </div>
+                                           </div>
+                                           </div>
+                                           <div class="avatar_editor_cutpreview">
+                                           <div class="img_upload">
+                                        
+                                            <div class="tips">
+                                            支持GIF.JPEG.PNG 格式的图片
+                                            </div>
+                                            </div>
+                                         </div>
+                                     </div>
+                                        </div>
+                                    </div>
+                             <!--  content -->
+                             <div class="btn-wrap cf">
+                                   <div class="choose_img fl">
+                                        <input type="file" id="choose" name="avatarfile" />
+                                        <div class="text">选择图片</div>
+                                    </div>
+                                    <div class="confirm fl">
+                                        <button type="submit" class="savebtn pinkbtn fl">确定</button>
+                                    </div>
+                             </div>
+                                  
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 财产安全 -->
+                    <div class="rightcontent property-safety">财产安全的内容</div>
+                    <!-- 实名认证 -->
+                    <div class="rightcontent name-verify">实名认证的内容</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mask_avatar">
+    </div>
+    <div id="footer">Copyright © 2014-2015 i代言(idaiyan.cn) 版权所有</div>
+<!-- 前端静态页js，请勿嵌套 -->
+<script type="text/javascript" src="js/floatmenu.js"></script>
+<!-- 前端静态页js，请勿嵌套 end--> 
+<script>
+    (function($) {
+
+    $.fn.tabswitch = function(options) {
+
+        var DEFAULT = {
+            nav: '.nav li',
+            main: '.main li',
+            switchEvent: 'mouseover',
+            navActive: 'on',
+            mainActive: 'on',
+        };
+
+        var opts = $.extend({}, DEFAULT, options);
+
+        return this.each(function() {
+            var $this = $(this);
+            // alert($this[0]==$(".main-content-wrap")[0]);
+            $this.on(opts.switchEvent, opts.nav, function() {
+                var _this = $(this);
+                var index = $this.find(opts.nav).index(_this);
+
+                _this.addClass(opts.navActive)
+                    .siblings(opts.nav).removeClass(opts.navActive);
+
+                $this.find(opts.main).eq(index).addClass(opts.mainActive)
+                    .siblings(opts.main).removeClass(opts.mainActive);
+            });
+        });
+
+    };
+})(jQuery);
+$(".main-content-wrap").tabswitch({nav:'.left-menu li',main:'.right-con-wrap .rightcontent',switchEvent: 'click', navActive: 'active',
+            mainActive: 'active',});
+// for(var i = 0; i < 10; i++) {
+//    (function(e) {
+//         return function() {
+//             console.log(e);
+//         }
+//     })(i);
+// }
+// for(var i = 0; i < 10; i++) {
+//     setTimeout((function(e) {
+//         return function() {
+//             console.log(e);
+//         }
+//     })(i), 1000)
+// }
+ // setTimeout(function(){alert(1)},1000);
+
+function Animal(name){      
+    this.name = name;      
+    this.showName = function(){      
+        alert(this.name);      
+    }      
+}      
+    
+function Cat(name){    
+    Animal.call(this, name);    
+}      
+    
+var cat = new Cat("Black Cat");   
+var ani = new Animal("red Cat");   
+// cat.showName();  
+// var abb = {0:"1",1:"2",2:"3",length:3};
+Array.prototype.slice.call({0:"1",1:"2",2:"3",length:3});
+</script>
+</body>
+</html>

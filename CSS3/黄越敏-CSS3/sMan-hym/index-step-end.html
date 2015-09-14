@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>sMan</title>
+	<style type="text/css">
+		
+.body{background:#123ade;}
+#Rdiv{
+		margin: 100px auto;
+		position: relative;
+		overflow: hidden;
+		background:url(hj-manb.png) no-repeat;
+		width: 115px;
+		height:128px;
+		-webkit-animation: move 1.2s 0s infinite both;
+		-webkit-animation-timing-function: step-end;
+	}
+
+@-webkit-keyframes move{
+		0%{
+			background-position: 0 0;
+			/*-webkit-transform:translateX(0);*/
+		}
+		25%{
+			background-position: -115px 0;
+			/*-webkit-transform:translateX(10px);*/
+		}
+		
+		50%{
+			background-position: -230px 0;
+			/*-webkit-transform:translateX(20px);*/
+		}
+		75%{
+			background-position: -115px 0;
+			/*-webkit-transform:translateX(30px);*/
+		}
+	}
+.walk{
+		-webkit-animation-duration: 4.5s;
+	    animation-duration: 4.5s;
+	    -webkit-animation-name: m6walk;
+	    animation-name: m6walk;
+	    -webkit-animation-delay: .4s;
+	    animation-delay: .4s;
+	    animation-iteration-count: 1;
+	    -webkit-animation-iteration-count: 1;
+	    animation-timing-function: ease-in;
+	    -webkit-animation-timing-function: ease-in;
+	    animation-fill-mode: forwards;
+	    -webkit-animation-fill-mode: forwards;
+	    -webkit-transform-origin: 0 50%;
+	    -ms-transform-origin: 0 50%;
+	    transform-origin: 0 50%
+	}
+	@-webkit-keyframes m6walk {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(250px, 0, 0);
+        transform: translate3d(250px, 0, 0)
+    }
+}
+	</style>
+	
+</head>
+<body>
+<div class="walk">
+	<div id="Rdiv">
+	</div>
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,161 @@
+#particles{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+#particles canvas{
+	z-index: -1;
+	position: relative;
+}
+
+.tec-circles{
+	height: 449px;
+	width: 449px;
+	margin: auto;
+	position: relative;
+}
+.tec-circles img{
+	position: absolute;
+}
+.tec-circles img:nth-child(1){
+	top: 135.5px;
+	left: 135.5px;
+	animation-name:rotate-f ;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-name:rotate-f ;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	
+}
+.tec-circles img:nth-child(2){
+	top: 63px;
+	left: 63px;
+	
+	animation-name:rotate-b ;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-name:rotate-b ;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.tec-circles img:nth-child(3){
+	top: 0;
+	left: 0;
+	
+	animation-name:rotate-f ;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-name:rotate-f ;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate-f{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate-b{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+@-webkit-keyframes rotate-f{
+	0%{
+		-webkit-transform: rotate(0);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes rotate-b{
+	0%{
+		-webkit-transform: rotate(0);
+	}
+	100%{
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+.bg{
+	
+	width: 100%;
+	height: 100%;
+}
+.tab0 .bg{
+	
+	background: url(../img/01_bg.jpg);
+	background-size: cover;
+}
+.tab1 .bg{
+	
+	background: url(../img/02_bg.jpg);
+	background-size: cover;
+}
+.tab1 .center-text{
+	
+	top: 400px;
+	left: 170px;
+	height: 246px;
+	overflow: hidden;
+	
+}
+.tab1 .center-text img{margin: auto;}
+.tab2 .bg{
+	
+	background: url(../img/03_bg.jpg);
+	background-size: cover;
+}
+.tab3 .bg{
+	
+	background: url(../img/04_bg.jpg);
+	background-size: cover;
+}
+.tab4 .bg{
+	
+	background: url(../img/05_bg.jpg);
+	background-size: cover;
+}
+.tab5 .bg{
+	
+	background: url(../img/06_bg.jpg);
+	background-size: cover;
+}
+.tab6 .bg{
+	
+	background: url(../img/07_bg.jpg);
+	background-size: cover;
+}
+.tab7 .bg{
+	
+	background: url(../img/08_bg.jpg);
+	background-size: cover;
+}
+.tab8 .bg{
+	
+	background: url(../img/09_bg.jpg);
+	background-size: cover;
+}
+.pa{
+	position: absolute;
+}
+
+
+
+

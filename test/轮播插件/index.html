@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+    body{
+        background:#333;
+    }
+        body,div,ul,li,img{
+            margin:0;
+            padding:0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        img{
+            width: 820px;
+            height: 500px;
+            display: block;
+        }
+        ul li{
+            float: left;
+        }
+        .viewport{
+            width: 820px;
+            height: 500px;
+            position: relative;
+            margin: 200px auto;
+            overflow: hidden;
+        }
+        .slidebox{
+            transition:all 0.5s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 500px;
+        }
+        .slidebar{
+            width: 132px;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin:auto;
+            position: absolute;
+         }
+        .slidebar li{
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border:1px solid #434343;
+            background:#fff;
+        }
+          .slidebar li.active{
+             background:#F42;
+          }
+    </style>
+</head>
+<body>
+    <div class="viewport">
+        <ul class="slidebox">
+            <li><img src="img/meinv-002.jpg" alt=""></li>
+            <li><img src="img/meinv-001.jpg" alt=""></li>
+         <li><img src="img/meinv-007.jpg" alt=""></li>
+            <li><img src="img/meinv-009.jpg" alt=""></li> 
+          <li><img src="img/meinv-004.jpg" alt=""></li>
+            <li><img src="img/meinv-005.jpg" alt=""></li> 
+        </ul>
+        <ul class="slidebar">
+          <!--   <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+        </ul>
+    </div>
+    <script>
+       (function($){
+         $.fn.slider = function(options){
+            var DEFAULT = {
+                slidebox:".slidebox",   //轮播图片的div
+                slidebar:".slidebar",   //跟随移动的小圆点
+                activeclass:"active",  //点击小圆点时加上的类
+                autotime:2000   //轮播间隔
+            }
+            var that = $(this);
+            // console.log(that.length);
+            var opts = $.extend({},DEFAULT,options);
+            return that.each(function(){
+                var _that = $(this);
+                var slideBox = _that.find(opts.slidebox),
+                slidebar = _that.find(opts.slidebar),
+                activeClass = opts.activeclass;
+                // console.log(slideBox.length);
+            var html = '';
+            var timer;  //定时器
+            var all_length = slideBox.find("li").length;    //图片总数
+                // console.log(all_length);
+            var img_width = slideBox.find("li").width(); //每次移动的距离
+            var final_length = (all_length-1) * img_width;  //最多移动的距离
+            var totalWidth = all_length * img_width;
+            slideBox.width(totalWidth);
+            // console.log(final_length);
+            for(var j=0;j<all_length;j++){
+                html += '<li></li>'
+            }
+            slidebar.append(html);
+            slideMenu = slidebar.find("li");
+            automove(); //自动播放
+
+            //鼠标移入移出小圆点时触发的事件    
+            slideMenu.mouseenter(function(){
+                clearInterval(timer);
+                var _this = $(this);
+                move(_this);
+            }).mouseleave(function(){
+                automove();
+            });
+
+            //移动
+            function move(current){
+                var li_index = current.index();
+                current.addClass(activeClass).siblings().removeClass(activeClass);
+                slideBox.css("left",0-img_width*li_index);
+            };
+
+            //自动播放
+            function automove(){
+                clearInterval(timer);
+                timer =setInterval(function(){
+                var img_index = slideBox.find("li").index();
+                var slidebox_left =  slideBox.position().left;  //获取当前轮播图片的div的left值
+                var current_activeli = slideMenu.siblings("."+activeClass).index();  //获取当前被active的小圆点的index
+                slideBox.css("left",slidebox_left-img_width);    //控制图片的移动
+
+                //小圆点移除被点击状态
+               slideMenu.eq(current_activeli+1).addClass(activeClass).siblings().removeClass(activeClass);
+
+                //滑动到最后一张的时候从头开始
+                if(current_activeli == all_length-1){
+                    slideBox.css("left",0);
+                    slideMenu.eq(0).addClass(activeClass).siblings().removeClass(activeClass);
+                }
+
+                },opts.autotime);
+            };
+            });
+            
+         };
+       })(jQuery);
+       $(".viewport").slider();
+    </script>
+</body>
+</html>

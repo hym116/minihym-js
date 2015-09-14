@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">  
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>测试测试测试~！！</title>
+    <script type="text/javascript">
+        var scale = 1, ratio = 1;
+        (function() {
+            if (window.devicePixelRatio === 2 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.5; ratio = 2;
+            }else if (window.devicePixelRatio === 3 && window.navigator.appVersion.match(/iphone/gi)) {
+              scale = 0.65; ratio = 2;
+            }
+            var text = '<meta name="viewport" content="width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', user-scalable=no" />';
+            document.write(text);
+        })();
+    </script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.iheima.com/base/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body style="margin:0;">
+
+<h1 style="width:0; height:0; overflow:hidden; position: absolute;">webapp
+</h1>
+
+<div id="bg" style="display:block;"><div id="loading"></div><span style=""></span></div>
+<!-- up arrw -->
+<div class="uparrw" id="uparrw" style="display:none;">
+    <div class="icon_uparrw" id="icon_uparrw"></div>
+    <div class="cur"></div>
+</div>
+
+<div style="height:0px;overflow:hidden;"><audio src="./audio/11.mp3" loop="loop" autoplay></audio></div>
+<a href="javascript:playPause();">
+    <div class="icon_audio border_anim">
+        <span class="iconaudio1"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio2"><s class="icon_audio_anim"></s></span>
+        <span class="iconaudio3"><s class="icon_audio_anim"></s></span>
+    </div>
+</a>
+
+<div class="content">
+    <div class="bg">
+    	<img id="logo" class="" src="images/logo.png"/>
+    </div>
+    <div class="tabs" id="scene" style="display:none;">
+        <ul>
+            <li class="tab1">
+            	<div class="img-list">
+            		<div class="layer" data-depth="0.6">
+                    	<img src="images/01_icons2.png" />
+                	</div>
+            		
+                	<div class="layer" data-depth="0.3">
+                    	<img src="images/01_icons1.png"/>
+                	</div>
+                	
+                	<!--<div class="layer" data-depth="0.0">
+                    	<img src="images/01_text1.png"/>
+                	</div>-->
+            	</div>
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab2">
+            	<div class="img-list">
+            		<img class="fadeInLeft  delay0020" src="images/02_text2.png" alt="" />
+            		<img class="fadeInRight delay0060" src="images/02_text3.png"/>
+            		<img class="fadeInDown  delay0120" src="images/02_text4.png"/>
+            	</div>
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab3">
+            	
+            	<div class="img-list">
+            		<img class="bounceInLeft  delay0020" src="images/03_text1.png"/>
+            		<img class="bounceInRight  delay0060" src="images/03_text2.png" alt="" />
+            		<img class="bounceInUp  delay0140" src="images/03_text3.png"/>
+            	</div>
+                
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab4">
+            	
+            	<div class="img-list">
+            		<img class="bounceInRight  " src="images/04_text1.png"/>
+            		<img class="bounceInUp  delay0060" src="images/04_text2.png"/>
+            		<img class="bounceInUp  delay0080" src="images/04_text3.png"/>
+            		<img class="bounceInUp  delay0100" src="images/04_text4.png"/>
+            		<img class="bounceInDown  delay0180" src="images/04_text5.png"/>
+            	</div>
+                
+                <div class="tips"></div>
+            </li>
+
+            <li class="tab5">
+            	
+            	<div class="img-list">
+            		<img class="bounceInDown  delay0020" src="images/05_text2.png"/>.
+            		<img class="bounceInRight  delay0100" src="images/05_text3.png"/>
+            		<img class="bounceInUp  delay0100" src="images/05_text4.png"/>
+            		<img class="bounceInLeft  delay0100" src="images/05_text5.png"/>
+            	</div>
+                
+                <div class="tips"></div>
+            </li>
+
+             <li class="tab6">
+             	<div class="img-list">
+            		<img class="bounceInDown  " src="images/06_text1.png"/>
+            		<img class="bounceInLeft  delay0060" src="images/06_text2.png"/>
+            		<img class="bounceInRight  delay0060" src="images/06_text3.png"/>
+            		<img class="bounceInUp  delay0060" src="images/06_text4.png"/>
+            	</div>
+               
+                <div class="tips"></div>
+            </li>
+
+           <li class="tab7">
+           	
+           		<div class="img-list">
+            		<img src="images/07_text1.png"/>
+            	</div>
+            	
+            	<div class="tc baoming_btn" >
+            		<a href="">
+            			<img class="pulse delay0100" src="images/07_button.png"/>
+            		</a>
+            	</div>
+                
+           </li>
+        </ul>
+    </div>
+</div>
+<div id="debugbox" style="height:0;width:0;overflow:hidden;">debugbox</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

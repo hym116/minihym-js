@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>loading</title>
+	<script src="jquery-1.10.2.min.js"></script>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background:#F5FAFD;
+	}
+		.load{
+			
+			width:531px;
+			height: 15px;
+			background: url("test2.jpg") no-repeat;
+			position:relative;
+			margin: 50px auto;
+		}
+		.loading{
+			position:absolute;
+			top:-6px;
+			left:70px;
+		}
+		h2{
+			margin:50px auto;
+			width: 200px;
+			color:#29B6FE;
+		}
+	</style>
+	<script type="text/javascript">
+	
+	$(function(){
+		function ahead(){
+		
+      $(".loading").animate({left:"400px"},3000,function(){$(".loading").css("left","70px");})
+      };
+	
+		ahead();
+		var timer=setInterval(ahead,3000);
+	})	
+	
+	
+	</script>
+</head>
+<body>
+	<h2>Loading...</h2>
+	<div class="load">
+		<img class="loading" src="test1.jpg"/>
+	</div>
+	
+</body>
+</html>

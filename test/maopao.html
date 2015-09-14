@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冒泡</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        div{
+            margin:auto;
+            padding:40px;
+            border:1px solid #342625;
+        }
+        .grandfather{
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+        }
+        .father{
+            width: 300px;
+            height: 300px;
+
+        }
+         .son{
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grandfather">
+        <div class="father">
+            <div class="son">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+    // $(".grandfather").on("click",function(){
+    //     alert(1);
+    // })
+    // $(".father").on("click",function(){
+    //     alert(1);
+    // })
+    // $(".son").on("click",function(event){
+    //     alert(2);
+    //     event.stopPropagation();
+    // })
+    $(".father")[0].addEventListener("click",function(){
+        alert(2);
+    },false);
+    $(".son")[0].addEventListener("click",function(){
+        alert(3);
+    },true);
+
+    </script>
+</body>
+</html>

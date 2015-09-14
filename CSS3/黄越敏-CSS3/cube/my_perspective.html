@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>cube</title>
+<style>
+.scene3d {
+    perspective: 1000px;
+    width: 600px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#obj6 {
+    width: inherit;
+    height: inherit; 
+    position: absolute;
+    animation: rotate3d7 linear infinite 14s;
+}
+@keyframes rotate3d7 {
+    from {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+    }
+}
+#obj6 img {
+    transition: 0.5s linear;
+}
+.object3d {
+    position: absolute;
+    width: inherit;
+    height: inherit;        /*top: 20px;*/
+    transform-style: preserve-3d;
+}
+.face3d {
+    width: 383px;
+    height: 383px;
+    position: absolute;
+    left: 165px;
+    top: 15px;
+    background: url(apple.png) no-repeat;
+}
+#im2E {
+    top: 30px;
+    transform: translateZ(150px);
+}
+#im2F {
+    top: 30px;
+    transform: translateZ(-150px);
+}
+#im30 {
+    top: 30px;
+    transform: translateX(150px) rotateY(90deg);
+}
+#im31 {
+    top: 30px;
+    transform: translateX(-150px) rotateY(-90deg);
+}
+#im32 {
+    top: 30px;
+    transform: translateY(150px) rotateX(90deg);
+}
+#im33 {
+    top: 30px;
+    transform: translateY(-150px) rotateX(-90deg);
+}
+
+/* :hover > #im2E { top: 30px; transform: translateZ(250px); }
+ :hover > #im2F { top: 30px; transform: translateZ(-250px); }
+ :hover > #im30 { top: 30px; transform: translateX(250px) rotateY(90deg);}
+ :hover > #im31 { top: 30px; transform: translateX(-250px) rotateY(-90deg);}
+ :hover > #im32 { top: 30px; transform: translateY(250px) rotateX(90deg);}
+ :hover > #im33 { top: 30px; transform: translateY(-250px) rotateX(-90deg);}*/
+</style>
+</head>
+<body>
+<div class="scene3d"style="margin-top: 200px"id="sce6">
+<div id="obj6">
+<div class="face3d"id="im2E"></div>
+<div class="face3d"id="im2F"></div>
+<!-- <div class="face3d"id="im30"></div>
+<div class="face3d"id="im31"></div>
+<div class="face3d"id="im32"></div>
+<div class="face3d"id="im33"></div> -->
+</div>
+</div>
+</body>
+</html>

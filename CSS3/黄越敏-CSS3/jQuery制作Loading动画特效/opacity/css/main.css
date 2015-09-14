@@ -1,0 +1,28 @@
+html{
+	height:100%;
+	margin:0;
+	padding:0;
+	width:100%;
+	background-color:#242424;
+	font-family:arial;
+}
+body{
+	height:100%;
+	margin:0 auto;
+	padding:0;
+	width:980px;
+}
+
+
+a{
+color: rgb(0, 114, 191); text-decoration: none;	
+}
+
+
+a{
+color: rgb(0, 114, 191); text-decoration: none;	
+}
+.clearfix{
+	clear:both;
+	float:none;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640">
+    <title>作用域</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    /*html{
+        width: 640px;
+    }*/
+        button{
+            width: 100px;
+            height: 40px;
+            display: block;
+            margin-bottom: 40px;
+        }
+    /*    body{
+            width: 600px;
+        }*/
+        div{
+            width: 100%;
+            height: 200px;
+            font-size: 20px;
+            border:1px solid #ed1234;
+        }
+    </style>
+    <script>
+    document.documentElement.clientWidth = 980;
+    </script>
+</head>
+<body>
+ <!-- <embed wmode="ffffff" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"> -->
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>4</button>
+<div>这个行为是由于viewport的定义方式而产生的一个后果。我之前给顶部的蓝色边栏设置了width: 100%。什么的100%？<html>元素的100%，它的宽度和viewport是一样的，viewport的宽度是和浏览器窗口一样的。
+
+问题是：在100%缩放的情况下这个工作的很好，现在我们进行了放大操作，viewport变得比我的站点的总体宽度要小。这对于viewport它本身来说没什么影响，内容现在从<html>元素中溢出了，但是那个元素拥有overflow: visible，这意味着溢出的内容在任何情况下都将会被显示出来。
+
+但是蓝色边栏并没有溢出。我之前给它设置了width: 100%，并且浏览器把viewport的宽度赋给了它。它们根本就不在乎现在宽度实在是太窄了。</div>
+<!-- <img src="" alt=""> -->
+    <script>
+    // $("img").attr({"src":"http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1311/11/c1/28530208_1384157109529_800x600.jpg","alt":"my picture","title":"img title"})
+
+     // $("img").removeAttr("src");
+ //    var a = 10;
+ //    function aa(){
+ //        var a=5;
+ //        bbb();
+ //    }
+ //    var bbb = function (){
+ //        alert(a);
+ //    }
+ // aa();
+ //---------------- 分割线 -------------
+    // var a = 10;  
+    // function test() {  
+    //     a = 100;  
+    //     alert(a);  
+    //     alert(this.a);  
+    //     var a;  
+    //     alert(a);  
+    // }  
+    // test();
+ //---------------- 分割线 -------------
+    // var a = 100;  
+    // function test(){  
+    //     alert(a);  
+    //     var a = 10;  
+    //     alert(a);  
+    // }  
+    // test();  
+//---------------- 分割线 ------------- 
+    // var a = 100;    
+    // function test(){    
+    //     alert(a);    
+    //     a = 10;  //去掉了var 就变成定义了全局变量了  
+    //     alert(a);    
+    // }    
+    // test();   
+    // alert(a);  
+//---------------- 分割线 -------------
+ // var btn = document.getElementsByTagName("button");
+ // for(var i=0;i<btn.length;i++){
+ //        (function(_i){
+ //            console.log(_i);
+ //            btn[_i].onclick = function(){
+ //            alert(_i);
+ //            };
+ //        })(i);
+        
+ // }
+ // function people(name){
+ //    this.selfname = name;
+ //    this.Introduce=function(){
+ //        alert("My name is "+this.selfname);
+ //    }
+ // }
+ // people.Introduce();
+// people.run= function(){
+//     alert("I am running");
+// };
+// people.run();
+//  people.prototype.eat = function(){
+//     alert("I am eating");
+//  }
+ // var xiaoming = new people("daxian");
+ // console.log(xiaoming.name);
+ // xiaoming.Introduce();
+ //xiaoming.eat();
+ //xiaoming.run();
+ // xiaoming.running = function(){
+ //    alert("xiaoming is running")
+ // };
+// //xiaoming.running();
+// var object = {
+//     name: "daxian",
+//     age: "13"
+// }
+    // $.extend({
+    //     aa: function (){$(this).css("background","red");}
+    // }
+    // );
+    // $.fn.extend({
+    //     aa: function (){$(this).css("background","red");}
+    // }
+    // );
+    // $("button").aa();
+// function myfunc(){
+//     alert("hello");
+// };
+//     myfunc();
+// var  myfunc = function(){
+//     alert("yeah");
+// };
+//     myfunc();
+// var anObject={};//一个对象
+// anObject.aProperty="Propertyofobject";//对象的一个属性
+// anObject.aMethod = function(){
+    
+//     alert("Methodofobject")
+// };
+// anObject["aMethod"]();
+// for(var s in anObject)
+// alert(s+"isa"+typeof(anObject[s]));
+  // alert(window.devicePixelRatio);
+
+    </script>  
+</body>
+</html>

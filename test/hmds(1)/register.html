@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contest introduction</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/docs.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><img src="images/homelogo.png"></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="active">首页</a>
+                    </li>
+                    <li><a href="contest.html">大赛介绍</a>
+                    </li>
+                    <li><a href="#">评委嘉宾</a>
+                    </li>
+                    <li><a href="#">新闻消息</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="register-warp">
+        <div class="container">
+            <h3 class="h2 text-center">参赛报名</h3>
+            <h4 class="h4">报名须知</h4>
+            <p class="text-left tip-content">
+            1. 请认真填写每项内容，并对内容的真实性负责，大赛组委会不承担信息失实的责任。<br>
+            2. 您提交的企业信息将作为评审资料，仅供大赛组委会评审团参考，组委会将严格保密。<br>
+            3. 为了保证大赛项目审核质量，需要选手在线填写报名表的同时发送PPT等项目相关资料至邮箱 project@chuangyejia.com<br>
+            4. 项目提交后组委会会进行初审，审核通过方可安排参赛。<br>
+            5. 《创业家》全年举行包括黑马大赛在内的多种路演，所以如果您的项目没有通过某场次的筛选，我们一般不会专门通知您“没有入选”，因为未来还可能有别的比赛适合您，
+            对于审核结果您也可以电话咨询。
+            </p>
+        </div>
+    </div>
+    <div class="container registerwarp">
+        <!-- Nav tabs -->
+        <ul class="nav register-tabs box-shadow col-md-2" role="tablist">
+            <li role="presentation" class="active" id="basicone">
+                <a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">企业基本信息</a>
+                <i class="status"></i>
+            </li>
+            <li role="presentation" class="" id="coreone">
+                <a href="#core" aria-controls="core" role="tab" data-toggle="tab">公司核心业务描述</a>
+                <i class="status"></i></li>
+            <li role="presentation" class="" id="messageone">
+                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">创始人信息</a>
+                <i class="status"></i></li>
+             <li role="presentation" id="controlone">
+                <a href="#control" aria-controls="control" role="tab" data-toggle="tab">核心高管信息</a>
+                <i class="status"></i>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <form id="edit-form">
+            <div class="tab-content box-shadow col-md-10">
+                <div role="tabpanel" class="tab-pane active basic" id="basic">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label"><span class="star">*</span>公司名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control must" name="name" id="name" value="" datatype="*2-30" nullmsg="不可以为空哦！" errormsg="公司名称至少2个字符,最多30个字符！" placeholder="请填写公司名称，最大长度30"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectname" class="col-sm-2 control-label"><span class="star">*</span>项目名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control must" name="projectname" id="projectname" value="" datatype="*2-20" nullmsg="不可以为空哦！" errormsg="项目名称至少2个字符,最多20个字符！" placeholder="请填写项目名称，最大长度20" />
+                        </div>
+                    </div>
+                    <!-- 复制 -->
+                     <div class="form-group">
+                        <label for="ectname" class="col-sm-2 control-label"><span class="star">*</span>项目名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control must" name="projectname" id="ectname" value="" datatype="*2-20" nullmsg="不可以为空哦！" errormsg="项目名称至少2个字符,最多20个字符！" placeholder="请填写项目名称，最大长度20" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="core">
+                       <div class="form-group detail">
+                            <label for="summary" class="col-sm-2 control-label"><span class="star">*</span>产品或服务简述</label>
+                            <div class="col-sm-10">
+                                <textarea name="summary" class="form-control must" id="summary" cols="30" rows="10" datatype="*1-200" nullmsg="不可以为空哦！" errormsg="" placeholder="请填写产品服务简述，最大长度200字" maxlength="200"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="goal-client" class="col-sm-2 control-label"><span class="star">*</span>目标客户</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="goal-client" id="goal-client" value="" datatype="*2-30" nullmsg="不可以为空哦！" placeholder="请填写目标客户，最大长度30字" errormsg="请填写正确的目标客户"/>
+                            </div>
+                        </div>
+                       
+                        
+                </div>
+                <div role="tabpanel" class="tab-pane messages" id="messages">
+                    <div class="form-group">
+                        <label for="founder_name" class="col-sm-2 control-label"><span class="star">*</span>姓名</label>
+                        <div class="col-sm-4">
+                            <input class="form-control must" type="text" name="founder_name" id="founder_name" value="" datatype="*2-10" nullmsg="不可以为空哦！" errormsg="最少2个字符,最大长度10个字符"  />
+                        </div>
+                        <label for="mobile" class="col-sm-2 control-label"><span class="star">*</span>手机</label>
+                        <div class="col-sm-4">
+                           <input class="form-control must" type="text" name="mobile" id="mobile" value="" datatype="m" nullmsg="不可以为空哦！" errormsg="请填写正确的手机号码" />
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </div>
+                <div role="tabpanel" class="tab-pane" id="control">
+                  
+                    <div class="form-group">
+                        <label for="core_name" class="col-sm-2 control-label"><span class="star">*</span>姓名</label>
+                        <div class="col-sm-4">
+                            <input class="form-control must" type="text" name="core_name" id="core_name" value="" datatype="*2-10" nullmsg="不可以为空哦！" errormsg="请输入2-10位任意字符"   />
+                        </div>
+                        <label for="duty" class="col-sm-2 control-label"><span class="star">*</span>职务</label>
+                        <div class="col-sm-4">
+                           <input class="form-control must" type="text" name="duty" id="duty" value="" datatype="*2-10" nullmsg="不可以为空哦！" errormsg="请输入2－10位任意字符"  />
+                        </div>
+                    </div>
+                   
+                    <div class="form-group detail">
+                        <label for="core_work" class="col-sm-2 control-label"><span class="star">*</span>工作经历</label>
+                        <div  class="col-sm-10">
+                            <textarea name="core_work" class="form-control must" id="core_work" cols="30" rows="10" datatype="*1-200" nullmsg="不可以为空哦！" errormsg="工作经历最多200个字符"></textarea>
+                        </div>
+                    </div>
+                    <div class="add-btn">
+                        <button class="btns btn-blue mg-r60">添加</button><button class="btns btn-blue">收回</button>
+                    </div>        
+                </div>
+            </div>
+            <div class="formsubmit">
+                <input type="hidden" name="extra[id]" id="product_id" value="">
+                <button type="submit" class="btn bluebtn" id="submit-btn">确认</button>
+            </div>  
+    </form>
+    </div>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="copytext">CopyRight © 创业家杂志.黑马大赛 All Rights Reserved 版权所有 复制必究 京ICP备12006413号</span>  
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/validform/Validform_Datatype.js"></script>
+<script type="text/javascript" src="js/validform/Validform_v5.3.2.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/floatmenu.js"></script>
+<script type="text/javascript">
+</script>
+</html>

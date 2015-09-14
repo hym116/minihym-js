@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        button{
+            width: 100px;
+            height: 40px;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>4</button>
+    <script>
+// 定义一个people类
+ function people(name){
+    this.selfname = name;
+    this.Introduce=function(){
+        alert("My name is "+this.selfname);
+    };
+ }
+ // people的原型上定义一个方法
+ people.prototype.eat = function(){
+    alert("I am eating");
+ };
+  // 实例化一个people类
+ var p1 = new people("daxian");
+ p1.Introduce();
+ xiaoming.eat();
+ xiaoming.running = function(){
+    alert("xiaoming is running")
+ };
+//xiaoming.running();
+var object = {
+    name: "daxian",
+    age: "13"
+}
+    $.extend({
+        aa: function (){$(this).css("background","red");}
+    }
+    );
+    // $.fn.extend({
+    //     change: function (){$(this).css("background","red");}
+    // }
+    // );
+    $("button").aa();
+    </script>  
+</body>
+</html>

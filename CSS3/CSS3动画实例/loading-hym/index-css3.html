@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>loading</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.load{
+			
+			width:531px;
+			height: 15px;
+			background: url("test2.jpg") no-repeat;
+			position:relative;
+			margin: 50px auto;
+		}
+		.loading{
+			position:absolute;
+			top:-6px;
+			left:70px;
+			-webkit-animation: ahead 2.5s linear infinite both;
+		}
+		h2{
+			margin:50px auto;
+			width: 200px;
+			color:#29B6FE;
+		}
+		@-webkit-keyframes ahead{
+			0%{
+				left:70px;
+			}
+			100%{
+				left:380px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h2>Loading...</h2>
+	<div class="load">
+		<img class="loading" src="test1.jpg"/>
+	</div>
+</body>
+</html>

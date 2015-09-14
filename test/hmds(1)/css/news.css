@@ -1,0 +1,163 @@
+.tab-content{
+    padding:0 30px 30px 30px;
+}
+.img-wrap{
+    height: 150px;
+}
+.img-wrap img{
+    width: 100%;
+    height: 150px;
+}
+.tab-pane .row{
+    margin:0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9eaec;
+}
+.tab-pane .row:last-child{
+    border:0;
+     padding-bottom: 0;
+}
+@media (min-width: 992px){
+    .col-md-3{
+        padding:0;
+    }
+    .col-md-9{
+        padding-left: 25px;
+        padding-right: 0;
+    }
+}
+.subtitle{
+    display: block;
+    font-size: 22px;
+    padding-top: 8px;
+    cursor: pointer;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    white-space:nowrap;
+    color: #232323;
+    text-decoration: none;
+}
+/*@media (min-width: 768px){
+    .subtitle{
+        font-size: 22px;
+    }
+}*/
+.subtitle:hover{
+    color:#7541e6;
+    text-decoration: none;
+}
+.author-date{
+    color: #919191;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.author-date .author{
+    margin-right: 60px;
+}
+.desc{
+    height: 93px;
+    overflow: hidden;
+    color: #919191;
+    font-size: 12px;
+    padding-top: 30px;
+    line-height: 21px;
+}
+#video .row{
+    border:0;
+    margin:0 -18px;
+    padding:0;
+}
+.video-wrap{
+    height: 100px;
+}
+.video-wrap img{
+    width: 100%;
+    height: 100px;
+}
+#video .col-md-3{
+    padding:0 18px;
+}
+.videocontent{
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    border-bottom: 2px solid #e2e2e2;
+}
+.videocontent:hover{
+    border-bottom-color: #7541e6;
+}
+.video-desc{
+    color:#828282;
+    line-height: 30px;
+}
+.play-desc{
+    color: #6a6a6a;
+}
+.playnum{
+    vertical-align: middle;
+}
+.playbtn{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    background:url(../images/arrow-right.png) no-repeat;
+}
+.pagination-wrap{
+    text-align: center;
+}
+.pagination{
+    margin:30px;
+}
+.pagination > li > a, .pagination > li > span{
+    color: #aaaaaa;
+    border:0;
+}
+.pagination > li > a:hover,.pagination > li > span:hover{
+    color: #fff;
+    background-color: #aaaaaa;
+}
+.pagination > li > a.active, .pagination > li > span.active{
+
+    background-color:#7541e6;
+}
+.pagination > li > a:focus, .pagination > li > span:focus{
+     color: #fff;
+    background-color:#7541e6;
+}
+.bigPrevious{
+    width: 34px;
+    height: 34px;
+    background:url(../images/arrow-right.png) no-repeat 10px -21px;
+}
+.bigPrevious:hover{
+    background-position:10px -111px;
+}
+.bigPrevious,.bigNext{
+    transition:none;
+}
+.bigNext{
+    width: 34px;
+    height: 34px;
+    background:url(../images/arrow-right.png) no-repeat 12px -50px;
+}
+.pagination > li > a.next,.pagination > li > a.pre{
+    padding:6px 8px;
+}
+.bigNext:hover{
+  background-position:11px -82px;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+    border-radius: 0;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: 0;
+}
+/*@media (min-width: 768px){
+    .col-sm-6 {
+        width: 50%;
+    }
+}*/

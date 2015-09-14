@@ -1,0 +1,300 @@
+.Validform_right {
+  display: none!important;
+}
+.btns {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn-blue {
+  color: #fff;
+  background-color: #4baaf2;
+  border-color: #4baaf2;
+  width: 200px;
+  height: 50px;
+}
+.btn-blue:hover {
+  color: #fff;
+  background: rgba(75, 170, 242, 0.94);
+}
+select {
+  background: url(../images/select_bg.jpg) no-repeat right top !important;
+}
+select:focus {
+  background: url(../images/select_active.jpg) no-repeat right top !important;
+}
+.mg-r60 {
+  margin-right: 60px;
+}
+.register-warp {
+  background: #fcfcfc url(/images/register_bg.jpg) no-repeat 0 0;
+}
+.register-warp .h2 {
+  color: #6a6a6a;
+  margin: 30px 0;
+}
+.register-warp .h4 {
+  padding-left: 15.5%;
+  color: #6a6a6a;
+  margin-bottom: 13px;
+}
+.register-warp .tip-content {
+  font-size: 12px;
+  color: #919191;
+  line-height: 20px;
+  padding: 0 15.5%;
+  padding-bottom: 25px;
+}
+.Validform_wrong {
+  font-size: 14px;
+  color: #ff4861;
+}
+.Validform_right {
+  display: none;
+}
+.nav > li > a {
+  padding: 0;
+}
+.registerwarp {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.registerwarp .register-tabs {
+  font-family: "Microsoft Yahei";
+  padding-right: 0;
+  padding-bottom: 135px;
+  width: 20%;
+}
+.registerwarp .register-tabs li {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+.registerwarp .register-tabs li.active a {
+  background-color: #fff;
+  color: #6a6a6a;
+}
+.registerwarp .register-tabs li .status.ignore {
+  background: url(../images/register.png) no-repeat 0 0;
+}
+.registerwarp .register-tabs li .status {
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  width: 25px;
+  height: 25px;
+  margin-top: -12px;
+  background: url(../images/register.png) no-repeat 0 -40px;
+}
+.registerwarp .register-tabs li .status.active {
+  background: url(../images/register.png) no-repeat 0 -75px;
+}
+.registerwarp .register-tabs li a {
+  padding: 0 40px;
+  line-height: 75px;
+  font-size: 14px;
+  color: #6a6a6a;
+  text-align: center;
+}
+.registerwarp .register-tabs li a:hover {
+  background-color: #fff;
+  color: #6a6a6a;
+}
+.registerwarp .tab-content {
+  margin-left: 20px;
+  width: 78%;
+  padding: 60px 50px 30px 0;
+  background-color: #ffffff;
+}
+.registerwarp .tab-content .tab-pane {
+  min-height: 653px;
+}
+.registerwarp .tab-content .tab-pane .form-group {
+  height: 70px;
+  margin: 0;
+}
+.registerwarp .tab-content .tab-pane .form-group .control-label {
+  line-height: 40px;
+  padding: 0;
+  font-size: 13px;
+  text-align: right;
+}
+.registerwarp .tab-content .tab-pane .form-group .control-label .star {
+  color: #ff4861;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.registerwarp .tab-content .tab-pane .form-group textarea.form-control {
+  height: 100px;
+  resize: none;
+}
+.registerwarp .tab-content .tab-pane .form-group .col-sm-10 {
+  padding: 0;
+  padding-left: 10px;
+}
+.registerwarp .tab-content .tab-pane .form-group .col-sm-2,
+.registerwarp .tab-content .tab-pane .form-group .col-sm-3,
+.registerwarp .tab-content .tab-pane .form-group .col-sm-6 {
+  padding: 0;
+}
+.registerwarp .tab-content .tab-pane .form-group .col-sm-4 {
+  padding-left: 10px;
+}
+.registerwarp .tab-content .tab-pane .form-group .col-sm-5 {
+  padding: 0;
+  margin-left: 10px;
+  width: 41.1%;
+}
+.registerwarp .tab-content .tab-pane .form-group .form-control {
+  height: 40px;
+  border: solid 1px #e2e2e2;
+  color: #434343;
+  background: #fcfcfc;
+  box-shadow: none;
+}
+.registerwarp .tab-content .tab-pane .form-group .form-control:focus {
+  border-color: #733ee5;
+}
+.registerwarp .tab-content .tab-pane .form-group .city-warp {
+  padding-right: 0;
+}
+.registerwarp .tab-content .tab-pane .form-group .city-warp .province,
+.registerwarp .tab-content .tab-pane .form-group .city-warp .city {
+  width: 80%;
+  float: left;
+}
+.registerwarp .tab-content .tab-pane .form-group .city-warp .right {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 20%;
+  font-size: 14px;
+  text-align: center;
+}
+.registerwarp .tab-content .tab-pane .form-group.detail {
+  height: 130px;
+}
+.registerwarp .tab-content .tab-pane .add-btn {
+  text-align: center;
+}
+#edit-form .formsubmit {
+  text-align: center;
+}
+.registerwarp .tab-content .basic .form-control {
+  display: inline-block;
+}
+.registerwarp .tab-content .basic .zc {
+  display: inline-block;
+  width: 65%;
+}
+.registerwarp .tab-content .basic .span {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.registerwarp .tab-content .achieve .radio-inline,
+.registerwarp .tab-content .achieve .checkbox-inline {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  width: 20%;
+}
+.registerwarp .tab-content .achieve .radio {
+  margin-top: 12px;
+}
+.registerwarp .tab-content .achieve .col-sm-6 {
+  width: 50%;
+  margin: 0 10px;
+}
+.registerwarp .tab-content .achieve .col-sm-6 .form-control{
+  width: 41.2%;
+  display: inline-block;
+}
+.registerwarp .tab-content .achieve .col-sm-6 .Validform_wrong{
+  float: left;
+}
+.registerwarp .tab-content .achieve .span {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  color: #919191;
+  display: inline-block;
+  margin-left: 6px;
+}
+.registerwarp .tab-content .messages .radio-inline,
+.registerwarp .tab-content .messages .checkbox-inline {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  width: 20%;
+}
+.registerwarp .tab-content .messages .radio {
+  margin-top: 12px;
+}
+.registerwarp .tab-content .messages .year,
+.registerwarp .tab-content .messages .month,
+.registerwarp .tab-content .messages .day {
+  width: 77px;
+  float: left;
+}
+.registerwarp .tab-content .messages .year .form-control,
+.registerwarp .tab-content .messages .month .form-control,
+.registerwarp .tab-content .messages .day .form-control {
+  display: inline-block;
+  width: 58px;
+}
+.registerwarp .tab-content .messages span {
+  display: inline-block;
+  font-size: 14px;
+}
+.registerwarp .tab-content .finance .year,
+.registerwarp .tab-content .finance .month,
+.registerwarp .tab-content .finance .day {
+  width: 100px;
+  float: left;
+}
+.registerwarp .tab-content .finance .year .form-control,
+.registerwarp .tab-content .finance .month .form-control,
+.registerwarp .tab-content .finance .day .form-control {
+  display: inline-block;
+  width: 80px;
+}
+.registerwarp .tab-content .finance span {
+  display: inline-block;
+  font-size: 14px;
+}
+.registerwarp .tab-content .demand .radio-inline,
+.registerwarp .tab-content .demand .checkbox-inline {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  width: 20%;
+}
+.registerwarp .tab-content .demand .radio {
+  margin-top: 12px;
+}
+.registerwarp .tab-content .stocks {
+  display: inline-block;
+}
+.registerwarp .tab-content .percent {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 10px;
+}

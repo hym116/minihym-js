@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+    }
+        .container{
+            display:flex;
+            height: 700px;
+            flex-flow:row wrap;
+        }
+        .left{
+            width: 200px;
+            background:-webkit-linear-gradient(top,#645627,#333);
+        }
+        .main{
+            width: 400px;
+            /*height: 400px;*/
+            background:-webkit-radial-gradient(30px 30px, circle farthest-corner, #58ff00 0%, rgba(222, 255, 0, 0) 100%);
+        }
+        .right{
+            width: 200px;
+            /*height: 400px;*/
+            -webkit-box-shadow:0 0 5px 3px #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="main"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

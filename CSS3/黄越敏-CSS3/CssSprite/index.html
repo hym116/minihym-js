@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animation.css"/>
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+	<div id="header" class="w pr">
+		<div id="down"class="fb f20 pa">
+			<div class="code">
+				<img src="img/1_16.png"/>
+			</div>
+			<div id="iphone" class="mb20">
+				<a href="#">iphone App</a>
+			</div>
+			<div id="android">
+				<a href="#">Android App</a>
+			</div>
+		</div>
+		<div class="wh-phone head-wh pa">
+			<img src="img/3_1_03.png"/>
+		</div>
+		<div class="bl-phone head-bl pa">
+			<img src="img/6_03.png"/>
+		</div>
+		<div id="date" class="pa">
+			<span id="">
+				iphone版本号：2.0.0更新日期：2014-10-18 				
+			</span>
+			<span id="">
+				Android版本号：2.0.0更新日期：2014-10-20
+			</span>
+		</div>
+	</div>
+<!--
+	end--header
+-->
+
+<div id="page1" class="w pr">
+	<div class="wh-phone pg1-wh1 pa fadeInUp">
+		<img src="img/6_11.png"/>
+	</div>
+	<div class="wh-phone pg1-wh2 pa fadeInUp delay1 ">
+			<img src="img/6_14.png"/>
+	</div>
+	<div class="pic-text pa flip">
+				<img src="img/1_24.png"/>
+	</div>
+	
+</div>
+<div id="page2" class="w pr">
+	<div class="pic-text2 pa swing">
+				<img src="img/1_28.png"/>
+	</div>
+	<div id="call" class="pa">
+		<div class="wh-phone pg2-wh rotateInDownRight">
+			
+			<img src="img/6_18.png"/>
+		</div>
+	</div>
+</div>
+
+<div id="page3" class="w pr">
+	<div class="wh-phone pg3-wh1 pa fadeInDown">
+		<img src="img/2_033.png"/>
+	</div>
+	<div class="wh-phone pg3-wh2 pa fadeInDown delay1">
+			<img src="img/2_06.jpg"/>
+	</div>
+	<div class="pic-text3 pa">
+				<img src="img/1_31.png"/>
+	</div>
+	
+</div>
+
+<div id="page4" class="w pr">
+	<div class="pic-text2 pa">
+				<img src="img/1_35.png"/>
+	</div>
+	<div id="call2" class="pa">
+			<img src="img/t_03.png"/>
+		</div>
+		<div class="wh-phone pg4-wh pa">
+			
+			<img src="img/6_18.png"/>
+		</div>
+	
+</div>
+<div id="page5">
+	<div class="wh-phone pg5-wh1 pa fa fadeInLeft">
+		<img src="img/9_03.jpg"/>
+	</div>
+	<div class="wh-phone pg5-wh2 pa fadeInLeft delay1">
+		<img src="img/9_05.jpg"/>
+	</div>
+	<div class="wh-phone pg5-wh3 pa fadeInLeft dely2">
+		<img src="img/9_07.jpg"/>
+	</div>
+	<div class="pic-text3 pa">
+		<img src="img/1_39.png"/>
+	</div>
+	
+	
+</div>
+<div id="page6" class="w pr">
+	<div class="pic-text2 pa">
+				<img src="img/1_43.png"/>
+	</div>
+	<div id="call3" class="pa">
+			<img src="img/x_03.png"/>
+		</div>
+		<div id="call-3" class="pa">
+			
+				<img src="img/x_03_03.png"/>
+		</div>
+		<div class="wh-phone pg6-wh1 pa">
+			
+			<img src="img/6_18.png"/>
+		</div>
+		<div class="wh-phone pg6-wh2 pa">
+			
+			<img src="img/6_18.png"/>
+		</div>
+	
+</div>
+<div id="pagebom" class="w">
+	<div id="scan">
+		<img src="img/1_49.png"/>
+		
+	</div>
+	<div class="code2">
+		<img src="img/1_47.png"/>
+	</div>
+</div>
+<!--<script type="text/javascript">
+		$(function(){
+			
+			
+			$('.pic-text2').addClass('animated fadeInUpBig');
+		})
+	</script>-->
+	<script type="text/javascript">
+		$('#page1,#page2,#page3,#page4,#page5,#page6').waypoint(function() {
+  $(this).addClass("current");
+}, { offset: '60%' });
+//$("#page2").waypoint(function(){
+//	$(this).find(".animate").addClass("show");
+//});
+	</script>
+	</body>
+</html>
