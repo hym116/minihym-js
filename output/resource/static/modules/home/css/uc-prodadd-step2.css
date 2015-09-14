@@ -1,0 +1,934 @@
+body {
+  min-height: 1351px;
+}
+.Validform_right {
+  display: none;
+}
+.gray {
+  color: #686868;
+}
+.Validform_wrong {
+  color: #ff8062;
+  white-space: nowrap;
+}
+.ucheader .mainnav {
+  padding-left: 20px;
+}
+.prodeditform_wrap {
+  width: 73.4%;
+}
+.main_wrap {
+  width: 100%;
+  margin-top: 45px;
+}
+.personwrap {
+  border: solid 1px #c6c6c6;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #ccc;
+}
+.personwrap .overview-title {
+  height: 74px;
+  line-height: 74px;
+  color: #6a6a6a;
+  border-bottom: solid 1px #c6c6c6;
+  font-size: 24px;
+  font-weight: normal;
+  padding-left: 38px;
+  background: #f9f9f9;
+  border-radius: 4px 4px 0 0;
+}
+.personwrap .checkboxs {
+  padding: 46px 36px;
+  border-radius: 3px;
+  background: #fff;
+  /*// .city {
+        //     .cell {
+        //         width: 234px;
+        //         margin-right: 30px;
+        //         border-radius: 3px;
+        //     }
+        //     .back {
+        //         background-position: 95% 50%;
+        //     }
+        //     .hide_c4 {
+        //         top: 0;
+        //         // display: none;
+        //         ul {
+        //             width: 234px;
+        //             max-height: 208px;
+        //             margin: 0;
+        //             padding: 0;
+        //             border: 1px solid #e2e2e2;
+        //             border-radius: 3px;
+        //             background-color: #fcfcfc;
+        //             li {
+        //                 padding-left: 20px;
+        //                 line-height: 52px;
+        //                 width: 234px;
+        //                 height: 54px;
+        //                 cursor: pointer;
+        //             }
+        //         }
+        //     }
+        //     .h1 {
+        //         left: -1px;
+        //     }
+        //     .h2 {
+        //         left: 262px;
+        //     }
+        // }
+        // .back {
+        //     background: url(/images/uc/selectarrow_D.png) no-repeat 90% 50%;
+        // }*/
+}
+.personwrap .checkboxs .margin-top30 {
+  margin-top: 30px;
+}
+.personwrap .checkboxs .type {
+  margin-bottom: 15px;
+  /*// .hide_c4 {
+            //     position: absolute;
+            //     z-index: 3;
+            //     top: 0;
+            //     right: 234px;
+            //     display: none;
+            //     ul {
+            //         overflow: scroll;
+            //         overflow-x: hidden;
+            //         width: 145px;
+            //         max-height: 221px;
+            //         margin: 0;
+            //         padding: 0;
+            //         border: 1px solid #e2e2e2;
+            //         border-radius: 3px;
+            //         border-top-left-radius: 0;
+            //         background-color: #fcfcfc;
+            //         li {
+
+            //             line-height: 52px;
+            //             width: 143px;
+            //             height: 54px;
+            //             cursor: pointer;
+            //             &:hover {
+            //                 background: #e2e2e2;
+            //             }
+            //             &.selected {
+            //                 color: #00a1d7;
+            //             }
+            //         }
+            //     }
+            // }*/
+}
+.personwrap .checkboxs .type ul {
+  width: 525px;
+}
+.personwrap .checkboxs .type li {
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+.personwrap .checkboxs .type .left {
+  width: 115px;
+  line-height: 40px;
+}
+.personwrap .checkboxs .type .right {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.personwrap .checkboxs .type .right li {
+  color: #919191;
+  cursor: pointer;
+}
+.personwrap .checkboxs .type .right li.checked {
+  color: #ff8062;
+}
+.personwrap .checkboxs .type .right li label {
+  cursor: pointer;
+  padding-left: 10px;
+}
+.personwrap .checkboxs .type .right li label:hover {
+  color: #434343;
+}
+.personwrap .checkboxs .type .right1 {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.personwrap .checkboxs .type .right1 li {
+  color: #919191;
+  cursor: pointer;
+}
+.personwrap .checkboxs .type .right1 li.checked {
+  color: #ff8062;
+}
+.personwrap .checkboxs .type .right1 li label {
+  cursor: pointer;
+  padding-left: 10px;
+}
+.personwrap .checkboxs .type .right1 li label:hover {
+  color: #434343;
+}
+.personwrap .checkboxs .type .right2 {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.personwrap .checkboxs .type .right2 li {
+  color: #919191;
+  cursor: pointer;
+}
+.personwrap .checkboxs .type .right2 li.checked {
+  color: #ff8062;
+}
+.personwrap .checkboxs .type .right2 li label {
+  cursor: pointer;
+  padding-left: 10px;
+}
+.personwrap .checkboxs .type .right2 li label:hover {
+  color: #434343;
+}
+.personwrap .checkboxs .type #genders {
+  width: 230px;
+}
+.personwrap .checkboxs .type #genders li {
+  width: 65px;
+}
+.personwrap .checkboxs .type #personbox {
+  width: 328px;
+  margin-right: -33px;
+}
+.personwrap .checkboxs .type #personbox li {
+  width: 82px;
+}
+.personwrap .checkboxs .type .formitem {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.personwrap .checkboxs .type .label {
+  float: left;
+  width: 115px;
+  line-height: 44px;
+}
+.personwrap .checkboxs .type .cell_wrap {
+  position: relative;
+}
+.personwrap .checkboxs .type .cell {
+  padding-left: 20px;
+  line-height: 42px;
+  position: relative;
+  height: 44px;
+  margin-left: -1px;
+  cursor: pointer;
+  border: 1px solid #e2e2e2;
+  background-color: #fcfcfc;
+}
+.personwrap .checkboxs .type .cell:hover {
+  z-index: 1;
+  color: #434343;
+  border-color: #c6c6c6;
+  background-color: #fff;
+}
+.personwrap .checkboxs .type .cell.click {
+  z-index: 2;
+  color: #00a1d7;
+  border-color: #00a1d7;
+  background-color: #f0fcff;
+}
+.personwrap .checkboxs .type .provinceselect {
+  float: left;
+}
+.personwrap .checkboxs .type .townselect {
+  float: left;
+}
+.personwrap .checkboxs .type .c1 {
+  margin-right: -1px;
+  margin-left: 0;
+}
+.personwrap .checkboxs .type:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  width: 100%;
+}
+.personwrap .checkboxs .city_wrap {
+  margin-left: 115px;
+  position: relative;
+}
+.personwrap .checkboxs .city_wrap #select-province {
+  float: left;
+  margin-right: 30px;
+  width: 240px;
+  height: 52px;
+  line-height: 52px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/selectarrow_D.png) no-repeat 90% 50%;
+}
+.personwrap .checkboxs .city_wrap #select-city {
+  float: left;
+  width: 240px;
+  height: 52px;
+  line-height: 52px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/selectarrow_D.png) no-repeat 90% 50%;
+}
+.prodedit_wrap {
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 5px #ccc;
+}
+.prodedit_wrap .modify_head {
+  width: 700px;
+  margin: 70px 0 0 60px;
+  line-height: 44px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0 0 30px 30px;
+}
+.prodedit_wrap .modify_head .head_l {
+  width: 350px;
+}
+.prodedit_wrap .formitem {
+  padding-left: 36px;
+}
+.prodedit_wrap .formitem.name .formobject {
+  width: auto;
+}
+.prodedit_wrap .formitem {
+  margin-top: 37px;
+}
+.prodedit_wrap .formitem:before,
+.prodedit_wrap .formitem:after {
+  content: " ";
+  display: table;
+}
+.prodedit_wrap .formitem:after {
+  clear: both;
+}
+.prodedit_wrap input,
+.prodedit_wrap textarea {
+  background-color: #fcfcfc;
+}
+.prodedit_wrap .select {
+  width: 320px;
+  height: 34px;
+  background: #fcfcfc url(http://static.idaiyan.cn/website/static/modules/home/images/uc/selectarrow_D.png) 98% 50% no-repeat;
+  line-height: 42px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.prodedit_wrap .formlabel {
+  float: left;
+  width: 115px;
+  min-height: 42px;
+  line-height: 42px;
+  color: #434343;
+}
+.prodedit_wrap .label-price {
+  float: left;
+  margin-right: 14px;
+  width: 100px;
+  min-height: 42px;
+  line-height: 42px;
+  text-align: right;
+  color: #434343;
+}
+.prodedit_wrap .formobject {
+  float: left;
+  width: 525px;
+}
+.prodedit_wrap .formobject .price {
+  float: left;
+}
+.prodedit_wrap .formobject .money-box {
+  border-radius: 3px;
+  width: 130px;
+  height: 40px;
+  border: solid 1px #e2e2e2;
+  font-size: 14px;
+}
+.prodedit_wrap .formobject .money-box .left {
+  display: block;
+  float: left;
+  border-right: solid 1px #e2e2e2;
+  background: #f9f9f9;
+  width: 45px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #000;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px 0 0 3px;
+}
+.prodedit_wrap .formobject .money-box input.right {
+  display: block;
+  float: left;
+  border: none;
+  height: 38px;
+  line-height: 38px;
+  width: 83px;
+  background: #fcfcfc;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.prodedit_wrap .city .addr_1 {
+  width: 250px;
+}
+.prodedit_wrap .category {
+  position: relative;
+}
+.prodedit_wrap .category .select {
+  width: 100%;
+  padding-left: 10px;
+}
+.prodedit_wrap .address {
+  position: relative;
+}
+.prodedit_wrap .address .addr_leval1,
+.prodedit_wrap .address .addr_leval2 {
+  float: left;
+  margin-right: 20px;
+}
+.prodedit_wrap .address .select {
+  width: 150px;
+  padding-left: 10px;
+}
+.prodedit_wrap .intro textarea {
+  width: 525px;
+  height: 112px;
+  padding: 0.6em 0.8em;
+  line-height: 1.5;
+}
+.prodedit_wrap .video {
+  border: none;
+}
+.prodedit_wrap .video input {
+  width: 525px;
+}
+.prodedit_wrap .detail textarea {
+  width: 525px;
+  height: 115px;
+  padding: 0.6em 0.8em;
+  line-height: 1.5;
+}
+.prodedit_wrap .imgpreview_wrap {
+  position: absolute;
+  z-index: 9;
+  height: 175px;
+  top: -2px;
+  left: -2px;
+}
+.prodedit_wrap .imgpreview {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.prodedit_wrap .imgselect {
+  position: relative;
+  width: 280px;
+  border: 2px dashed #e2e2e2;
+  background: #fcfcfc url(http://static.idaiyan.cn/website/static/modules/home/images/uc/selectbg.png) no-repeat 50% 25px;
+  cursor: pointer;
+}
+.prodedit_wrap .imgselect .tip {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  color: #d5d5d5;
+}
+.prodedit_wrap .imgselect .filewrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.prodedit_wrap .imgselect .filewrap input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 1000px;
+  opacity: 0;
+  cursor: pointer;
+}
+.prodedit_wrap .imgselect:hover {
+  background-color: #fff;
+}
+.prodedit_wrap .cover .imgselect {
+  height: 175px;
+}
+.prodedit_wrap .cover .imgpreview_wrap {
+  width: 280px;
+}
+.prodedit_wrap .bigbanner .imgselect {
+  height: 130px;
+  width: 524px;
+  background-position: 50% 10px;
+}
+.prodedit_wrap .bigbanner .imgpreview_wrap {
+  height: 130px;
+  width: 524px;
+}
+.prodedit_wrap .bigbanner .imgpreview .fl,
+.prodedit_wrap .bigbanner .imgpreview .fr {
+  height: 130px;
+  width: 22.43426633%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.prodedit_wrap .cover,
+.prodedit_wrap .bigbanner {
+  position: relative;
+}
+.prodedit_wrap .cover .formobject,
+.prodedit_wrap .bigbanner .formobject {
+  min-width: 152px;
+}
+.prodedit_wrap .cover .formlabel,
+.prodedit_wrap .bigbanner .formlabel {
+  float: left;
+  line-height: 175px;
+}
+.prodedit_wrap .cover b,
+.prodedit_wrap .bigbanner b {
+  color: #ff8062;
+}
+.prodedit_wrap .listtitle {
+  background: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  padding-left: 38px;
+  height: 70px;
+}
+.prodedit_wrap .listtitle h2 {
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #6a6a6a;
+}
+.prodedit_wrap .listtitle .back {
+  width: 40px;
+  height: 40px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/back.png) no-repeat 0 0;
+  margin: 15px 44px 0 0;
+}
+.prodedit_wrap .name .formobject input {
+  width: 280px;
+}
+.prodedit_wrap .name .price input {
+  width: 130px;
+}
+.prodedit_wrap .nickname .formobject input {
+  width: 250px;
+}
+.prodedit_wrap .truename .formobject input {
+  width: 250px;
+}
+.prodedit_wrap #province,
+.prodedit_wrap #city {
+  width: 150px;
+  height: 34px;
+  line-height: 32px;
+}
+.prodedit_wrap #intro,
+.prodedit_wrap #detail {
+  width: 525px;
+  background: #fcfcfc;
+}
+.prodedit_wrap .bigbanner .imgselect .tip {
+  bottom: 18px;
+}
+.prodedit_wrap .downmenu {
+  display: none;
+  position: absolute;
+  left: 146px;
+  top: 0;
+  width: 320px;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  background: #fcfcfc;
+  z-index: 100;
+}
+.prodedit_wrap #addr_1 {
+  width: 150px;
+  display: none;
+}
+.prodedit_wrap #addr_2 {
+  left: 316px;
+  width: 150px;
+  display: none;
+}
+.prodedit_wrap .downmenu li {
+  color: #919191;
+  font-size: 13px;
+}
+.prodedit_wrap .downmenu li:hover {
+  color: #636363;
+  background: #ececec;
+}
+.prodedit_wrap .downmenu li:hover .next {
+  color: #989895;
+}
+.prodedit_wrap .downmenu ul li {
+  margin: 5px 0;
+  line-height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.prodedit_wrap .downmenu ul li .next {
+  color: #e2e2e2;
+  margin-left: 20px;
+}
+.prodedit_wrap .show {
+  display: block;
+}
+.prodedit_wrap .addimg {
+  float: left;
+  position: relative;
+  border: 2px dashed #e2e2e2;
+  width: 170px;
+  height: 40px;
+  margin-top: 5px;
+  background: #fcfcfc;
+}
+.prodedit_wrap .addimg .tip {
+  width: 166px;
+  height: 36px;
+  line-height: 36px;
+  color: #c6c6c6;
+  padding-left: 46px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/adds.png) no-repeat 18px 50%;
+}
+.prodedit_wrap .addimg .add_wrap {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 170px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.prodedit_wrap .addimg .add_wrap .edit {
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/editdel.png) no-repeat 0 0;
+  cursor: pointer;
+}
+.prodedit_wrap .addimg .add_wrap .edit:hover {
+  background-position: -24px 0;
+}
+.prodedit_wrap .addimg .add_wrap .del {
+  position: absolute;
+  right: 50px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/editdel.png) no-repeat 0 -24px;
+  cursor: pointer;
+}
+.prodedit_wrap .addimg .add_wrap .del:hover {
+  background-position: -24px -24px;
+}
+.prodedit_wrap .addimg .imgpreview_wrap {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 10;
+  width: 170px;
+  height: 40px;
+}
+.prodedit_wrap .addimg .imgpreview {
+  display: block;
+}
+.prodedit_wrap .addimg .filewrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.prodedit_wrap .addimg .filewrap input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 1000px;
+  opacity: 0;
+  cursor: pointer;
+}
+.prodedit_wrap .addimg:hover {
+  background: #fff;
+}
+.prodedit_wrap .addimg.hasimg:hover .add_wrap {
+  display: block;
+  z-index: 20;
+}
+.prodedit_wrap .addimg2,
+.prodedit_wrap .addimg3 {
+  margin-left: 7px;
+}
+.formsubmit {
+  margin-top: 20px;
+  height: 72px;
+  border-top: 1px solid #c6c6c6;
+  background: #f9f9f9;
+  padding-top: 15px;
+}
+.formsubmit .submitbtn {
+  width: 244px;
+  text-align: center;
+  color: #fff;
+  background-color: #3ebde0;
+  box-shadow: 0 2px 0 0 #32a0be;
+}
+.formsubmit .submitbtn:hover {
+  background-color: #4ac7e9;
+}
+.formsubmit .submitbtn:active {
+  background-color: #32a0be;
+}
+.formsubmit .savebtn {
+  float: right;
+  width: 110px;
+  height: 44px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  color: #919191;
+  font-size: 16px;
+  box-shadow: none;
+  background: #FFF;
+}
+.formsubmit .savebtn:hover,
+.formsubmit .hover {
+  border: 1px solid #c6c6c6;
+  color: #434343;
+}
+.formsubmit .submitbtn {
+  float: right;
+  width: 245px;
+  height: 42px;
+  margin-right: 15px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+.prodedit_preview {
+  float: right;
+  width: 24.8%;
+}
+.prodedit_preview .right_t {
+  border: 1px solid #c6c6c6;
+  margin-bottom: 15px;
+  color: #434343;
+  box-shadow: 0 0 5px #ccc;
+}
+.prodedit_preview .top1 {
+  position: relative;
+  width: 100%;
+  height: 155px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/bgg.png) repeat;
+  text-align: center;
+}
+.prodedit_preview .cover_add,
+.prodedit_preview .bigbanner_add {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.prodedit_preview .cover_preview,
+.prodedit_preview .bigbanner_preview {
+  position: relative;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/addd.png) no-repeat 50% 50%;
+  height: 100%;
+}
+.prodedit_preview .top_t {
+  height: 12px;
+  background: #fff;
+  border-top: 2px solid #ff8062;
+}
+.prodedit_preview .middle {
+  background: #fff;
+  padding: 10px 12px;
+}
+.prodedit_preview .middle p {
+  height: 22px;
+  color: #434343;
+  font-size: 14px;
+  overflow: hidden;
+}
+.prodedit_preview .middle .small-text {
+  color: #919191;
+  font-size: 10px;
+}
+.prodedit_preview .middle .prodnums {
+  padding: 10px 0 0 0;
+  color: #919191;
+  font-size: 9px;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+  line-height: 25px;
+  opacity: 0.4;
+}
+.prodedit_preview .middle .prodnums b {
+  float: left;
+  color: #434343;
+  font-size: 9px;
+}
+.prodedit_preview .middle .prodnums .icon {
+  text-align: left;
+  padding-left: 16px;
+  margin-right: 10px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/number_s.png) no-repeat 0 3px;
+}
+.prodedit_preview .middle .prodnums .icon-money {
+  background-position: 0 3px;
+}
+.prodedit_preview .middle .prodnums .icon-topic {
+  background-position: 0 -27px;
+}
+.prodedit_preview .middle .prodnums .icon-attention {
+  background-position: 0 -56px;
+}
+.prodedit_preview .middle .prodnums .icon-love {
+  background-position: 0 -86px;
+  margin-right: 0;
+}
+.prodedit_preview .bot {
+  padding: 6px 0 6px 7px;
+  height: 39px;
+  background: #f9f9f9;
+  position: relative;
+}
+.prodedit_preview .bot .avatar_wrap {
+  width: 140px;
+  float: left;
+}
+.prodedit_preview .bot .avatar_wrap .avatar {
+  position: relative;
+  z-index: 10;
+  width: 25px;
+  vertical-align: middle;
+  height: 25px;
+  border-radius: 3px;
+}
+.prodedit_preview .bot .avatar_wrap .text {
+  color: #6a6a6a;
+  font-size: 11px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.prodedit_preview .bot .add {
+  margin-top: 1px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/follow.png) no-repeat 0 -29px;
+  margin-right: 5px;
+  float: left;
+}
+.prodedit_preview .bot .email {
+  margin-top: 1px;
+  display: none;
+  width: 24px;
+  height: 24px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/email.png) no-repeat 0 0;
+  margin-right: 10px;
+  float: left;
+}
+.prodedit_preview .bot .add_icon {
+  width: 37px;
+  height: 39px;
+  cursor: pointer;
+  padding: 14px 10px 0;
+  border-left: 1px solid #f1f1f1;
+  margin-top: -6px;
+  right: 0;
+  position: absolute;
+  text-align: center;
+}
+.prodedit_preview .bot .add_icon .inner_div {
+  width: 13px;
+  height: 2px;
+  margin-bottom: 2px;
+  background: #c6c6c6;
+}
+.prodedit_preview .right_d {
+  margin-top: 20px;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 0 5px #ccc;
+}
+.prodedit_preview .right_d img {
+  display: block;
+}
+.prodedit_preview .top2 {
+  position: relative;
+  height: 85px;
+}
+.prodedit_preview .right_b {
+  box-shadow: 0 0 5px #ccc;
+}
+.prodedit_preview .right_b .previewbtn {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #434343;
+  background: #fff;
+}
+.prodedit_preview .scal {
+  margin-top: -7px;
+  position: relative;
+}
+.prodedit_preview .prodrate {
+  position: relative;
+  z-index: 2;
+  height: 8px;
+  margin: -4px 0;
+  background: transparent url(http://static.idaiyan.cn/website/static/modules/home/images/uc/axis.png) no-repeat 0 0;
+}
+.prodedit_preview .filewrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.prodedit_preview .filewrap input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 1000px;
+  opacity: 0;
+  cursor: pointer;
+}

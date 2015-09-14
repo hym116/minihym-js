@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>idaiyan</title>
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/lib/normalize.css">
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/common.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/libs/ui/popup/popup.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/pkgs/ajax-form/ajax-form.css">
+
+<meta name="format-detection" content="telephone=no" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript">
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+    var version = parseFloat(RegExp.$1);
+    if(version < 4){
+        document.getElementsByName("viewport")[0].content += ", target-densitydpi=device-dpi";
+    }
+}
+</script> -->
+</head>
+<body id="">
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/home.css">
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/uc.css">
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/uc_prodedit.css">
+<header class="ucheader">
+    <div class="respons_wp cf">
+        <div class="logo fl"><a href="index.html"><img src="http://static.idaiyan.cn/website/static/modules/home/images/uclogo.png" alt="idaiyan"></a></div>
+        <nav class="mainnav fl">
+            <ul>
+                <li><a href="index.html">首页<span></span></a></li>
+                <li><a href="product-list.html">新品<span></span></a></li>
+                <li><a href="daiyanlist.html">演讲<span></span></a></li>
+                <li><a href="javascript:;">创始人<span></span></a></li>
+                <li><a href="javascript:;">活动<span></span></a></li>
+                <li><a href="javascript:;">发布会<span></span></a></li>
+                <li><a href="aboutus.html">关于<span></span></a></li>
+            </ul>
+        </nav>
+        <div class="userstatus fr">
+            <a href="#" class="applybtn small btn fl"><span class="icon icon-add"></span>发布代言</a>
+            <div class="fl">
+                <a class="fl pm_link" title="私信" href="#">
+                    <span class="icon icon-message"></span><div class=""></div>
+                </a>
+                <a class="fl message_link" title="通知" href="#">
+                    <span class="icon icon-sendmessage"></span><div></div>
+                </a>
+                <div class="fl user_space" href="uc_index.html">
+                    <div class="uc_link">
+                        <img class="avatar" src="http://static.idaiyan.cn/website/static/modules/home/images/temp/avatar.jpg" alt="我的头像">
+                    </div>
+                    <div class="user_menu">
+                        <ul>
+                            <li class="bb1"><a href="#"><span class="icon icon-home"></span>个人主页</a></li>
+                            <li><a href="#"><span class="icon icon-follow"></span>我的关注</a></li>
+                            <li><a href="#"><span class="icon icon-myfollow"></span>我的粉丝</a></li>
+                            <li class="bb1"><a href="#"><span class="icon icon-order"></span>我的订单</a></li>
+                            <li><a href="#"><span class="icon icon-set"></span>账号设置</a></li>
+                            <li><a href="#"><span class="icon icon-quit"></span>退出登录</a></li>
+                        </ul>
+                        <div class="user_menu_arrow"><b><i></i></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="respons_wp uc_body cf">
+        <div class="main_wrap cf">
+        <!--产品信息完善表单-->
+        <div class="prodeditform_wrap fl">
+        <form action="" id="editform" enctype="multipart/form-data">
+            <div class="prodedit_wrap">
+                <div class="listtitle cf">
+                    <h2 class="fl">
+                        <!-- 修改的话是 编辑我的代言 -->
+                        完善产品信息
+                        <span class="subtitle">Releases new speaking</span>
+                    </h2>
+
+                </div>
+                <div class="editform_wrap">
+                    <div class="formitem category">
+                        <label for="category" class="formlabel">选择类别:</label>
+                        <div class="formobject">
+                            <div class="select addr_1"></div>
+                            <div class="downmenu" id="cate">
+                                <ul class="options">
+                                    <li>
+                                        <span>家居生活</span>
+                                        <span class="next">床，箱柜，卫生用品，家居，家电…</span>
+                                    </li>
+                                    <li>
+                                        <span>出行定位</span>
+                                        <span class="next">车, 导航仪, 船, 旅行相关, 地图…</span>
+                                    </li>
+                                    <li>
+                                        <span>手机娱乐</span>
+                                        <span class="next">手机, 充电器,充电宝, 游戏手柄…</span>
+                                    </li>
+                                    <li>
+                                        <span>智能穿戴</span>
+                                        <span class="next">手环, 手表, 项链, 戒指, 眼镜…</span>
+                                    </li>
+                                    <li>
+                                        <span>健康监测</span>
+                                        <span class="next">水质监测, 空气检测, 人体监测…</span>
+                                    </li>
+                                    <li>
+                                        <span>虚拟服务</span>
+                                        <span class="next">在线教学, 云服务, O2O服务…</span>
+                                    </li>
+                                    <li>
+                                        <span>生鲜实物</span>
+                                        <span class="next">水果, 蔬菜, 家禽, 家畜, 水产…</span>
+                                    </li>
+                                    <li>
+                                        <span>其　　他</span>
+                                        <span class="next">珠宝, 公仔, 体验, 化妆品, 服务…</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formitem name">
+                        <label for="name" class="formlabel">产品名称:</label>
+                        <div class="formobject">
+                            <input type="text" name="name" id="name" value="" />
+                        </div>
+                    </div>
+                    <div class="formitem address">
+                        <label for="province" class="formlabel">发起地点:</label>
+                        <div class="formobject">
+                            <div class="addr_leval1">
+                            <div class="select addr addr_1"></div>
+                            <div class="downmenu" id="addr_1">
+                                <ul>
+                                    <li>北京</li>
+                                    <li>上海</li>
+                                    <li>广州</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="addr_leval2">
+                            <div class="select addr addr_1"></div>
+                            <div class="downmenu" id="addr_2">
+                                <ul>
+                                    <li>北京</li>
+                                    <li>上海</li>
+                                    <li>广州</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formitem intro">
+                        <label for="intro" class="formlabel">产品简介:</label>
+                        <div class="formobject">
+                            <textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="formitem cover">
+                        <label class="formlabel">封面图片:</label>
+                        <div class="formobject">
+                            <div class="imgselect">
+                                <div class="filewrap">
+                                    <input type="file" name="cover" id="cover"></div>
+                                <div class="imgpreview_wrap">
+                                    <div class="imgpreview"></div>
+                                </div>
+                                <div class="tip">
+                                    <p>支持 JPG , JPEG , PNG格式的图片</p>
+                                    <p>
+                                        尺寸为 <b>800x500</b>
+                                        。大小不超过 <b>1M</b>
+                                        。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formitem bigbanner">
+                        <label class="formlabel">通栏图片:</label>
+                        <div class="formobject">
+                            <div class="imgselect">
+                                <div class="filewrap">
+                                    <input type="file" name="bigbanner" id="bigbanner"></div>
+                                <div class="imgpreview_wrap cf">
+                                    <div class="imgpreview">
+                                        <div class="fl"></div>
+                                        <div class="fr"></div>
+                                    </div>
+                                </div>
+                                <div class="tip">
+                                    支持 JPG , JPEG , PNG格式的图片 尺寸为
+                                    <b>2560x450</b>
+                                    。大小不超过
+                                    <b>2M</b>
+                                    。
+                                </div>
+                            </div>
+                            <div class="cf">
+                                <div class="addimg addimg1" data-target="bigbanner">
+                                    <div class="add_wrap">
+                                        <div class="edit"></div>
+                                        <div class="del"></div>
+                                    </div>
+                                    <div class="imgpreview_wrap">
+                                        <div class="imgpreview">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="tip">可以再添加一张</div>
+                                </div>
+                                <div class="addimg addimg2" data-target="bigbanner2">
+                                    <div class="add_wrap">
+                                        <div class="edit"></div>
+                                        <div class="del"></div>
+                                    </div>
+                                    <div class="imgpreview_wrap">
+                                        <div class="imgpreview">
+                                            <div class="filewrap">
+                                                <input type="file" name="bigbanner2" id="bigbanner2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tip">可以再添加一张</div>
+                                </div>
+                                <div class="addimg addimg3" data-target="bigbanner3">
+                                    <div class="add_wrap">
+                                        <div class="edit"></div>
+                                        <div class="del"></div>
+                                    </div>
+                                    <div class="imgpreview_wrap">
+                                        <div class="imgpreview">
+                                            <div class="filewrap">
+                                                <input type="file" name="bigbanner3" id="bigbanner3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tip">可以再添加一张</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formitem video">
+                        <label for="video" class="formlabel">宣传视频:</label>
+                        <div class="formobject">
+                            <input type="text" name="video" value="" placeholder="可选, 输入视频地址 ( 支持: 优酷, 土豆 )" ></div>
+                    </div>
+                    <div class="formitem detail">
+                        <label for="detail" class="formlabel">详细描述:</label>
+                        <div class="formobject">
+                            <textarea name="detail" id="detail" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formsubmit">
+                <button type="submit" class="submitbtn">提交</button>
+                <button type="submit" class="save">保存</button>
+            </div>
+        </form>
+        </div>
+        <div class="article_right prodedit_preview">
+            <div class="right_t">
+                <div class="top1">
+                    <div class="cover_preview"></div>
+                </div>
+                <div class="middle">
+                    <p>您填写的产品名称将出现在这里</p>
+                </div>
+                <div class="prodrate">
+                </div>
+                <div class="bot">
+                    <ul class="cf">
+                        <li class="not">
+                            <b>￥0</b>
+                            <br/>
+                            累计金额
+                        </li>
+                        <li>
+                            <b>0</b>
+                            <br/>
+                            话题
+                        </li>
+                        <li>
+                            <b>0</b>
+                            <br/>
+                            关注
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_d">
+                <div class="top_t"></div>
+                <div class="top1 top2">
+                    <div class="bigbanner_preview">
+                    </div>
+                </div>
+                <div>
+                    <img src="http://static.idaiyan.cn/website/static/modules/home/images/uc/scal.png"></div>
+            </div>
+            <div class="right_b">
+            <a class="preview_link" target="_blank" href="#">预览</a></div>
+        </div>
+</div>
+
+</div>
+<footer>
+<div class="respons_wp cf">
+    <div class="copy">
+        Copyright &copy; 2014-2015 i代言(idaiyan.cn) 版权所有
+    </div>
+</div>
+</footer>
+<script type="text/javascript" src="http://static.idaiyan.cn/website/static/modules/home/js/require.js"></script>
+
+<script type="text/javascript" data-single="true" src="http://static.idaiyan.cn/website/pkg/map_efc0204.js"></script>
+<script>
+    /*fis async*/
+    require(['js/modules/app/uc_prodedit']);
+</script>
+<script>
+/*fis async*/
+require(['js/modules/pkgs/common']);
+</script>
+
+<!--前端专用，请勿嵌套start-->
+<script src="js/floatmenu.js"></script>
+<!--前端专用，请勿嵌套end-->
+</body>
+</html>

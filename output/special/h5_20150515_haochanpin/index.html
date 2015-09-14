@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Document</title>
+    <script type="text/javascript">if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+    var version = parseFloat(RegExp.$1);
+    if(version>2.3){
+        var phoneScale = parseInt(window.screen.width)/640;
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+    }else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+}else{
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}</script>
+    <script type="text/javascript">(function(navigator) {
+    var userAgent = navigator.userAgent;
+        documentElement = document.documentElement;
+    if ( userAgent.match( /micromessenger\/5/gi ) ) {
+        documentElement.className += " mobile wx_mobile wx_mobile_5";
+    } else if ( userAgent.match( /micromessenger/gi ) ) {
+        documentElement.className += " mobile wx_mobile";
+    } else if ( userAgent.match( /ucbrowser/gi ) ) {
+        documentElement.className += " mobile uc_mobile";
+    } else if ( /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test( userAgent.toLowerCase() ) ) {
+        documentElement.className += " mobile";
+    } else if ( userAgent.toLowerCase().match( /msie/gi ) && ( parseFloat( userAgent.toLowerCase().match( /msie ([0-9]{1,}[\.0-9]{0,})/i )[1] || 999 ) < 9 ) ) {
+        documentElement.className += " pc pc-ie pc-ie8";
+    } else if ( userAgent.toLowerCase().match( /msie/gi ) || navigator.msPointerEnabled || navigator.pointerEnabled ) {
+         documentElement.className += " pc pc-ie";
+    } else {
+        documentElement.className += " pc";
+    }
+})(navigator);</script>
+    <script>
+        var StaticPath = "";
+        //var StaticPath = "http://static.idaiyan.cn/special/h5_20150515_haochanpin";
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://test.idaiyan.cn/weixin/jssdk"></script>
+    <link rel="stylesheet" href="http://static.idaiyan.cn/special/h5_20150515_haochanpin/css/app.min.css">
+    <link rel="stylesheet" href="http://static.idaiyan.cn/special/h5_20150515_haochanpin/css/style.css">
+    <!--分享信息start-->
+    <!--分享给朋友数据-->
+    <meta name="share_msg"
+        data-title="创业家&amp;i代言 中国好产品大赛招募 Start！"
+        data-desc="知名投资家、创业家为产品加冕，京东金融、百度未来商店、Dell、硬蛋、通路快建等行业巨头共同孵化，让天下没有被埋没的好产品。"
+        data-imgUrl="http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/share.jpg"
+        data-link="http://www.idaiyan.cn/goodproduct/gindex"
+    >
+    <!--分享到朋友圈数据-->
+    <meta name="share_line"
+        data-title="创业家&amp;i代言 中国好产品大赛招募 Start！亮出新奇特硬货，有货你就来！"
+        data-imgUrl="http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/share.jpg"
+        data-link="http://www.idaiyan.cn/goodproduct/gindex"
+    >
+    <!--分享成功回调跳转链接-->
+    <meta name="share_callback" data-callback="">
+    <!--分享信息end-->
+</head>
+<body class="app" >
+    <div id="app-loading" class="app-loading">
+        <div class="loading-main middle-center"><span class="loading-text"></span><span id="loading-progress">
+        </span><span class="percent"></span></div>
+    </div>
+    <div class="ui-guideWrap"></div>
+    <section class="app-content">
+        <!-- <section id="story1" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-text">
+                </div>
+            </section>
+        </section>
+        <section id="story2" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-text">
+                </div>
+            </section>
+        </section>
+        <section id="story3" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-text">
+                </div>
+            </section>
+        </section>
+        <section id="story4" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-text">
+                </div>
+            </section>
+        </section> -->
+        <section id="story5" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-text">
+                    <div class="anim-light"></div>
+                    <div class="anim-text1"></div>
+                    <div class="anim-text2"></div>
+                </div>
+            </section>
+        </section>
+        <section id="story6" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-text">
+                    <div class="anim-text1"></div>
+                    <div class="ui-continue-link center"></div>
+                </div>
+            </section>
+        </section>
+        <section id="trans" class="page" notrans>
+            <section class="page-content">
+                <div class="middle-center">
+                    <div class="trans-1"></div>
+                    <div class="trans-2"></div>
+                    <div class="trans-3"></div>
+                    <div class="trans-4"></div>
+                </div>
+            </section>
+        </section>
+        <section id="cover" class="page">
+            <section class="page-content middle-center a-fadein">
+                <div class="activity-logo-wrap">
+                    <div class="activity-logo"></div>
+                    <div class="activity-logo-text"></div>
+                    <div class="activity-logo-border-tl a-fadeinL"></div>
+                    <div class="activity-logo-border-tr a-fadeinR"></div>
+                    <div class="activity-logo-border-bl a-fadeinL"></div>
+                    <div class="activity-logo-border-br a-fadeinR"></div>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <div id="sponsor" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title ui-title1 a-fadeinB"></div>
+                <div class="ui-content ui-content1 a-zoomin"></div>
+                <div class="ui-title ui-title2 a-fadeinB"></div>
+                <div class="ui-content ui-content2 a-zoomin"></div>
+                <div class="ui-title ui-title3 a-fadeinB"></div>
+                <div class="ui-content ui-content3 a-zoomin"></div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </div>
+        <section id="intro" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-content-wrap a-flipinX">
+                    <div class="ui-content a-flash"></div>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="map" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-map-wrap center a-zoom">
+                    <div class="ui-dots"></div>
+                    <div class="ui-city ui-beijing a-fadeinB"></div>
+                    <div class="ui-city ui-wuhan"><div class="ui-tip a-fadeinT"></div><div class="ui-arrow a-fadeinT"></div></div>
+                    <div class="ui-city ui-shanghai"><div class="ui-tip a-fadeinL"></div><div class="ui-arrow a-fadeinB"></div></div>
+                    <div class="ui-city ui-hangzhou"><div class="ui-tip a-fadeinT"></div><div class="ui-arrow a-fadeinT"></div></div>
+                    <div class="ui-city ui-chengdu"><div class="ui-tip a-fadeinR"></div><div class="ui-arrow a-fadeinR"></div></div>
+                    <div class="ui-city ui-nanjing"><div class="ui-tip a-fadeinR"></div><div class="ui-arrow a-fadeinR"></div></div>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="flow" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-flow-list  a-fadeinR">
+                    <ul>
+                        <li class="li1 a-flipinX2"></li>
+                        <li class="li2 a-flipinX2"></li>
+                        <li class="li3 a-flipinX2"></li>
+                        <li class="li4 a-flipinX2"></li>
+                        <li class="li5 a-flipinX2"></li>
+                        <li class="li6 a-flipinX2"></li>
+                        <li class="li7 a-flipinX2"></li>
+                        <li class="li8 a-flipinX2"></li>
+                        <li class="li9 a-flipinX2"></li>
+                    </ul>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="apply" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-form">
+                    <form id="form1" action="">
+                        <div class="form-item form-item1 a-fadeinB">
+                            <input type="text" id="realname">
+                        </div>
+                        <div class="form-item form-item2 a-fadeinB">
+                            <input type="text" id="mobile">
+                        </div>
+                        <div class="form-item form-item3 a-fadeinB">
+                            <input type="text" id="email">
+                        </div>
+                    </form>
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section>
+        <section id="valid" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-form">
+                    <form id="form2" action="">
+                        <div class="infos a-fadeinB">
+                            创始人：<span class="realname">罗唐尼</span><br>
+                            手机号：<span class="mobile">19283750289</span><br>
+                            电子邮箱：<span class="email">sidjfbwou@enq.com</span>
+                        </div>
+                        <div class="form-item form-item4 a-fadeinB">
+                            <input type="text" id="valid">
+                        </div>
+                    </form>
+                    <div class="ui-buttons a-fadeinB cf">
+                        <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                        <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- <section id="result" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-qrtip a-ring"></div>
+                <div class="ui-qrcode a-bouncein"></div>
+                <div class="ui-link a-flash"></div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+            </section>
+        </section> -->
+        <section id="resultx" class="page">
+            <section class="page-content middle-center">
+                <div class="ui-title a-fadeinT"></div>
+                <div class="ui-qrtip a-ring"></div>
+                <div class="ui-qrcode a-bouncein">
+                    <img src="http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6x-qrcode.png" alt="">
+                </div>
+                <div class="ui-buttons a-fadeinB cf">
+                    <div class="ui-button btn-prev"><div class="btn-text"></div></div>
+                    <div class="ui-button btn-next"><div class="btn-text"></div></div>
+                </div>
+                <div class="press a-bouncein"></div>
+            </section>
+        </section>
+    </section>
+    <div id="share-mask" class="a-fadein"><div class="share-mask-tip"></div></div>
+    <div id="ajax-mask" class="z-hide">
+        <div id="floatingCirclesG">
+            <div class="f_circleG" id="frotateG_01"></div><div class="f_circleG" id="frotateG_02"></div><div class="f_circleG" id="frotateG_03"></div><div class="f_circleG" id="frotateG_04"></div><div class="f_circleG" id="frotateG_05"></div><div class="f_circleG" id="frotateG_06"></div><div class="f_circleG" id="frotateG_07"></div><div class="f_circleG" id="frotateG_08"></div>
+        </div>
+    </div>
+    <div id="alert-mask" class="a-fadein">
+        <div class="middle-center">
+            <div class="alert-text"></div>
+            <div class="alert-btn"></div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="u-globalAudio">
+        <audio id="bgmidim" src="" autoplay loop data-src="/audio/bgmidi.mp3"></audio>
+    </a>
+    <audio preload="load" id="buttonm" class="audio-lazyload" data-src="/audio/button.mp3"></audio>
+    <audio preload="load" id="citym1" class="audio-lazyload" data-src="/audio/city.mp3"></audio>
+    <audio preload="load" id="citym2" class="audio-lazyload" data-src="/audio/city.mp3"></audio>
+    <audio preload="load" id="citym3" class="audio-lazyload" data-src="/audio/city.mp3"></audio>
+    <audio preload="load" id="citym4" class="audio-lazyload" data-src="/audio/city.mp3"></audio>
+    <audio preload="load" id="citym5" class="audio-lazyload" data-src="/audio/city.mp3"></audio>
+    <audio preload="load" id="citym6" class="audio-lazyload" data-src="/audio/city.mp3"></audio>
+    <audio preload="load" id="tumblingm1" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm2" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm3" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm4" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm5" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm6" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm7" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm8" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="tumblingm9" class="audio-lazyload" data-src="/audio/tumbling.mp3"></audio>
+    <audio preload="load" id="logom" class="audio-lazyload" data-src="/audio/logo.mp3"></audio>
+    <audio preload="load" id="screenmessm" class="audio-lazyload" data-src="/audio/screenmess.mp3"></audio>
+    <audio preload="load" id="synopsis" class="audio-lazyload" data-src="/audio/synopsis.mp3"></audio>
+    <audio preload="load" id="textbox1" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox2" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox3" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox4" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="textbox5" class="audio-lazyload" data-src="/audio/textbox.mp3"></audio>
+    <audio preload="load" id="warningm" class="audio-lazyload" data-src="/audio/warning.mp3"></audio>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin/js/zepto.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin/js/fastclick.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin/js/flippage.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin/js/share.js"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin/js/loader.js?5"></script>
+    <script src="http://static.idaiyan.cn/special/h5_20150515_haochanpin/js/script.js?5"></script>
+</body>
+</html>

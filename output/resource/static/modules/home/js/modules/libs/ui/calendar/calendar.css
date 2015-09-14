@@ -1,0 +1,87 @@
+.dv_dateCalendar {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background: #fff;
+}
+.dv_dateCalendar .dc_header {
+  position: relative;
+}
+.dv_dateCalendar .dc_header h4 {
+  line-height: 46px;
+  text-align: center;
+}
+.dv_dateCalendar .dc_header .dc_button {
+  position: absolute;
+  top: 10px;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/calendar-arrow.png) no-repeat 50% 50%;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.dv_dateCalendar .dc_header .dc_btn_prev {
+  left: 10px;
+  cursor: pointer;
+  background-position: 8px 50%;
+}
+.dv_dateCalendar .dc_header .dc_btn_prev_year {
+  display: none;
+  left: 10px;
+}
+.dv_dateCalendar .dc_header .dc_btn_next {
+  right: 10px;
+  cursor: pointer;
+  background-position: -35px 50%;
+}
+.dv_dateCalendar .dc_header .dc_btn_next_year {
+  display: none;
+  right: 10px;
+}
+.dv_dateCalendar .dc_header .dc_btn_backToday {
+  display: none;
+}
+.dv_dateCalendar .dc_header .btn_close {
+  display: none;
+}
+.dv_dateCalendar .dv_calendarBox table .colHeader {
+  line-height: 22px;
+  color: #8d9395;
+}
+.dv_dateCalendar .dv_calendarBox table tr.dc_last td {
+  border-bottom: none;
+}
+.dv_dateCalendar .dv_calendarBox table td {
+  line-height: 34px;
+  height: 34px;
+  text-align: center;
+  border: 1px solid #dbe0e0;
+  cursor: pointer;
+}
+.dv_dateCalendar .dv_calendarBox table:first-child td.dc_first {
+  border-left: none;
+}
+.dv_dateCalendar .dv_calendarBox table:last-child td.dc_last {
+  border-right: none;
+}
+.dv_dateCalendar .dv_calendarBox table .dc_past_date,
+.dv_dateCalendar .dv_calendarBox table .dc_other_month,
+.dv_dateCalendar .dv_calendarBox table .dc_unclick {
+  color: #dce0e0;
+  background-color: #f9f9f9;
+  cursor: text;
+}
+.dv_dateCalendar .dv_calendarBox table .dc_selected_date {
+  color: #fff;
+  background-color: #ff8062;
+}
+.dv_dateCalendar .dc_cleanlink {
+  clear: both;
+  border-top: 1px solid #dbe0e0;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.dv_dateCalendar .dc_cleanlink:hover {
+  text-decoration: underline;
+}

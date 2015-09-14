@@ -1,0 +1,89 @@
+body {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font: 400 14px "Microsoft Yahei";
+}
+ul,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #1e1912;
+}
+header ul {
+  width: 642px;
+  height: 100%;
+  margin: 0 auto;
+}
+header ul li {
+  float: left;
+  text-align: center;
+}
+header ul li a {
+  display: block;
+  width: 107px;
+  line-height: 40px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #929291;
+  font-size: 16px;
+}
+header ul li a:hover {
+  background-color: #009bf0;
+  color: #fff;
+}
+.take-the-lead-first {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.take-the-lead-first .banner {
+  width: 100%;
+  height: 520px;
+  background: url(../images/take-the-lead-banner.jpg) center 2px no-repeat #101125;
+}
+.take-the-lead-first .section {
+  width: 100%;
+  height: 690px;
+  background-color: #e48f27;
+}
+.take-the-lead-first .section-01 ul {
+  width: 1132px;
+  height: 67px;
+  margin: 0 auto;
+  background-color: #009bf0;
+  box-shadow: 0 0 1px #22a8f2;
+}
+.take-the-lead-first .section-01 ul li {
+  float: left;
+  width: 278px;
+  height: 46px;
+  margin-top: 12px;
+}
+.take-the-lead-first .section-01 ul li .lit-bg {
+  display: inline-block;
+  width: 35px;
+  height: 100%;
+  background: url(../image/lit-bg.png) no-repeat;
+}
+.take-the-lead-first .section-01 ul li .title {
+  display: inline-block;
+  width: 136px;
+}
+.take-the-lead-first .section-01 ul li .title h2 {
+  font: 400 19.96px "FZLTHJW GB10";
+  color: #fff;
+}
+.take-the-lead-first .section-01 ul li .title h3 {
+  font: 400 17.2px "FZLTHJW GB10";
+  color: #3d3d3d;
+}

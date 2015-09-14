@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+    <script type="text/javascript" src="http://static.idaiyan.cn/special/web_20141221/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static.idaiyan.cn/special/web_20141221/js/jquery.flipcountdown.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/special/web_20141221/css/time.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/special/web_20141221/css/jquery.flipcountdown.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="time">
+            <div class="countdown"></div>
+        </div>
+        <div class="num_wrap">
+            <i>23491</i><b>·</b><span>人次</span>
+        </div>
+    </div>
+    <script>
+    $(function(){
+        var NY = Math.round(new Date().getTime()/1000) + 180;
+        $('.countdown').flipcountdown({
+            size:"lg",
+            tick:function(){
+                var nol = function(h){
+                    return h>9?h:'0'+h;
+                }
+                var range   = NY-Math.round((new Date()).getTime()/1000),
+                    secday = 86400, sechour = 3600,
+                    min     = parseInt(((range%secday)%sechour)/60),
+                    sec     = ((range%secday)%sechour)%60;
+                return nol(min)+' '+nol(sec);
+            }
+        });
+    });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>idaiyan</title>
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/lib/normalize.css">
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/common.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/css/header.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/libs/ui/dropkick/dropkick.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/css/filter.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/libs/ui/popup/popup.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/pkgs/ajax-form/ajax-form.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/libs/ui/tip/tip.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/libs/ui/dropkick/dropkick.css">
+
+<meta name="format-detection" content="telephone=no" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript">
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+    var version = parseFloat(RegExp.$1);
+    if(version < 4){
+        document.getElementsByName("viewport")[0].content += ", target-densitydpi=device-dpi";
+    }
+}
+</script> -->
+</head>
+<body id="">
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/home.css">
+<link rel="stylesheet" href="http://static.idaiyan.cn/website/static/modules/home/css/support-list.css">
+<!-- 
+    @require "styles/header.less"
+-->
+<header class="homeheader">
+    <div class="respons_wp cf">
+        <div class="logo fl"><a href="index.html"><img src="http://static.idaiyan.cn/website/static/modules/home/images/homelogo.png" alt="idaiyan"></a></div>
+        <nav class="mainnav fl">
+            <ul>
+                <li><a href="index.html">首页<span></span></a></li>
+                <li><a href="product-list.html">新品<span></span></a></li>
+                <li><a href="daiyanlist.html">演讲<span></span></a></li>
+                <li><a href="founderlist.html">创始人<span></span></a></li>
+                <li><a href="">活动<span></span></a></li>
+                <li><a href="">发布会<span></span></a></li>
+                <li><a href="aboutus.html">关于<span></span></a></li>
+            </ul>
+        </nav>
+        <div class="userstatus fr">
+            <!--已登录start-->
+            <a href="uc_prodedit.html" class="applybtn small btn fl"><span class="icon icon-add"></span>发布代言</a>
+            <div class="fl">
+                <a class="fl pm_link" title="私信" href="#">
+                    <span class="icon icon-message"></span><div class=""></div>
+                </a>
+                <a class="fl message_link" title="通知" href="#">
+                    <span class="icon icon-sendmessage"></span><div></div>
+                </a>
+                <div class="fl user_space" href="uc_index.html">
+                    <div class="uc_link">
+                        <img class="avatar" src="http://static.idaiyan.cn/website/static/modules/home/images/temp/avatar.jpg" alt="我的头像">
+                    </div>
+                    <div class="user_menu">
+                        <ul>
+                            <li class="bb1"><a href="#"><span class="icon icon-home"></span>个人主页</a></li>
+                            <li><a href="#"><span class="icon icon-follow"></span>我的关注</a></li>
+                            <li><a href="#"><span class="icon icon-myfollow"></span>我的粉丝</a></li>
+                            <li class="bb1"><a href="#"><span class="icon icon-order"></span>我的订单</a></li>
+                            <li><a href="#"><span class="icon icon-set"></span>账号设置</a></li>
+                            <li><a href="#"><span class="icon icon-quit"></span>退出登录</a></li>
+                        </ul>
+                        <div class="user_menu_arrow"><b><i></i></b></div>
+                    </div>
+                </div>
+            </div>
+            <!--已登录end-->
+            <!--未登录start-->
+            <a href="uc-prodadd-step1.html" class="applybtn btn fl"><span class="icon icon-add"></span>发布代言</a>
+            <div class="fl login_regist">
+                <a class="fl" href="uc_login.html">登录</a>
+                <span class="fl pipe">|</span>
+                <a class="fl" href="uc_regist.html">注册</a>
+            </div>
+            <!--未登录end-->
+        </div>
+    </div>
+</header>
+<div class="choosen-product respons_wp">
+    <div class="pic-box">
+        <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/choosen-product.jpg">
+        <div class="introduce-text">
+            <h1>褚橙-热血版-云冠牌冰糖橙（L型）2.5kg</h1>
+            <p>励志橙，有着中国人欣赏的甜，褚时健75岁再创业，精神终可传承</p>
+            <div class="origin-price orange">
+            原价:<div class="num ">199元</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--
+          
+            @require "js/modules/libs/ui/dropkick/dropkick.css"
+            @require "styles/filter.less"
+
+   -->
+   
+<div class="filterbox">
+    <div class="filteritems">
+        <div class="respons_wp">
+            <form id="filter" class="cf">
+                <div class="formitem city select-wrap city-check">
+                    <div class="item-wrap">
+                         <select id="prodname">
+                            <option value="1">产品名称</option>
+                            <option value="2">IT互联网</option>
+                            <option value="3">电子信息</option>
+                            <option value="4">化工</option>
+                            <option value="5">汽车</option>
+                            <option value="6">生物技术</option>
+                            <option value="7">环保材料</option>
+                            <option value="8">服务行业</option>
+                            <option value="9">食品行业</option>
+                        </select> 
+                         <select id="select-user">
+                            <option value="1">用户类型</option>
+                            <option value="2">创始人</option>
+                            <option value="3">合伙人</option>
+                        </select> 
+                         <select id="select-industry">
+                            <option value="1">活动类型</option>
+                            <option value="2">IT互联网</option>
+                            <option value="3">电子信息</option>
+                            <option value="4">化工</option>
+                            <option value="5">汽车</option>
+                            <option value="6">生物技术</option>
+                            <option value="7">环保材料</option>
+                            <option value="8">服务行业</option>
+                            <option value="9">食品行业</option>
+                        </select>
+                    </div>
+                    <div class="active-click js-check-active">
+                        <div class="active-title active-col">
+                            <i class="icon icon-city"></i>
+                            <span class="city"></span>
+                        </div>
+                      
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>   
+ <form action="" id="filter-form">
+   <input type="hidden" id="js-prodname" name="prodname" />
+   <input type="hidden" id="js-user" name="user" />
+   <input type="hidden" id="js-industry" name="industry" />
+ </form>
+<div class="list-wrap respons_wp">
+    <table>
+        <thead>
+            <tr>
+              <th class="user-info">用户信息</th>
+              <th>收货地址</th>
+              <th>活动</th>
+              <th class="money">金额</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="img-td">
+                <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/orange.png" alt="">
+                <span>
+                   <span class="name">娄晗臣</span>
+                <br/>18210245698
+                </span>
+               
+              </td>
+              <td class="address">
+                北京市海淀区海淀大街方正国际大厦601室601
+              </td>
+              <td class="activity orange">众筹</td>
+              <td class="right"><span class="crowd-donate">众筹</span><br/><span class="num">¥500</span></td>
+            </tr>
+            <tr>
+              <td class="img-td">
+                <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/orange.png" alt="">
+                <span>
+                   <span class="name">娄晗臣</span>
+                <br/>18210245698
+                </span>
+               
+              </td>
+              <td class="address">
+                北京市海淀区海淀大街方正国际大厦601室601
+              </td>
+              <td class="blue">365</td>
+              <td class="right"><span class="crowd-donate">众筹</span><br/><span class="num">¥500</span></td>
+            </tr>
+            <tr>
+              <td class="img-td">
+                <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/orange.png" alt="">
+                <span>
+                   <span class="name">娄晗臣</span>
+                <br/>18210245698
+                </span>
+               
+              </td>
+              <td class="address">
+                北京市海淀区海淀大街方正国际大厦601室601
+              </td>
+              <td class="activity pink">一呼百应</td>
+              <td class="right"><span class="crowd-donate">众筹</span><br/><span class="num">¥500</span></td>
+            </tr>
+            <tr>
+              <td class="img-td">
+                <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/orange.png" alt="">
+                <span>
+                   <span class="name">娄晗臣</span>
+                <br/>18210245698
+                </span>
+               
+              </td>
+              <td class="address">
+                北京市海淀区海淀大街方正国际大厦601室601
+              </td>
+              <td class="activity green">粉丝节</td>
+              <td class="right"><span class="crowd-donate">众筹</span><br/><span class="num">¥500</span></td>
+            </tr>
+            <tr>
+              <td class="img-td">
+                <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/orange.png" alt="">
+                <span>
+                   <span class="name">娄晗臣</span>
+                <br/>18210245698
+                </span>
+               
+              </td>
+              <td class="address">
+                北京市海淀区海淀大街方正国际大厦601室601
+              </td>
+              <td class="activity orange">众筹</td>
+              <td class="right"><span class="crowd-donate">众筹</span><br/><span class="num">¥500</span></td>
+            </tr>
+  </tbody>
+    </table>
+</div>
+<div class="pagenavi_wrap">
+        <nav class="pagenavi cf">
+        <ul>
+            <li class="first"><a href="#"></a></li>
+            <li class="prev"><a href="#"></a></li>
+            <li><a href="#">1</a></li>
+            <li class="current"><span>2</span></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="dot"><span>…</span></li>
+            <li><a href="#">67</a></li>
+            <li class="next"><a href="#"></a></li>
+            <li class="last"><a href="#"></a></li>
+        </ul>
+    </nav>
+</div>
+<footer>
+<div class="respons_wp cf">
+    <div class="copy">
+        Copyright &copy; 2014-2015 i代言(idaiyan.cn) 版权所有
+    </div>
+</div>
+</footer>
+<script type="text/javascript" src="http://static.idaiyan.cn/website/static/modules/home/js/require.js"></script>
+
+<script type="text/javascript" data-single="true" src="http://static.idaiyan.cn/website/pkg/map_a39d933.js"></script>
+<script>
+/*fis async*/
+require(["js/modules/app/support-list"]);
+</script>
+<script>
+/*fis async*/
+require(['js/modules/pkgs/common']);
+</script>
+
+<!--前端专用，请勿嵌套start-->
+<script src="js/floatmenu.js"></script>
+<!--前端专用，请勿嵌套end-->
+</body>
+</html>

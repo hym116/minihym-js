@@ -1,0 +1,181 @@
+/*order style*/
+.none {
+  display: none;
+}
+.result {
+  padding-top: 32px;
+}
+.result .order-content {
+  width: 998px;
+  margin: 0 auto;
+  padding: 31px auto;
+}
+.result .order-content .suss .title {
+  font-size: 26px;
+  color: #434343;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 23px;
+  padding-left: 35px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/su.png) no-repeat 0 0;
+}
+.result .order-content .suss .content {
+  color: #6a6a6a;
+  font-size: 14px;
+  padding: 9px 14px;
+  border: dashed 1px #e2e2e2;
+  margin-bottom: 28px;
+  background: #fcfcfc;
+}
+.result .order-content .suss .introduction {
+  line-height: 24px;
+}
+.result .order-content .suss .xq {
+  color: #919191;
+  line-height: 30px;
+  height: 30px;
+}
+.result .order-content .fail .title-wrap {
+  margin-bottom: 23px;
+}
+.result .order-content .fail .title-wrap .title {
+  font-size: 26px;
+  color: #434343;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 35px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/su.png) no-repeat left bottom;
+}
+.result .order-content .fail .content {
+  color: #6a6a6a;
+  font-size: 14px;
+  padding: 9px 14px;
+  border: dashed 1px #e2e2e2;
+  margin-bottom: 28px;
+}
+.result .order-content .fail .introduction {
+  line-height: 24px;
+}
+.result .order-content .fail .xq {
+  color: #919191;
+  line-height: 30px;
+  height: 30px;
+}
+.result .order-content .list-item {
+  margin-bottom: 10px;
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+}
+.result .order-content .list-item .list-item-title {
+  line-height: 40px;
+  position: relative;
+  height: 40px;
+}
+.result .order-content .list-item .list-item-title .item-title-number {
+  padding-left: 16px;
+  border-bottom: 1px solid #c6c6c6;
+  background: #f9f9f9;
+  border-radius: 3px 3px 0 0;
+}
+.result .order-content .list-item .list-item-title .item-title-number .number-check {
+  display: inline-block;
+  margin-right: 5px;
+}
+.result .order-content .list-item .list-item-title .item-title-number span {
+  margin-right: 40px;
+  color: #919191;
+}
+.result .order-content .list-item .list-item-title .item-title-number span a {
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00a1d7;
+}
+.result .order-content .list-item .list-item-content table tr {
+  width: 100%;
+  background: #fff;
+}
+.result .order-content .list-item .list-item-content table tr td {
+  text-align: center;
+  vertical-align: middle;
+  border-right: solid 1px #e2e2e2;
+  font-size: 14px;
+  color: #919191;
+}
+.result .order-content .list-item .list-item-content .table-thumb,
+.result .order-content .list-item .list-item-content .table-thumb img {
+  width: 90px;
+  height: 90px;
+}
+.result .order-content .list-item .list-item-content .w404 {
+  width: 404px;
+}
+.result .order-content .list-item .list-item-content .w108 {
+  width: 108px;
+}
+.result .order-content .list-item .list-item-content .w134 {
+  width: 134px;
+}
+.result .order-content .list-item .list-item-content .w171 {
+  width: 171px;
+}
+.result .order-content .list-item .list-item-content .w183 {
+  width: 183px;
+  color: #ff8062;
+  font-weight: 700;
+  font-size: 18px;
+}
+.result .order-content .list-item .list-item-content .border-none {
+  border-right: none;
+}
+.result .order-content .list-item .list-item-content .thumb-goods {
+  padding: 14px;
+  border-bottom: solid 1px #e2e2e2;
+}
+.result .order-content .list-item .list-item-content .thumb-goods .thumb-text {
+  float: left;
+  width: 180px;
+  padding-left: 10px;
+  text-align: left;
+}
+.result .order-content .list-item .list-item-content .thumb-goods .thumb-text a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  display: block;
+  padding-top: 16px;
+  cursor: pointer;
+  color: #6a6a6a;
+}
+.result .order-content .list-item .list-item-content .thumb-goods .thumb-text span {
+  font-size: 12px;
+  display: block;
+  padding-top: 14px;
+  color: #919191;
+}
+.result .order-content .list-item .list-item-content .border-bottom-none {
+  border-bottom: none;
+}
+.result .order-content .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 80px;
+}
+.result .order-content .btn .see {
+  font-size: 16px;
+  line-height: 37px;
+  width: 185px;
+  height: 37px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 27px;
+}
+.result .order-content .btn .see-prduct {
+  line-height: 37px;
+  width: 185px;
+  height: 37px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}

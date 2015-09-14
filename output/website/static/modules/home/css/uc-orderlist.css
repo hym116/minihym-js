@@ -1,0 +1,477 @@
+/*order style*/
+.order {
+  padding-top: 32px;
+}
+.order .order-content {
+  width: 998px;
+  margin: 0 auto;
+  padding: 31px auto;
+}
+.order .order-content .order-menu {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 44px;
+  height: 46px;
+  border-bottom: 2px solid #e2e2e2;
+}
+.order .order-content .order-menu ul {
+  display: block;
+}
+.order .order-content .order-menu ul li {
+  position: relative;
+  float: left;
+}
+.order .order-content .order-menu ul li.active a {
+  color: #ff7f61;
+  border-bottom: #ff7f61 2px solid;
+}
+.order .order-content .order-menu ul li a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  float: left;
+  padding: 0 33px;
+  text-decoration: none;
+  color: #6a6a6a;
+}
+.order .order-content .order-menu ul li .order-menu-line {
+  font-size: 0;
+  position: absolute;
+  top: 14px;
+  display: block;
+  width: 1px;
+  right: 0;
+  height: 14px;
+  color: #e2e2e2;
+  background: #e2e2e2;
+}
+.order .order-content .order-menu ul li .number {
+  position: absolute;
+  left: 75%;
+  bottom: 0;
+  font-size: 14px;
+  color: #ff7f61;
+}
+.order .order-content .order-menu .trash {
+  font-size: 12px;
+  width: 98px;
+  cursor: pointer;
+  color: #919191;
+}
+.order .order-content .order-menu .trash .trash-icon {
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/editdel.png) 0 -24px no-repeat;
+}
+.order .order-content .order-menu .trash a {
+  color: #919191;
+}
+.order .order-content .serach {
+  font-size: 14px;
+  height: 65px;
+  padding: 18px 0;
+}
+.order .order-content .serach .serach-box {
+  width: 370px;
+}
+.order .order-content .serach .serach-box .serach-input {
+  line-height: 32px;
+  display: inline-block;
+  width: 268px;
+  height: 32px;
+  padding-left: 10px;
+  color: #6a6a6a;
+  border: solid 1px #e9e9e9;
+  border-radius: 3px;
+}
+.order .order-content .serach .serach-box .serach-input:focus {
+  border: solid 1px #00a1d7;
+}
+.order .order-content .serach .serach-box .serach-button {
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
+  width: 78px;
+  height: 32px;
+  margin-left: 10px;
+  text-align: center;
+  color: #6a6a6a;
+  border: solid 1px #e9e9e9;
+  border-radius: 3px;
+  background: #f3f3f3;
+  box-shadow: none;
+}
+.order .order-content .serach .serach-select {
+  width: 140px;
+}
+.order .order-content .serach .serach-select .select {
+  width: 140px;
+  position: relative;
+  font-size: 14px;
+  line-height: 28px;
+  height: 32px;
+  cursor: pointer;
+  color: #6a6a6a;
+}
+.order .order-content .serach .serach-select .select .select-ui {
+  position: absolute;
+  z-index: 100;
+  top: -1px;
+  left: 0;
+  display: none;
+  width: 100%;
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+}
+.order .order-content .serach .serach-select .select .select-ui li a {
+  line-height: 34px;
+  display: block;
+  height: 34px;
+  color: #6a6a6a;
+  text-align: center;
+  background: #f3f3f3;
+}
+.order .order-content .serach .serach-select .select .select-ui li a:hover {
+  color: #000;
+  background: #e2e2e2;
+}
+.order .order-content .list-support {
+  line-height: 50px;
+  height: 50px;
+  color: #6a6a6a;
+  text-align: center;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  background: #f3f3f3;
+}
+.order .order-content .list-support .support-msg {
+  width: 380px;
+}
+.order .order-content .list-support .consignee {
+  width: 102px;
+}
+.order .order-content .list-support .place-date {
+  position: relative;
+  width: 142px;
+  cursor: pointer;
+}
+.order .order-content .list-support .place-date .select-ui {
+  position: absolute;
+  z-index: 100;
+  top: -1px;
+  left: 0;
+  display: none;
+  width: 100%;
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+}
+.order .order-content .list-support .place-date .select-ui li a {
+  line-height: 50px;
+  display: block;
+  height: 50px;
+  color: #6a6a6a;
+  background: #f3f3f3;
+}
+.order .order-content .list-support .place-date .select-ui li a:hover {
+  color: #000;
+  background: #e2e2e2;
+}
+.order .order-content .list-support .money {
+  width: 92px;
+}
+.order .order-content .list-support .state-all {
+  position: relative;
+  width: 138px;
+  cursor: pointer;
+}
+.order .order-content .list-support .state-all .select-ui {
+  position: absolute;
+  z-index: 100;
+  top: -1px;
+  left: 0;
+  display: none;
+  width: 100%;
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+}
+.order .order-content .list-support .state-all .select-ui li a {
+  line-height: 50px;
+  display: block;
+  height: 50px;
+  color: #6a6a6a;
+  background: #f3f3f3;
+}
+.order .order-content .list-support .state-all .select-ui li a:hover {
+  color: #000;
+  background: #e2e2e2;
+}
+.order .order-content .list-support .operation {
+  width: 136px;
+}
+.order .order-content .list-support .icon-down {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-left: 3px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/selectarrow_B.png) no-repeat;
+}
+.order .order-content .list-btn {
+  padding: 9px 0 9px 18px;
+}
+.order .order-content .list-btn .select-label {
+  margin-right: 26px;
+}
+.order .order-content .list-btn a {
+  font-size: 12px;
+  line-height: 22px;
+  display: inline-block;
+  height: 22px;
+  margin-right: 10px;
+  padding: 0 12px;
+  color: #919191;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  background: #fff;
+}
+.order .order-content .list-btn .page-btn a {
+  font-size: 12px;
+  line-height: 22px;
+  display: inline-block;
+  height: 22px;
+  color: #919191;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+}
+.order .order-content .list-btn .page-btn .arrow-left {
+  margin-right: 10px;
+  padding: 0 10px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/arrow-left-hover.png) no-repeat center center;
+}
+.order .order-content .list-btn .page-btn .arrow-left.hover {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/arrow-left.png) no-repeat center center;
+}
+.order .order-content .list-btn .page-btn .arrow-right {
+  margin-right: 0;
+  padding: 0 12px;
+  padding-right: 20px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/arrow-right.png) no-repeat #ffffff 58px center;
+}
+.order .order-content .list-btn .page-btn .arrow-right.hover {
+  color: #c6c6c6;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/arrow-right-last.png) no-repeat #ffffff 58px center;
+}
+.order .order-content .list-btn-bottom {
+  width: 500px;
+  padding: 9px 0 9px 18px;
+}
+.order .order-content .list-btn-bottom .select-label {
+  margin-right: 26px;
+}
+.order .order-content .list-btn-bottom a {
+  font-size: 12px;
+  line-height: 22px;
+  display: inline-block;
+  height: 22px;
+  margin-right: 10px;
+  padding: 0 12px;
+  color: #919191;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  background: #fff;
+}
+.order .order-content .list-btn-bottom .page-btn .a {
+  font-size: 12px;
+  line-height: 22px;
+  display: inline-block;
+  height: 22px;
+  color: #919191;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+}
+.order .order-content .list-btn-bottom .page-btn .arrow-left {
+  margin-right: 10px;
+  padding: 0 10px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/arrow-left.png) no-repeat center center;
+}
+.order .order-content .list-btn-bottom .page-btn .arrow-right {
+  margin-right: 0;
+  padding: 0 12px;
+  padding-right: 20px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/arrow-right.png) no-repeat #ffffff 58px center;
+}
+.order .order-content .list-item {
+  margin-bottom: 10px;
+  border: solid 1px #e2e2e2;
+  border-radius: 3px;
+}
+.order .order-content .list-item .list-item-title {
+  line-height: 40px;
+  position: relative;
+  height: 40px;
+  border-bottom: solid 1px #e2e2e2;
+}
+.order .order-content .list-item .list-item-title .item-title-number {
+  padding-left: 16px;
+  border-bottom: 1px solid #e2e2e2;
+  background: #f9f9f9;
+}
+.order .order-content .list-item .list-item-title .item-title-number .number-check {
+  display: inline-block;
+  margin-right: 5px;
+}
+.order .order-content .list-item .list-item-title .item-title-number span {
+  margin-right: 40px;
+  color: #919191;
+}
+.order .order-content .list-item .list-item-title .item-title-number span a {
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00a1d7;
+}
+.order .order-content .list-item .list-item-title .item-title-del {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  display: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/editdel.png) 0 0 no-repeat;
+}
+.order .order-content .list-item .list-item-title .item-title-del:hover {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/uc/editdel.png) -32px 0 no-repeat;
+}
+.order .order-content .list-item .list-item-content table tr {
+  width: 100%;
+  background: #fff;
+}
+.order .order-content .list-item .list-item-content table tr td {
+  text-align: center;
+  vertical-align: middle;
+  border-right: solid 1px #f3f3f3;
+}
+.order .order-content .list-item .list-item-content .table-thumb,
+.order .order-content .list-item .list-item-content .table-thumb img {
+  width: 90px;
+  height: 90px;
+}
+.order .order-content .list-item .list-item-content .w380 {
+  width: 380px;
+}
+.order .order-content .list-item .list-item-content .w102 {
+  font-size: 14px;
+  width: 102px;
+  color: #919191;
+}
+.order .order-content .list-item .list-item-content .w142 {
+  font-size: 14px;
+  width: 142px;
+  color: #919191;
+}
+.order .order-content .list-item .list-item-content .w92 {
+  font-size: 14px;
+  font-weight: 700;
+  width: 92px;
+  color: #ff8062;
+}
+.order .order-content .list-item .list-item-content .w138 {
+  width: 138px;
+}
+.order .order-content .list-item .list-item-content .w138 span {
+  font-size: 14px;
+  color: #919191;
+}
+.order .order-content .list-item .list-item-content .w142-l {
+  width: 142px;
+  text-align: center;
+}
+.order .order-content .list-item .list-item-content .w142-l a,
+.order .order-content .list-item .list-item-content .w142-l span {
+  line-height: 24px;
+  display: block;
+  width: 68px;
+  height: 24px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.order .order-content .list-item .list-item-content .w142-l a.pj,
+.order .order-content .list-item .list-item-content .w142-l span.pj {
+  cursor: pointer;
+  color: #6a6a6a;
+  border: solid 1px #c6c6c6;
+  box-shadow: none;
+}
+.order .order-content .list-item .list-item-content .w142-l a.qr,
+.order .order-content .list-item .list-item-content .w142-l span.qr {
+  color: #fff;
+  background: #d8d0b5;
+  box-shadow: 0 2px 0 #c7ba8f;
+}
+.order .order-content .list-item .list-item-content .w142-l a.fk,
+.order .order-content .list-item .list-item-content .w142-l span.fk {
+  color: #fff;
+  background: #ff8062;
+  box-shadow: 0 2px #fa7453;
+}
+.order .order-content .list-item .list-item-content .border-none {
+  border-right: none;
+}
+.order .order-content .list-item .list-item-content .thumb-blue,
+.order .order-content .list-item .list-item-content .thumb-blue a {
+  font-weight: 400;
+  display: block;
+  margin: 12px 0 0 0;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00a1d7 ;
+}
+.order .order-content .list-item .list-item-content .thumb-goods {
+  padding: 14px;
+  border-bottom: solid 1px #e2e2e2;
+}
+.order .order-content .list-item .list-item-content .thumb-goods .thumb-text {
+  float: left;
+  width: 180px;
+  padding-left: 10px;
+  text-align: left;
+}
+.order .order-content .list-item .list-item-content .thumb-goods .thumb-text a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  display: block;
+  padding-top: 16px;
+  cursor: pointer;
+  color: #6a6a6a;
+}
+.order .order-content .list-item .list-item-content .thumb-goods .thumb-text span {
+  font-size: 12px;
+  display: block;
+  padding-top: 14px;
+  color: #a2a2a2;
+}
+.order .order-content .list-item .list-item-content .border-bottom-none {
+  border-bottom: none;
+}
+.order .order-content .list-item:hover {
+  border-color: #c6c6c6;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.order .order-content .list-item:hover .item-title-del {
+  display: block;
+}
+.order .order-content .list-item:hover table tr td {
+  text-align: center;
+  vertical-align: middle;
+  border-right: solid 1px #e2e2e2;
+}
+.order .order-content .list-item:hover .item-title-number {
+  padding-left: 16px;
+  border-bottom: 1px solid #c6c6c6;
+  background: #f9f9f9;
+}

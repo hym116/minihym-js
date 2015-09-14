@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">  
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>认证会员</title>
+    <meta name="keywords" content="i黑马">
+    <meta name="description" content=",i黑马—关注创业者的平台">
+    <meta name="generator" content="i黑马">
+    <meta name="author" content="i黑马 Team">
+    <meta name="copyright" content="i黑马">
+
+    <script type="text/javascript">
+        ! function( userAgent ) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 640;
+            if ( /Android (\d+\.\d+)/.test( userAgent ) ) {
+                var version = parseFloat( RegExp.$1 );
+                document.write( version > 2.3
+                    ? '<meta name="viewport" content="width=640, minimum-scale = ' + scale + ", maximum-scale = " + scale + ', target-densitydpi=device-dpi">'
+                    : '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">' );
+            } else {
+                document.write( '<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">' );
+            }
+        }( navigator.userAgent );
+    </script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.iheima.com/base/base.css"/>
+     <link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/special/h5_20150325_heimahui/css/form.css"/>
+ </head>
+    <body>
+        <div class="form-wrap info">
+            <div class="space"></div>
+            <form id="info">
+                <div class="title"></div>
+                <div class="formitem cf">
+                    <label for="name">姓名:</label>
+                    <input type="text" name="name" class="com-input name"/>
+                </div>
+                
+                <div class="formitem cf">
+                    <label for="company">公司:</label>
+                    <input type="text" name="company" class="com-input"/>
+                </div>
+                <div class="formitem cf">
+                    <label for="position">职位:</label>
+                    <input type="text" name="position" class="com-input"/>
+                </div>
+                 <div class="formitem cf">
+                    <label for="tel">手机:</label>
+                    <input type="text" name="tel" class="com-input"/>
+                </div>
+                  <div class="formitem iheima-vip cf">
+                    <label for="vip">选择行业分会:</label>
+                    <select class="select com-input">
+                        <option>请选择</option>
+                        <option>教育</option>
+                        <option>文化创意</option>
+                        <option>智能硬件</option>
+                        <option>软件信息服务</option>
+                        <option>电商消费</option>
+                        <option>TMT</option>
+                        <option>互联网旅游</option>
+                        <option>生物医药</option>
+                    </select>
+                </div>
+                <div class="formitem btn">
+                    <button class="submit com-input">支付</button>
+                </div>
+                
+                
+            </form>
+        </div>
+    </body>

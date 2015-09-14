@@ -1,0 +1,201 @@
+body {
+  padding-bottom: 0;
+}
+body .special_yihubaiying {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2206px;
+  width: 100% ;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/yhby_bg.jpg) 50% 0% no-repeat;
+}
+.special_yihubaiying .plan {
+  margin: 828px auto 0;
+  width: 830px;
+  height: 410px;
+  padding: 0 10px;
+}
+.special_yihubaiying .plan h1 {
+  margin: 0 auto;
+  width: 100% ;
+  height: 60px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: normal;
+}
+.special_yihubaiying .plan .inner {
+  width: 410px;
+  height: 320px;
+  margin-top: 30px;
+  color: #ff517e;
+}
+.special_yihubaiying .plan .inner.diy {
+  width: 360px;
+}
+.special_yihubaiying .plan .inner.diy .contents p {
+  margin-bottom: 25px;
+}
+.special_yihubaiying .plan .inner h2 {
+  font-size: 24px;
+  width: 100% ;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.special_yihubaiying .plan .inner .contents {
+  width: 100% ;
+  height: 190px;
+}
+.special_yihubaiying .plan .inner .contents p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+.special_yihubaiying .plan .inner .contents span {
+  display: block;
+  color: #2e5c72;
+  font-size: 16px;
+  text-indent: 50px;
+  line-height: 28px;
+}
+.special_yihubaiying .plan .inner .btn {
+  display: block;
+  width: 100% ;
+  height: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+.special_yihubaiying .plan .inner .btn_left {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/plan_btn1.png) 82px 14px no-repeat;
+}
+.special_yihubaiying .plan .inner .btn_right {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/plan_btn2.png) 87px 12px no-repeat;
+}
+.special_yihubaiying .plan .official {
+  float: left;
+}
+.special_yihubaiying .plan .diy {
+  float: right;
+}
+.special_yihubaiying .notice {
+  margin: 138px auto 0;
+  width: 840px;
+  height: 280px;
+  color: #ff517e;
+}
+.special_yihubaiying .notice h1 {
+  line-height: 59px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+}
+.special_yihubaiying .notice p {
+  margin-top: 72px;
+  line-height: 22px;
+  font-size: 22px;
+}
+.special_yihubaiying .notice ul {
+  margin-top: 41px;
+}
+.special_yihubaiying .notice ul li {
+  font-size: 14px;
+  line-height: 23px;
+}
+.special_yihubaiying .exhibition_bg_common {
+  margin-top: 278px;
+  height: auto;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/yhby_bg_middle.jpg) 50% 0 repeat-y;
+}
+.special_yihubaiying .exhibition_bg_common ul {
+  width: 974px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.special_yihubaiying .exhibition_bg_common ul li {
+  position: relative;
+  margin-bottom: 24px;
+  vertical-align: top;
+  display: inline-block;
+  width: 456px;
+  height: 274px;
+  margin: 15px;
+}
+.special_yihubaiying .exhibition_bg_common ul li a {
+  display: block;
+}
+.special_yihubaiying .exhibition_bg_common ul li a img {
+  width: 456px;
+  height: 274px;
+  overflow: hidden;
+}
+.special_yihubaiying .exhibition_bg_common ul li .products {
+  position: absolute;
+  z-index: 1;
+  top: 234px;
+  left: 0;
+  width: 100% ;
+  height: 40px;
+  background-color: rgba(46, 92, 114, 0.9);
+}
+.special_yihubaiying .exhibition_bg_common ul li .products .title {
+  float: left;
+  width: 384px;
+  line-height: 40px;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.special_yihubaiying .exhibition_bg_common ul li .products .qrcode_logo {
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/temp/QR_code_logo.png) 2px 2px no-repeat;
+  cursor: pointer;
+}
+.special_yihubaiying .exhibition_bg_common ul li .products .qrcode_logo .QR_code {
+  display: none;
+  position: absolute;
+  width: 162px;
+  height: 166px;
+  top: -171px;
+  left: -112px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/qr_code_box.png) no-repeat;
+}
+.special_yihubaiying .exhibition_bg_common ul li .products .qrcode_logo .QR_code img {
+  width: 154px;
+  height: 153px;
+  margin: 3px 0 0 3px;
+}
+.special_yihubaiying .exhibition_bg_common ul li .products .qrcode_logo:hover .QR_code {
+  display: block;
+}
+.special_yihubaiying .exhibition_bg_common ul .specities {
+  width: 456px;
+  height: 1px;
+  margin-bottom: -1px;
+}
+.special_yihubaiying .exhibition_bg_common .copyright {
+  clear: both;
+  color: #477384;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 475px;
+}
+.special_yihubaiying .bottom {
+  width: 100% ;
+  height: 604px;
+  padding-top: 574px;
+  text-align: center;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/yhby_bg_bottom.jpg) 50% 0 no-repeat;
+  color: #477384;
+}

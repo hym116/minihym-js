@@ -1,0 +1,290 @@
+.ajax-form-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  opacity: .7;
+  background-color: #000;
+  display: none;
+}
+.ajax_form .register .form_wrap .formitem input.Validform_error {
+  border-color: #ff8062;
+}
+.ajax_form .Validform_right {
+  display: none;
+}
+.ajax_form .Validform_wrong {
+  color: #ff8062;
+}
+.ajax_form .reg_wrap {
+  margin: 0 auto;
+  padding-top: 15px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+}
+.ajax_form .register {
+  width: 260px;
+  margin: 0 auto;
+}
+.ajax_form .register .header {
+  margin: 0 auto;
+  padding-top: 18px;
+}
+.ajax_form .register .header .head {
+  font-size: 17px;
+  position: relative;
+  width: 186px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  text-align: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+.ajax_form .register .header .head span {
+  position: absolute;
+  top: -13px;
+  left: 27.5px;
+  display: block;
+  padding: 0 12px;
+  background: #fff;
+}
+.ajax_form .register .header .icon {
+  width: 225px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.ajax_form .register .header .icon .icon-msg,
+.ajax_form .register .header .icon .icon-weibo,
+.ajax_form .register .header .icon .icon-qq {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #87c80a;
+  border-radius: 25px;
+  background: #ffffff url(http://static.idaiyan.cn/website/static/modules/home/images/icons/tplogin.png) no-repeat 0 0;
+}
+.ajax_form .register .header .icon .icon-msg {
+  background-position: 4px 4px;
+}
+.ajax_form .register .header .icon .icon-msg:hover {
+  background-color: #87c80a;
+  background-position: 4px -116px;
+}
+.ajax_form .register .header .icon .icon-weibo {
+  border-color: #fc605c;
+  background-position: 4px -36px;
+}
+.ajax_form .register .header .icon .icon-weibo:hover {
+  background-color: #fc605c;
+  background-position: 4px -156px;
+}
+.ajax_form .register .header .icon .icon-qq {
+  border-color: #12b6eb;
+  background-position: 4px -76px;
+}
+.ajax_form .register .header .icon .icon-qq:hover {
+  background-color: #12b6eb;
+  background-position: 4px -196px;
+}
+.ajax_form .register .header .icon .weibo,
+.ajax_form .register .header .icon .qq {
+  margin-left: 37px;
+}
+.ajax_form .register .header .bottom {
+  width: 200px;
+}
+.ajax_form .register .header .bottom span {
+  left: 80px;
+}
+.ajax_form .register .form_wrap {
+  font-size: 13px;
+  margin-top: -5px;
+  padding-bottom: 10px;
+  color: #c6c6c6;
+  border-bottom: 1px solid #e2e2e2;
+}
+.ajax_form .register .form_wrap .formitem {
+  margin-bottom: 15px;
+}
+.ajax_form .register .form_wrap .formitem input {
+  width: 260px;
+  height: 42px;
+  padding-left: 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+}
+.ajax_form .register .form_wrap .formitem input:focus {
+  border-color: #00a1d7;
+  background-color: #f2fafd;
+}
+.ajax_form .register .form_wrap .number input {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/login.png) no-repeat 220px -40px;
+}
+.ajax_form .register .form_wrap .pass input {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/login.png) no-repeat 220px -80px;
+}
+.ajax_form .register .form_wrap .rewrite input {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/login.png) no-repeat 220px -80px;
+}
+.ajax_form .register .form_wrap .notice {
+  font-size: 15px;
+  position: relative;
+  color: #3c4452;
+}
+.ajax_form .register .form_wrap .notice label {
+  position: absolute;
+  top: -2px;
+  left: 25px;
+}
+.ajax_form .register .form_wrap .notice input {
+  width: 20px;
+  height: 20px;
+  color: #123ade;
+  background-color: #fff;
+}
+.ajax_form .register .form_wrap .sign {
+  font-size: 16px;
+  line-height: 42px;
+  width: 260px;
+  height: 42px;
+  text-align: center;
+  color: #fff;
+}
+.ajax_form .register .form_wrap .check input {
+  float: left;
+  width: 130px;
+}
+.ajax_form .register .form_wrap .check .checkcode {
+  width: 120px;
+  height: 42px;
+  margin-left: 10px;
+  border: 1px solid #ededed;
+}
+.ajax_form .footer {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 18px 0;
+  color: #3c4452;
+}
+.ajax_form .log_wrap {
+  margin: 0 auto;
+  padding-top: 15px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+}
+.ajax_form .log_wrap .register .header .head span {
+  left: 44.5px;
+}
+.ajax_form .log_wrap .register .header .bottom {
+  width: 200px;
+}
+.ajax_form .log_wrap .register .header .bottom span {
+  left: 80px;
+}
+.ajax_form .log_wrap .form_wrap .notice a {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+}
+.ajax_form .log_wrap .form_wrap .sign {
+  padding: 0;
+}
+.ajax_form .recode_wrap1 {
+  margin: 0 auto;
+  padding-top: 15px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+}
+.ajax_form .recode_wrap1 .header .head span {
+  left: 47px;
+}
+.ajax_form .recode_wrap1 .sign {
+  margin-top: 25px;
+}
+.ajax_form .recode_wrap2 {
+  margin: 0 auto;
+  padding-top: 15px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+}
+.ajax_form .recode_wrap2 .header .head span {
+  left: 47px;
+}
+.ajax_form .recode_wrap2 .sign {
+  margin-top: 25px;
+}
+.ajax_form .recode_wrap2 .puretxt {
+  font-size: 15px;
+  color: #919191;
+}
+.ajax_form .recode_wrap2 .puretxt span {
+  font-size: 19px;
+  letter-spacing: 1.1px;
+  color: #566175;
+}
+.ajax_form .recode_wrap2 .form_wrap .check .checkcode {
+  font-size: 15px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+.ajax_form .hello_wrap {
+  font-size: 14px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 70px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+}
+.ajax_form .hello {
+  width: 260px;
+  margin: 0 auto;
+}
+.ajax_form .hello .ps1 {
+  font-size: 18px;
+  margin: 40px 0 15px 0;
+}
+.ajax_form .hello .ps2 {
+  margin-bottom: 15px;
+}
+.ajax_form .hello .ps3 {
+  margin-bottom: 40px;
+}
+.ajax_form .close {
+  font-size: 16px;
+  line-height: 42px;
+  width: 160px;
+  height: 42px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.ajax_form .success_wrap {
+  font-size: 14px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 70px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+}
+.ajax_form .success_wrap .ps1 {
+  font-size: 30px;
+  color: #87c80a;
+}
+.ajax_form .success_wrap .ps3 {
+  margin-bottom: 55px;
+}
+.ajax_form .success_wrap .ps3 span {
+  color: #ff7300;
+}
+.ajax_form .success_wrap .hello {
+  text-align: center;
+}

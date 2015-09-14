@@ -1,0 +1,25 @@
+{
+    "res": {
+        "css/aio.min.css": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150325_heimahui/css/aio.min.css",
+            "type": "css"
+        },
+        "css/form.css": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150325_heimahui/css/form.css",
+            "type": "css"
+        },
+        "css/yunmantou.less": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150325_heimahui/css/yunmantou.css",
+            "type": "css"
+        },
+        "js/aio.min.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150325_heimahui/js/aio.min.js",
+            "type": "js"
+        },
+        "js/yunmantou.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150325_heimahui/js/yunmantou.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

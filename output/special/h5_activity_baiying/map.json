@@ -1,0 +1,37 @@
+{
+    "res": {
+        "css/game.less": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/css/game.css",
+            "type": "css"
+        },
+        "css/style.less": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/css/style.css",
+            "type": "css"
+        },
+        "js/game.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/js/game.js",
+            "type": "js"
+        },
+        "js/iscroll.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/js/iscroll.js",
+            "type": "js"
+        },
+        "js/parallax.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/js/parallax.js",
+            "type": "js"
+        },
+        "js/platform.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/js/platform.js",
+            "type": "js"
+        },
+        "js/script.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/js/script.js",
+            "type": "js"
+        },
+        "js/zepto.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity_baiying/js/zepto.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

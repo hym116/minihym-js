@@ -1,0 +1,177 @@
+/* ! daiyanitem */
+.prod_bigpic_wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+}
+.prod_bigpic_wrap .prod_bigpic {
+  height: 450px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.prod_bigpic_wrap .prod_bigpic a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.prod_title_wrap {
+  padding: 40px 0 50px;
+  text-align: center;
+  background: #fff;
+}
+.prod_title_wrap .prod_title {
+  font-size: 48px;
+  color: #434343;
+}
+.prod_title_wrap .prod_opintro {
+  font-size: 18px;
+  color: #434343;
+}
+.proditem_wrap {
+  overflow: hidden;
+  margin-top: 20px;
+}
+.proditem_wrap .content {
+  font-size: 16px;
+  line-height: 30px;
+  width: 680px;
+  color: #919191;
+}
+.proditem_wrap .content img {
+  display: block;
+  max-width: 100%;
+  margin: 10px 0;
+}
+.proditem_wrap .sidebar {
+  width: 290px;
+}
+.proditem_wrap .sidebar .remain {
+  line-height: 30px;
+  height: 48px;
+  padding: 9px 8px;
+  color: #919191;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+.proditem_wrap .sidebar .remain .time {
+  line-height: 30px;
+  float: right;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.proditem_wrap .sidebar .numbers {
+  color: #919191;
+}
+.proditem_wrap .sidebar .numbers .number {
+  margin-top: 20px;
+}
+.proditem_wrap .sidebar .numbers .number .num {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+.proditem_wrap .sidebar .numbers .number .num .unit {
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  letter-spacing: -1px;
+}
+.proditem_wrap .sidebar .numbers .number .desc {
+  line-height: 3;
+}
+.proditem_wrap .sidebar .ceo {
+  margin-top: 20px;
+  padding-left: 15px;
+  border-left: 3px solid #ff8062;
+}
+.proditem_wrap .sidebar .ceo .ceoname {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #656f80;
+}
+.proditem_wrap .sidebar .ceo .ceointro {
+  line-height: 21px;
+  margin-top: 10px;
+  color: #919191;
+}
+.proditem_wrap .sidebar .share {
+  margin-top: 20px;
+}
+.proditem_wrap .sidebar .share .sharetitle {
+  font-size: 18px;
+  text-align: center;
+  color: #6b7585;
+}
+.proditem_wrap .sidebar .share .bdshare {
+  padding-left: 12.5px;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox a {
+  width: 31px;
+  height: 31px;
+  margin-right: 8px;
+  background-image: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/social.png);
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox a:hover {
+  opacity: 1;
+  filter: none;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_qzone {
+  background-position: 0 100%;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_qzone:hover {
+  background-position: 0 0;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_tsina {
+  background-position: -39px 100%;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_tsina:hover {
+  background-position: -39px 0;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_renren {
+  background-position: -78px 100%;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_renren:hover {
+  background-position: -78px 0;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_weixin {
+  background-position: -117px 100%;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_weixin:hover {
+  background-position: -117px 0;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_douban {
+  background-position: -156px 100%;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_douban:hover {
+  background-position: -156px 0;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_tqq {
+  background-position: -195px 100%;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_tqq:hover {
+  background-position: -195px 0;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_bdysc {
+  background-position: -234px 100%;
+}
+.proditem_wrap .sidebar .share .bdsharebuttonbox .bds_bdysc:hover {
+  background-position: -234px 0;
+}
+.proditem_wrap .sidebar .qrcode_wrap {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+.bd_weixin_popup {
+  box-sizing: content-box;
+}
+.onedotone {
+  margin: 20px 0;
+}

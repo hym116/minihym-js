@@ -1,0 +1,21 @@
+{
+    "res": {
+        "css/aio.min.css": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity365/css/aio.min.css",
+            "type": "css"
+        },
+        "css/h5-activity365.less": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity365/css/h5-activity365.css",
+            "type": "css"
+        },
+        "js/aio.min.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity365/js/aio.min.js",
+            "type": "js"
+        },
+        "js/h5-activity365.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_activity365/js/h5-activity365.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

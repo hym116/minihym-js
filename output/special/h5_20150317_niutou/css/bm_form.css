@@ -1,0 +1,290 @@
+/*
+ * author wufengjie 
+ * 2014-12-18
+*/
+
+.bbx{
+	box-sizing: border-box;
+}
+.inb{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.mobile-body{
+	background-image: url(http://static.idaiyan.cn/special/h5_20150317_niutou/img/bg1.jpg) ;
+	background-repeat: no-repeat;
+	background-color:#311677;
+	background-position: top center;
+	background-size:cover;
+	width: 640px;
+	min-height: 960px;
+	margin: auto;
+}
+
+
+.bm-content{
+	width: 640px;
+	margin: auto;
+	color: #fff;
+	font-size: 24px;
+	font-family: "微软雅黑";
+}
+.bm-logo{
+	padding-top: 30px;
+}
+
+
+.bm-input{
+	margin: auto;
+	outline: none;
+	font-family: "微软雅黑";
+	letter-spacing: 2px;
+	box-sizing: border-box;
+	padding-left:30px;
+	color: #fff;
+	width:640px;
+	height:80px;
+	background:rgba(255,255,255,0.15);
+	border-radius: 4px;
+	border-color:#7b7b7b;
+    -webkit-appearance:none;
+}
+.bm-input:focus{
+    border-color:#f6b37f;
+    box-shadow: 0 0 5px #fff100;
+}
+.select{
+	margin: auto;
+	outline: none;
+	font-family: "微软雅黑";
+	letter-spacing: 2px;
+	box-sizing: border-box;
+	color: #e2e2e2;
+	font-size:24px;
+	width:640px;
+	height:80px;
+    text-align: center;
+	background:rgba(255,255,255,0.15) url(http://static.idaiyan.cn/special/h5_20150317_niutou/img/arrow.png) no-repeat 98% 50%;
+    /*background-image:;*/
+	border-radius: 10px;
+    -webkit-appearance:none;
+	border-color:#7b7b7b;
+}
+.select option{
+	/*color: #3d99ce;*/
+	width: 250px;
+
+}
+.bm-input::-webkit-input-placeholder{
+	color: #919191;
+}
+
+.input-body.withlabel{
+	text-align: left;
+    margin-bottom: 20px;
+   
+    }
+.withlabel textarea{
+    height: 120px;
+    padding-top: 20px;
+}
+.withlabel span{
+    float: right;
+}
+.withlabel label{
+	line-height: 50px;
+	color:#fff;
+    text-align: left;
+    display: block;
+	font-family: "微软雅黑";
+	
+}
+.input-body.withlabel.new{
+text-align: center;
+
+}
+.input-body.withlabel.new label{
+line-height: 50px;
+}
+
+#info-logo{
+	border-radius: 50%;
+}
+.tab-btn{
+	width: 107px;
+	height: 66px;
+	background: url(../img/bm_option_btn.png) no-repeat;
+	position: absolute;
+	top: 28px;
+	right: 0px;
+}
+
+.tab-btn.off{
+	background-position-y:0 ;
+}
+.tab-btn.on{
+	background-position-y:-66px  ;
+}
+
+.smscode-btn{
+	width: 100%;
+	height: 100px;
+	border: none;
+	outline: none;
+	background: url(http://static.idaiyan.cn/special/h5_20150317_niutou/img/submit.png) no-repeat;
+margin-top:60px;
+}
+
+
+
+/*动画
+.delay0020{
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+.delay0040{
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+.delay0060{
+	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+}
+.delay0080{
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+}
+.delay0100{
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.delay0120{
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+}
+.delay0140{
+	animation-delay: 1.4s;
+	-webkit-animation-delay: 1.4s;
+}
+.delay0160{
+	animation-delay: 1.6s;
+	-webkit-animation-delay: 1.6s;
+}
+.delay0180{
+	animation-delay: 1.8s;
+	-webkit-animation-delay: 1.8s;
+}
+
+
+@-webkit-keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+            transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+            transform: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+            transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+            transform: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+
+
+@-webkit-keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+
+
+*/
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 750px) {
+	.mobile-body{
+		width: 100%;
+	}
+}
+

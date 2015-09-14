@@ -1,0 +1,1244 @@
+body,
+.page,
+#app-loading {
+  width: 640px;
+  background-color: #000;
+}
+#app-loading .loading-main {
+  width: 640px;
+  font-size: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+#app-loading .loading-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 368px;
+  height: 82px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/loading.png) no-repeat 0 0;
+}
+#app-loading #loading-progress {
+  font-size: 60px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  height: 82px;
+}
+#app-loading #loading-progress .num {
+  display: inline-block;
+  vertical-align: top;
+  width: 56px;
+  height: 82px;
+  margin: 0 -12px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/loading.png) no-repeat;
+}
+#app-loading #loading-progress .num.num0 {
+  background-position: -505px 115%;
+}
+#app-loading #loading-progress .num.num1 {
+  background-position: 7px 115%;
+}
+#app-loading #loading-progress .num.num2 {
+  background-position: -52px 115%;
+}
+#app-loading #loading-progress .num.num3 {
+  background-position: -109px 115%;
+}
+#app-loading #loading-progress .num.num4 {
+  background-position: -166px 115%;
+}
+#app-loading #loading-progress .num.num5 {
+  background-position: -221px 115%;
+}
+#app-loading #loading-progress .num.num6 {
+  background-position: -278px 115%;
+}
+#app-loading #loading-progress .num.num7 {
+  background-position: -335px 115%;
+}
+#app-loading #loading-progress .num.num8 {
+  background-position: -392px 115%;
+}
+#app-loading #loading-progress .num.num9 {
+  background-position: -449px 115%;
+}
+#app-loading .percent {
+  display: inline-block;
+  vertical-align: top;
+  width: 70px;
+  height: 82px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/loading.png) no-repeat -420px 0;
+}
+.app-content {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.ui-buttons {
+  width: 640px;
+  padding: 0 20px;
+}
+.ui-buttons .ui-button {
+  float: left;
+  width: 285px;
+  height: 142px;
+  margin-right: 15px;
+  background-image: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/button.png);
+}
+.ui-buttons .btn-text {
+  width: 285px;
+  height: 142px;
+  background-image: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/button-text.png);
+  background-repeat: no-repeat;
+}
+.ui-buttons .btn-prev {
+  -webkit-animation: buttonPrev 2s steps(18) 0s infinite;
+  animation: buttonPrev 2s steps(18) 0s infinite;
+  background-position: 0 0;
+}
+.ui-buttons .btn-next {
+  -webkit-animation: buttonNext 1.8s steps(18) -0.4s infinite;
+  animation: buttonNext 1.8s steps(18) -0.4s infinite;
+  background-position: 100% 0;
+}
+.ui-guideWrap {
+  position: absolute;
+  z-index: 101;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  width: 75px;
+  height: 83px;
+  margin: auto;
+  -webkit-animation: guideWrap 0.7s steps(7) 0s infinite;
+  animation: guideWrap 1.8s steps(7) 0s infinite;
+  background-image: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/guideWrap.png);
+}
+#story5 {
+  background-color: #192a32;
+}
+#story5 .ui-text {
+  position: relative;
+  width: 640px;
+  height: 800px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p0-bg-1.jpg) no-repeat 50% 35%;
+  background-size: cover;
+}
+#story5 .anim-light {
+  position: absolute;
+  width: 100%;
+  top: 16px;
+  opacity: 0;
+  height: 450px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p0-text.png) no-repeat 63% -5%;
+  -webkit-animation: flash .4s linear 4s 1,fadein .4s linear 4.8s;
+  animation: flash .4s linear 4s 1,fadein .4s linear 4.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#story5 .anim-text1 {
+  position: absolute;
+  top: 506px;
+  left: 462px;
+  width: 126px;
+  height: 42px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p0-text.png) no-repeat -368px -471px;
+  -webkit-animation: typing 0.6s steps(3, end) 0.5s;
+  animation: typing 0.6s steps(3, end) 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#story5 .anim-text2 {
+  position: absolute;
+  top: 578px;
+  left: 94px;
+  width: 459px;
+  height: 51px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p0-text.png) no-repeat 0 -540px;
+  -webkit-animation: typing 1.8s steps(9, end) 1.5s;
+  animation: typing 1.8s steps(9, end) 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#story5 .middle-center {
+  padding-bottom: 80px;
+}
+#story6 {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/ads-bg.jpg) repeat-x 0 0;
+  background-size: 640px 1136px;
+}
+#story6 .anim-text1 {
+  width: 570px;
+  height: 77px;
+  margin: 250px 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/ads-text.png) no-repeat 50% 0;
+  -webkit-animation: bouncein 1.8s steps(10, end) 0.5s;
+  animation: bouncein 1.8s steps(10, end) 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#story6 .ui-continue-link {
+  opacity: 0;
+  width: 230px;
+  height: 58px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/ads-text.png) no-repeat 50% -100px;
+  -webkit-animation: fadein .3s linear 2.5s, flash 2s linear 3s infinite;
+  animation: fadein .3s linear 2.5s, flash 2s linear 3s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#story6 .middle-center {
+  padding-bottom: 80px;
+}
+#trans .page-content {
+  width: 100%;
+  height: 100%;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/trans-bg.jpg) no-repeat 50% 50%;
+  -webkit-animation: shake 0.2s linear 1s, fadeout .5s linear 2.5s forwards;
+  animation: shake 0.2s linear 1s, fadeout .5s linear 2.5s forwards;
+}
+#trans .gif {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/light.gif) no-repeat 50% 50%;
+  background-size: cover;
+}
+#trans .trans-1 {
+  position: absolute;
+  top: -152px;
+  left: -156px;
+  z-index: 10;
+  width: 312px;
+  height: 305px;
+  margin: 0;
+  -webkit-animation: shake 0.2s linear .6s, fadeout .3s linear 1s forwards;
+  animation: shake 0.2s linear .6s, fadeout .3s linear 1s forwards;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/trans-1.jpg) no-repeat 0 0;
+}
+#trans .trans-2 {
+  position: absolute;
+  top: -480px;
+  right: -310px;
+  width: 335px;
+  height: 450px;
+  -webkit-animation: shake 0.2s linear .6s, flash .1s linear 1.2s, trans2 .1s linear 1.2s;
+  animation: shake 0.2s linear .6s, flash .1s linear 1.2s, trans2 .1s linear 1.2s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/trans-2.jpg) no-repeat 0 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#trans .trans-3 {
+  position: absolute;
+  top: -390px;
+  left: -155px;
+  width: 206px;
+  height: 360px;
+  -webkit-animation: shake 0.2s linear .6s, flash .1s linear 1.2s, trans3 .1s linear 1.2s;
+  animation: shake 0.2s linear .6s, flash .1s linear 1.2s, trans3 .1s linear 1.2s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/trans-3.jpg) no-repeat 0 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#trans .trans-4 {
+  position: absolute;
+  top: -420px;
+  left: -325px;
+  width: 170px;
+  height: 865px;
+  -webkit-animation: shake 0.4s linear .6s, flash .1s linear 1.2s, trans4 .1s linear 1.2s;
+  animation: shake 0.4s linear .6s, flash .1s linear 1.2s, trans4 .1s linear 1.2s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/trans-4.png) no-repeat 0 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#cover {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p1-bg.png) no-repeat 50% 100%;
+  background-size: cover;
+}
+#cover .middle-center {
+  padding-bottom: 80px;
+}
+#cover .activity-logo-wrap {
+  position: relative;
+  width: 640px;
+  height: 390px;
+}
+#cover .activity-logo {
+  width: 592px;
+  height: 320px;
+  margin-left: -27px;
+  -webkit-animation: activityLogo 0.4s steps(6) 0s 2 forwards, flash 0.3s linear 1s forwards;
+  animation: activityLogo 0.4s steps(6) 0s 2 forwards, flash 0.3s linear 1s forwards;
+  opacity: 0;
+  background-image: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/activity-logo.png);
+}
+#cover .activity-logo-text {
+  width: 640px;
+  height: 77px;
+  margin-top: -44px;
+  opacity: 0;
+  -webkit-animation: fadein .4s linear 1s forwards, bounce .5s linear 1.2s forwards;
+  animation: fadein .4s linear 1s forwards, bounce .5s linear 1.2s forwards;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p1-text.png) no-repeat 50% 50%;
+}
+#cover .activity-logo-border-tl {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 70px;
+  height: 70px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p1-border.png) no-repeat 0 0;
+}
+#cover .activity-logo-border-tr {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 70px;
+  height: 70px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p1-border.png) no-repeat 100% 0;
+}
+#cover .activity-logo-border-bl {
+  position: absolute;
+  top: 320px;
+  left: 40px;
+  width: 70px;
+  height: 70px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p1-border.png) no-repeat 0 100%;
+}
+#cover .activity-logo-border-br {
+  position: absolute;
+  top: 320px;
+  right: 40px;
+  width: 70px;
+  height: 70px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p1-border.png) no-repeat 100% 100%;
+}
+#cover .ui-buttons {
+  margin-top: 100px;
+}
+#cover .btn-prev .btn-text {
+  background-position: 40px 49px;
+}
+#cover .btn-next .btn-text {
+  background-position: -262px 50px;
+}
+#sponsor {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p2_5-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#sponsor .middle-center {
+  padding-bottom: 40px;
+}
+#sponsor .ui-title {
+  height: 70px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p2_5-text.png) no-repeat 50% 0;
+}
+#sponsor .ui-content {
+  margin-top: 15px;
+  height: 92px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p2_5-text.png) no-repeat 50% 0;
+}
+#sponsor .ui-title1 {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+  background-position: 50% 8px;
+}
+#sponsor .ui-title2 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  background-position: 50% -150px;
+}
+#sponsor .ui-title3 {
+  height: 100px;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  background-position: 50% -458px;
+  margin-top: 30px;
+}
+#sponsor .ui-content1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  background-position: 50% -70px;
+}
+#sponsor .ui-content2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  background-position: 50% -270px;
+}
+#sponsor .ui-content3 {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  background-position: 50% -364px;
+  margin-top: -30px;
+}
+#sponsor .ui-buttons {
+  margin-top: 90px;
+}
+#sponsor .btn-prev .btn-text {
+  background-position: 40px 49px;
+}
+#sponsor .btn-next .btn-text {
+  background-position: -262px -1327px;
+}
+#intro {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p2-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#intro .middle-center {
+  padding-bottom: 40px;
+}
+#intro .ui-title {
+  height: 77px;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p2-title.png) no-repeat 50% 50%;
+}
+#intro .ui-content-wrap {
+  width: 529px;
+  height: 464px;
+  margin-top: 20px;
+  margin-left: 35px;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p2-text-bg.png) no-repeat 0 0;
+}
+#intro .ui-content-wrap .ui-content {
+  width: 529px;
+  height: 464px;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p2-text.png) no-repeat 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#intro .ui-buttons {
+  margin-top: 90px;
+}
+#intro .btn-prev .btn-text {
+  background-position: 40px 49px;
+}
+#intro .btn-next .btn-text {
+  background-position: -262px -132px;
+}
+#map {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p3-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#map .middle-center {
+  padding-bottom: 40px;
+}
+#map .ui-title {
+  height: 77px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p3-title.png) no-repeat 50% 50%;
+}
+#map .ui-map-wrap {
+  position: relative;
+  width: 640px;
+  height: 484px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p3-map.png) no-repeat 50% 0;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+#map .ui-dots {
+  position: absolute;
+  top: 170px;
+  left: 285px;
+  width: 229px;
+  height: 196px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p3-dots.png) no-repeat 0 0;
+}
+#map .ui-city {
+  position: absolute;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+}
+#map .ui-city .ui-tip {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p3-tips-cd.png) no-repeat 0 0;
+}
+#map .ui-city .ui-arrow {
+  position: absolute;
+  z-index: 2;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p3-tips-cd.png) no-repeat 100% 0;
+}
+#map .ui-beijing {
+  top: 63px;
+  left: 374px;
+  width: 190px;
+  height: 120px;
+  -webkit-animation-delay: 3.3s;
+  animation-delay: 3.3s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p3-tips.png) no-repeat -2px -13px;
+}
+#map .ui-shanghai {
+  top: 210px;
+  left: 435px;
+  width: 205px;
+  height: 112px;
+}
+#map .ui-shanghai .ui-tip {
+  right: 0;
+  width: 184px;
+  height: 70px;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+  background-position: -11px -327px;
+}
+#map .ui-shanghai .ui-arrow {
+  bottom: 0;
+  left: 0;
+  width: 63px;
+  height: 89px;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+  background-position: -444px -222px;
+}
+#map .ui-chengdu {
+  top: 303px;
+  left: 40px;
+  width: 277px;
+  height: 74px;
+}
+#map .ui-chengdu .ui-tip {
+  left: 0;
+  width: 182px;
+  height: 70px;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+  background-position: 0 -526px;
+}
+#map .ui-chengdu .ui-arrow {
+  right: 0;
+  width: 135px;
+  height: 51px;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  background-position: 100% -418px;
+}
+#map .ui-hangzhou {
+  top: 350px;
+  left: 360px;
+  width: 205px;
+  height: 131px;
+}
+#map .ui-hangzhou .ui-tip {
+  right: 0;
+  bottom: 0;
+  width: 182px;
+  height: 70px;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+  background-position: 0 -697px;
+}
+#map .ui-hangzhou .ui-arrow {
+  top: -10px;
+  left: 0;
+  width: 116px;
+  height: 116px;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  background-position: -380px -610px;
+}
+#map .ui-nanjing {
+  top: 168px;
+  left: 170px;
+  width: 301px;
+  height: 137px;
+}
+#map .ui-nanjing .ui-tip {
+  left: 0;
+  width: 182px;
+  height: 70px;
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+  background-position: -2px -184px;
+}
+#map .ui-nanjing .ui-arrow {
+  right: 0;
+  bottom: 0;
+  width: 159px;
+  height: 147px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  background-position: 100% -25px;
+}
+#map .ui-wuhan {
+  top: 322px;
+  left: 110px;
+  width: 306px;
+  height: 179px;
+}
+#map .ui-wuhan .ui-tip {
+  bottom: 0;
+  width: 184px;
+  height: 70px;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+  background-position: 0 -868px;
+}
+#map .ui-wuhan .ui-arrow {
+  right: 0;
+  width: 164px;
+  height: 156px;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  background-position: -330px -800px;
+}
+#map .ui-buttons {
+  margin-top: 90px;
+}
+#map .btn-prev .btn-text {
+  background-position: 40px 49px;
+}
+#map .btn-next .btn-text {
+  background-position: -262px -731px;
+}
+#flow {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p4-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#flow .middle-center {
+  padding-bottom: 40px;
+}
+#flow .ui-title {
+  height: 77px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p4-title.png) no-repeat 50% 50%;
+}
+#flow .ui-flow-list {
+  position: relative;
+  height: 484px;
+  margin-top: 45px;
+}
+#flow .ui-flow-list ul {
+  position: absolute;
+  left: 80px;
+  width: 35px;
+  height: 468px;
+  padding-left: 35px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p4-list.png) no-repeat 0 -13px;
+}
+#flow .ui-flow-list li {
+  width: 435px;
+  height: 52px;
+  list-style: none;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p4-list.png) no-repeat 100% -13px;
+}
+#flow .ui-flow-list .li1 {
+  -webkit-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+  background-position: 100% -13px;
+}
+#flow .ui-flow-list .li2 {
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+  background-position: 100% -65px;
+}
+#flow .ui-flow-list .li3 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  background-position: 100% -116px;
+}
+#flow .ui-flow-list .li4 {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+  background-position: 100% -168px;
+}
+#flow .ui-flow-list .li5 {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+  background-position: 100% -220px;
+}
+#flow .ui-flow-list .li6 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  background-position: 100% -272px;
+}
+#flow .ui-flow-list .li7 {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+  background-position: 100% -323px;
+}
+#flow .ui-flow-list .li8 {
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+  background-position: 100% -374px;
+}
+#flow .ui-flow-list .li9 {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+  background-position: 100% -427px;
+}
+#flow .ui-buttons {
+  margin-top: 45px;
+}
+#flow .btn-prev .btn-text {
+  background-position: 40px 49px;
+}
+#flow .btn-next .btn-text {
+  background-position: -262px -333px;
+}
+#apply,
+#valid {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p5-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#apply .middle-center,
+#valid .middle-center {
+  padding-bottom: 40px;
+}
+#apply .ui-title,
+#valid .ui-title {
+  height: 77px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p5-title.png) no-repeat 50% 50%;
+}
+#apply .ui-form,
+#valid .ui-form {
+  margin-top: 70px;
+}
+#apply .ui-form input,
+#valid .ui-form input {
+  font-size: 24px;
+  width: 330px;
+  height: 42px;
+  margin: 10px 0 0 140px;
+  color: #e2f9e1;
+  border: none;
+  background: transparent;
+}
+#apply .ui-form .form-item,
+#valid .ui-form .form-item {
+  width: 530px;
+  height: 80px;
+  margin-left: 50px;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p5-form.png) no-repeat 0 -13px;
+}
+#apply .ui-form .form-item1,
+#valid .ui-form .form-item1 {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+  background-position: 0 -13px;
+}
+#apply .ui-form .form-item2,
+#valid .ui-form .form-item2 {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+  background-position: 0 -93px;
+}
+#apply .ui-form .form-item3,
+#valid .ui-form .form-item3 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  background-position: 0 -173px;
+}
+#apply .ui-form .form-item4,
+#valid .ui-form .form-item4 {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+  background-position: 0 -253px;
+}
+#apply #form2 .infos,
+#valid #form2 .infos {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  margin-left: 55px;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+  color: #e2f9e1;
+}
+#apply #form1,
+#valid #form1,
+#apply #form2,
+#valid #form2 {
+  height: 416px;
+}
+#apply .ui-buttons,
+#valid .ui-buttons {
+  margin-top: 90px;
+}
+#apply .btn-prev .btn-text,
+#valid .btn-prev .btn-text {
+  background-position: 40px 49px;
+}
+#apply .btn-next .btn-text,
+#valid .btn-next .btn-text {
+  background-position: -262px -532px;
+}
+#valid .btn-prev .btn-text {
+  background-position: 40px -1143px;
+}
+#valid .btn-next .btn-text {
+  background-position: -262px -1143px;
+}
+#result {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#result .middle-center {
+  padding-bottom: 40px;
+}
+#result .ui-title {
+  height: 77px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-title.png) no-repeat 50% 50%;
+}
+#result .ui-qrtip {
+  height: 48px;
+  margin-top: 42px;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-qrtip.png) no-repeat 50% 0;
+}
+#result .ui-qrcode {
+  margin-top: 10px;
+  height: 294px;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-qrcode.png) no-repeat 50% 0;
+}
+#result .ui-link {
+  height: 69px;
+  margin-top: 41px;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-link.png) no-repeat 50% 0;
+}
+#result .ui-buttons {
+  margin-top: 70px;
+}
+#result .btn-prev .btn-text {
+  background-position: 40px -945px;
+}
+#result .btn-next .btn-text {
+  background-position: -262px -945px;
+}
+#resultx {
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#resultx .middle-center {
+  padding-bottom: 40px;
+}
+#resultx .ui-title {
+  height: 77px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-title.png) no-repeat 50% 50%;
+}
+#resultx .ui-qrtip {
+  height: 226px;
+  margin-top: 10px;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6x-text.png) no-repeat 50% 0;
+}
+#resultx .ui-qrcode {
+  margin: 5px auto 0;
+  height: 285px;
+  width: 285px;
+  box-shadow: 0 0 15px #ff7300;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+#resultx .ui-qrcode img {
+  display: block;
+  height: 285px;
+  width: 285px;
+}
+#resultx .ui-buttons {
+  margin-top: 50px;
+}
+#resultx .btn-prev .btn-text {
+  background-position: 40px -945px;
+}
+#resultx .btn-next .btn-text {
+  background-position: -262px -945px;
+}
+#resultx .press {
+  position: absolute;
+  right: 15px;
+  top: 422px;
+  width: 143px;
+  height: 195px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-press.png) no-repeat 0 0;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+#resultx .press .press-light {
+  margin-top: 10px;
+  height: 52px;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/p6-press.png) no-repeat 0 100%;
+  -webkit-animation: press 1s linear 0s infinite;
+  animation: press 1s linear 0s infinite;
+}
+#share-mask {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/share-mask-bg.jpg) no-repeat 50% 50%;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+}
+#share-mask .share-mask-tip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/share-mask-tip.png) no-repeat 100% 0;
+}
+#ajax-mask {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#alert-mask {
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+#alert-mask .middle-center {
+  -webkit-transform: translate3d(-50%, -100%, 0);
+  transform: translate3d(-50%, -100%, 0);
+}
+#alert-mask .alert-text {
+  height: 118px;
+  width: 554px;
+  padding-top: 48px;
+  color: #ff4861;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/alert.png) no-repeat 50% 0;
+}
+#alert-mask .alert-btn {
+  width: 190px;
+  height: 98px;
+  margin: 32px auto 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150515_haochanpin/img/alert.png) no-repeat 50% 100%;
+}
+@-webkit-keyframes activityLogo {
+  0% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  84% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  99% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  99.8% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  99.9% {
+    opacity: 1;
+    background-position: -4144px 0;
+  }
+  100% {
+    opacity: 1;
+    background-position: -4144px 0;
+  }
+}
+@keyframes activityLogo {
+  0% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  84% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  99% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  99.8% {
+    opacity: 1;
+    background-position: -3552px 0;
+  }
+  99.9% {
+    opacity: 1;
+    background-position: -4144px 0;
+  }
+  100% {
+    opacity: 1;
+    background-position: -4144px 0;
+  }
+}
+@-webkit-keyframes flash1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes flash1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes buttonPrev {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 100% -2556px;
+  }
+}
+@keyframes buttonPrev {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 100% -2556px;
+  }
+}
+@-webkit-keyframes buttonNext {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2556px;
+  }
+}
+@keyframes buttonNext {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2556px;
+  }
+}
+@-webkit-keyframes guideWrap {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -581px;
+  }
+}
+@keyframes guideWrap {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -581px;
+  }
+}
+@-webkit-keyframes trans2 {
+  100% {
+    -webkit-transform: translate(-60px, -50px);
+  }
+}
+@keyframes trans2 {
+  100% {
+    transform: translate(-60px, -50px);
+  }
+}
+@-webkit-keyframes trans3 {
+  100% {
+    -webkit-transform: translate(100px, 340px);
+  }
+}
+@keyframes trans3 {
+  100% {
+    transform: translate(100px, 340px);
+  }
+}
+@-webkit-keyframes trans4 {
+  100% {
+    -webkit-transform: translate(40px, 80px);
+  }
+}
+@keyframes trans4 {
+  100% {
+    transform: translate(40px, 80px);
+  }
+}
+.a-flipinX2 {
+  -webkit-animation: flipinX2 0.5s ease-out backwards;
+  animation: flipinX2 0.5s ease-out backwards;
+}
+@-webkit-keyframes flipinX2 {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flipinX2 {
+  0% {
+    transform: perspective(400px) rotateX(360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(400px) rotateX(0);
+    opacity: 1;
+  }
+}
+.a-zoomin {
+  -webkit-animation: zoomin 0.5s ease-out backwards;
+  animation: zoomin 0.5s ease-out backwards;
+}
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+}
+@keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes press {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(60px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(120px);
+    opacity: 0;
+  }
+}
+@keyframes press {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(60px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(120px);
+    opacity: 0;
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes adsbg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1920px 0;
+  }
+}
+@keyframes adsbg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1920px 0;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">  
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>认证会员</title>
+    <meta name="keywords" content="i黑马">
+    <meta name="description" content=",i黑马—关注创业者的平台">
+    <meta name="generator" content="i黑马">
+    <meta name="author" content="i黑马 Team">
+    <meta name="copyright" content="i黑马">
+
+    <script type="text/javascript">
+        ! function( userAgent ) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 640;
+            if ( /Android (\d+\.\d+)/.test( userAgent ) ) {
+                var version = parseFloat( RegExp.$1 );
+                document.write( version > 2.3
+                    ? '<meta name="viewport" content="width=640, minimum-scale = ' + scale + ", maximum-scale = " + scale + ', target-densitydpi=device-dpi">'
+                    : '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">' );
+            } else {
+                document.write( '<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">' );
+            }
+        }( navigator.userAgent );
+    </script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.iheima.com/base/base.css"/>
+     <link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/special/h5_20150325_heimahui/css/form.css"/>
+ </head>
+    <body>
+        <div class="form-wrap certificate">
+            <div class="space"></div>
+            <div id="certificate">
+                <div class="title"></div>
+                <div class="formitem cf">
+                    <div class="vip-wrap fl">
+                        <label for="name">会员姓名:</label>
+                        <div class="com-input vip-name"></div>
+                    </div>
+                    <div class="vip-wrap fr">
+                        <label for="name">会员编号:</label>
+                        <div class="com-input vip-num"></div>
+                    </div>
+                </div>
+                
+                <div class="formitem cf">
+                    <label for="company">企业名称:</label>
+                    <div class="com-input com-name"></div>
+                </div>
+                <div class="formitem cf">
+                    <label for="position">所属分会:</label>
+                    <div class="com-input com-type"></div>
+                </div>
+                 <div class="formitem cf">
+                    <label for="tel">入会日期:</label>
+                    <div class="com-input enter-date"></div>
+                </div>
+                
+               
+               
+                
+                
+            </div>
+        </div>
+    </body>

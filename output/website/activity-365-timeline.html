@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>365每日新品发布会</title>
+    <!--
+        @require "styles/lib/normalize.css"
+        @require "styles/activity_365.less"
+        @require "styles/common.css"
+        @require "styles/home.less"
+        @require "styles/activity-365-timeline.less"
+    -->
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/css/lib/normalize.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/css/activity_365.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/css/common.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/css/home.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/css/activity-365-timeline.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/libs/ui/popup/popup.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/pkgs/ajax-form/ajax-form.css">
+<link rel="stylesheet" type="text/css" href="http://static.idaiyan.cn/website/static/modules/home/js/modules/pkgs/ajax-product-choose/ajax-product-choose.css">
+
+</head>
+<body >
+    <header>
+        <div class="respons_wp cf">
+            <nav class="mainnav fl" id="menu">
+                <a href="#" class="home">首页</a>
+                <a href="#">返回产品详情页</a>
+                <span>|</span>
+                <a href="javascript:;" class="qrcodebtn" title="点击显示二维码" data-mobileurl="http://test.idaiyan.cn/">二维码</a>
+            </nav>
+            <nav class="userstatus fr">
+                <a href="#">登陆</a>
+                <span>|</span>
+                <a href="#">注册</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="left_arrow"></div>
+    <div class="right_arrow"></div>
+    <div class="main_content">
+        <div class="wrap">
+            <img class="logo" src="http://static.idaiyan.cn/website/static/modules/home/images/365/356logo.png">
+            <div class="calendar_logo">
+                <div class="month_week by_month active">
+                    <div class="calendar month_logo"></div>
+                    <div class="contents">按月份查看产品</div>
+                </div>
+                <div class="month_week by_week">
+                    <div class="calendar week_logo"></div>
+                    <div class="contents">按周查看产品</div>
+                </div>
+                <div class="check_today">查看今日产品</div>
+            </div>
+
+        </div>
+
+        <div class="hand_week active">
+            <div class="screen-wrap" >
+                <div class="screen green" >
+                    <div class="product_pic">
+                        <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/music_box.jpg"></div>
+                    <div class="price_band">
+                        <div class="origin_price">
+                            <span class="del">原价:￥2900</span>
+                        </div>
+                        <div class="new_price">
+                            <span>365活动价:</span>
+                            <span>￥</span>
+                            498
+                        </div>
+                    </div>
+
+                    <div class="eassy">
+                        <h2>Harthink和欣空气净化机是什么</h2>
+                        <p>
+                            他是一位呆萌总裁，年纪轻轻时就收获了亿万财富。 他还是一个真正的“杯控”，钟爱一只陪伴十年的杯子。 功成名就之后，他在反思：为什么中国人的日子过得这么糙。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="week_scroll">
+                <ul class="products_thisweek">
+                    <li class="li4 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/07</div>
+                        </div>
+                    </li>
+                    <li class="li5 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/08</div>
+                        </div>
+                    </li>
+                    <li class="li6 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/09</div>
+                        </div>
+                    </li>
+                    <li class="li0 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/09</div>
+                        </div>
+                    </li>
+                    <li class="li1 gray">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/10</div>
+                        </div>
+                    </li>
+                    <li class="li2">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/11</div>
+                        </div>
+                    </li>
+                    <li class="li3">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/12</div>
+                        </div>
+                    </li>
+                    <li class="li4">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/13</div>
+                        </div>
+                    </li>
+                    <li class="li5">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/14</div>
+                        </div>
+                    </li>
+                    <li class="li6">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/09</div>
+                        </div>
+                    </li>
+                    <li class="li0">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/09</div>
+                        </div>
+                    </li>
+                    <li class="li1">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/10</div>
+                        </div>
+                    </li>
+                    <li class="li2 gray">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/11</div>
+                        </div>
+                    </li>
+                    <li class="li3 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/12</div>
+                        </div>
+                    </li>
+                    <li class="li4 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/13</div>
+                        </div>
+                    </li>
+                    <li class="li5 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/14</div>
+                        </div>
+                    </li>
+                    <li class="li6 hidden">
+                        <div class="brief">
+                            <div class="price">
+                                <span>￥2999</span>
+                            </div>
+                            <div class="info">Harthink和欣空气净...</div>
+                            <div class="circles"></div>
+                            <div class="date">2015/05/09</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hand_month">
+            <div class="screen-wrap" >
+                <div class="screen blue">
+                    <div class="product_pic">
+                        <img src="http://static.idaiyan.cn/website/static/modules/home/images/temp/music_box.jpg"></div>
+                    <div class="price_band">
+                        <div class="origin_price">
+                            <span class="del">原价:￥2900</span>
+                        </div>
+                        <div class="new_price">
+                            <span>365活动价:</span>
+                            <span>￥</span>
+                            49871234
+                        </div>
+                    </div>
+                    <div class="eassy">
+                        <h2>Harthink和欣空气净化机是什么</h2>
+                        <p>
+                            他是一位呆萌总裁，年纪轻轻时就收获了亿万财富。 他还是一个真正的“杯控”，钟爱一只陪伴十年的杯子。 功成名就之后，他在反思：为什么中国人的日子过得这么糙。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="month_scroll">
+                <ul class="products_thismonth">
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="mid-date other other-l2">
+                        <div class="dot"></div>
+                    </li>
+
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                    <li class="other other-l2">
+                        <div class="dot"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+<script type="text/html" id="month-show-tpl">
+    <% for (var i1 = length1; i1 > 0 ; i1--) { %>
+        <li class="other other-l<%=i1%>">
+            <div class="dot"></div>
+        </li>
+    <% } %>
+    <% var i2 = 0; %>
+    <% for (var item in list) { %>
+        <% if (list.hasOwnProperty(item)) { %>
+            <% if (list[item]) { %>
+                <li <% if (i2 === 0) { %> class="begin"<% } else if (i2 === (length-1)) { %> class="end"<% } else if (i2 === (center-1)) { %> class="mid-date"<% } %>
+                    data-date="<%=item%>"
+                    data-id="<%=list[item].id%>">
+                    <span><%=list[item].title%></span>
+                    <div class="dot"></div>
+                    <% if (i2 === 0) { %>
+                        <div class="start_stop">
+                            <span class="num"><%=month%></span>
+                            <span class="num">/</span>
+                            <span class="num">01</span>
+                        </div>
+                    <% } else if (i2 === (length-1)) { %>
+                        <div class="start_stop">
+                            <span class="num"><%=month%></span>
+                            <span class="num">/</span>
+                            <span class="num"><%=length%></span>
+                        </div>
+                    <% } %>
+                </li>
+            <% } else { %>
+                <li data-date="<%=item%>" class="noapply"></li>
+            <% } %>
+            <% i2++; %>
+        <% } %>
+    <% } %>
+    <% for (var i3 = 0; i3 < length2; i3++) { %>
+        <li class="other other-l<%=(i3+1)%>">
+            <div class="dot"></div>
+        </li>
+    <% } %>
+</script>
+<script type="text/html" id="week-show-tpl">
+
+</script>
+<script type="text/html" id="screen-tpl">
+    <div class="product_pic">
+        <img src="<%=img%>">
+    </div>
+    <div class="price_band">
+        <div class="origin_price">
+            <span class="del">原价:￥<%=oprice%></span>
+        </div>
+        <div class="new_price">
+            <span>365活动价:</span>
+            <span>￥</span>
+            <%=price%>
+        </div>
+    </div>
+    <div class="eassy">
+        <h2><%=title%></h2>
+        <p>
+            <%=desc%>
+        </p>
+    </div>
+</script>
+<script type="text/html" id="screen-noapply-tpl">
+    <div class="noapply">
+        <div class="month"><%=month%>月</div>
+        <div class="day"><%=day%></div>
+        <div class="tip">今天还没被占用哦</div>
+        <div data-year="<%=year%>" data-month="<%=month%>" data-day="<%=day%>" class="applybtn">立即申请</div>
+    </div>
+</script>
+    <footer>
+<div class="respons_wp cf">
+    <div class="copy">
+        Copyright &copy; 2014-2015 i代言(idaiyan.cn) 版权所有
+    </div>
+</div>
+</footer>
+    <script type="text/javascript" src="http://static.idaiyan.cn/website/static/modules/home/js/require.js"></script>
+    
+    <script type="text/javascript" data-single="true" src="http://static.idaiyan.cn/website/pkg/map_3eb9008.js"></script>
+    <script>
+/*fis async*/
+require(['js/modules/app/activity-365-timeline']);
+</script>
+
+    <script>
+/*fis async*/
+require(['js/modules/pkgs/common']);
+</script>
+
+<!--前端专用，请勿嵌套start-->
+<script src="js/floatmenu.js"></script>
+<!--前端专用，请勿嵌套end-->
+</body>
+</html>

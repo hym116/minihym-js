@@ -1,0 +1,579 @@
+.prodlist_wrap {
+  padding-top: 20px;
+}
+.prodlist_wrap .morebtn {
+  display: block;
+  height: 42px;
+  width: 314px;
+  margin: 20px auto;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  color: #919191;
+  background-color: #f3f3f3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100% #ededed));
+  background-image: -webkit-linear-gradient(top, #f6f6f6 0%, #ededed 100%);
+  background-image: -moz-linear-gradient(top, #f6f6f6 0%, #ededed 100%);
+  background-image: -ms-linear-gradient(top, #f6f6f6 0%, #ededed 100%);
+  background-image: -o-linear-gradient(top, #f6f6f6 0%, #ededed 100%);
+  background-image: linear-gradient(top, #f6f6f6 0%, #ededed 100%);
+}
+.prodlist_wrap .morebtn:hover {
+  background: #fff;
+}
+.prodlist {
+  margin: 0 -14.5px;
+}
+.prodlist .proditem {
+  position: relative;
+  float: left;
+  width: 314px;
+  margin: 14.5px 14.5px;
+  border: 1px solid #c6c6c6;
+  background: #fff;
+}
+.prodlist .proditem:hover {
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.prodlist .activity {
+  width: 100%;
+  height: 295px;
+  background: #fff;
+  position: absolute;
+  z-index: 100;
+  display: none;
+}
+.prodlist .activity .tabitem {
+  width: 50%;
+  height: 147.5px;
+  text-align: center;
+  padding-top: 15px;
+}
+.prodlist .activity .tabitem:hover {
+  background: #f9f9f9;
+}
+.prodlist .activity .tabitem .tab_img {
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 9px;
+  position: relative;
+}
+.prodlist .activity .tabitem .tab_img .text {
+  position: absolute;
+  top: 21px;
+  z-index: 10;
+  width: 100%;
+  color: #919191;
+  line-height: 20px;
+}
+.prodlist .activity .tabitem .tab_img .round {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 62px;
+  border: 3px solid #ececec;
+  border-radius: 31px;
+  background: #f9f9f9;
+}
+.prodlist .activity .tabitem .tab_img .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 62px;
+  height: 62px;
+  border-radius: 31px;
+}
+.prodlist .activity .tabitem .tab_dot {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/bigdots.png) no-repeat 50% 100%;
+}
+.prodlist .activity .tab1 {
+  text-align: center;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.prodlist .activity .tab2 {
+  border-bottom: 1px solid #e2e2e2;
+}
+.prodlist .activity .tab3 {
+  border-right: 1px solid #e2e2e2;
+}
+.prodlist .activity .cen {
+  margin: 6px auto;
+}
+.prodlist .portrait_hover {
+  width: 312px;
+  height: 145px;
+  background: #fff;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  z-index: 3;
+  display: none;
+}
+.prodlist .portrait_hover .add1 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/follow.png) no-repeat 0 0;
+  cursor: pointer;
+}
+.prodlist .portrait_hover .add1.followed {
+  background-position: 0 50%;
+}
+.prodlist .portrait_hover .add1.followed:hover {
+  background-position: 0 100%;
+}
+.prodlist .portrait_hover .email {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: 5px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/email.png) no-repeat 0 0;
+  cursor: pointer;
+}
+.prodlist .portrait_hover .email:hover {
+  background-position: 0 100%;
+}
+.prodlist .portrait_hover .ceoname {
+  width: 110px;
+  font-size: 15px;
+  padding: 10px 8px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.prodlist .portrait_hover .place {
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/place.png) no-repeat 0 12px;
+  color: #919191;
+  font-size: 15px;
+  line-height: 1.33333333;
+  padding: 10px 14px;
+  width: 120px;
+  height: 40px;
+  margin-right: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.prodlist .portrait_hover .add_email {
+  width: 100%;
+  height: 26px;
+  padding: 1px 0 0 8px;
+}
+.prodlist .portrait_hover .small_img {
+  width: 312px;
+  margin-top: 10px;
+  padding: 2px 0 0 7px;
+}
+.prodlist .portrait_hover .small_img li {
+  width: 96px;
+  height: 60px;
+  float: left;
+  margin: 0 5px 0 0;
+  border: none;
+}
+.prodlist .portrait_hover .small_img .b1 {
+  border: 1px solid #919191;
+}
+.prodlist .portrait_hover .small_img a,
+.prodlist .portrait_hover .small_img img {
+  display: block;
+  width: 96px;
+  height: 60px;
+}
+.prodlist .heart {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/heart.png) no-repeat 0 0;
+  cursor: pointer;
+}
+.prodlist .heart.liked {
+  background-position: 0 -30px;
+}
+.prodlist .portrait {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  top: 165px;
+  right: 10px;
+}
+.prodlist .portrait .avatar {
+  position: relative;
+  z-index: 10;
+  width: 62px;
+  height: 62px;
+  border-radius: 31px;
+  border: 2px solid #fff;
+}
+.prodlist .prodimg {
+  width: 100%;
+  height: 196px;
+  overflow: hidden;
+  position: relative;
+}
+.prodlist .prodimg a {
+  display: block;
+  overflow: hidden;
+  height: 196px;
+}
+.prodlist .prodimg img {
+  max-width: 100%;
+  display: block;
+}
+.prodlist .prodimg li {
+  margin: 0;
+  height: 196px;
+}
+.prodlist .prodimg:hover .btn {
+  display: block;
+}
+.prodlist .prodimg .pageState {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 32px;
+  width: 40px;
+  padding: 10px 0 5px 5px;
+  color: #fff;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/pagestatusbg.png) no-repeat 0 0;
+}
+.prodlist .prodimg .btn {
+  display: none;
+  cursor: pointer;
+}
+.prodlist .prodimg .btn_l {
+  width: 42px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/btn_l.png) no-repeat 50% 50%;
+}
+.prodlist .prodimg .btn_r {
+  width: 42px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/btn_r.png) no-repeat 50% 50%;
+}
+.prodlist .prodtitle {
+  width: 250px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 56px;
+  padding: 20px 8px;
+  font-size: 16px;
+  line-height: 1.33333333;
+}
+.prodlist .prodtitle a {
+  color: #434343;
+}
+.prodlist .prodtitle a:hover {
+  color: #434343;
+}
+.prodlist .prodmate {
+  height: 34px;
+  padding: 5px 9px;
+}
+.prodlist .prodmate .add_date {
+  max-width: 80px;
+  height: 24px;
+  background: #d8d0b5;
+  border-radius: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin-right: 5px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.prodlist .prodmate .add_icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/showactivity.png) no-repeat 0 0;
+  cursor: pointer;
+}
+.prodlist .prodmate .add_icon:hover {
+  background-position: 0 100%;
+}
+.prodlist .remain {
+  color: #919191;
+  line-height: 24px;
+}
+.prodlist .status {
+  max-width: 80px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  padding: 0 14px;
+}
+.prodlist .status.will {
+  background-color: #9ec80a;
+}
+.prodlist .status.doing {
+  background-color: #3ebde0;
+}
+.prodlist .status.done {
+  background-color: #999999;
+}
+.prodlist .prodrate {
+  height: 10px;
+  padding: 9px 0 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+.prodlist .prodrate .axis {
+  width: 0;
+  max-width: 100%;
+  padding: 0 6px;
+  height: 1px;
+  background-color: #ff8062;
+}
+.prodlist .prodrate .guide {
+  width: 12px;
+  height: 5px;
+  margin: -2px -6px;
+  border-radius: 2px;
+  border: 1px solid #ff8062;
+  background-color: #ffbfb0;
+}
+.prodlist .prodnums {
+  padding: 10px 10px;
+  color: #919191;
+  font-size: 12px;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+  line-height: 25px;
+  background-color: #f9f9f9;
+}
+.prodlist .prodnums b {
+  float: left;
+  color: #434343;
+  font-size: 13px;
+}
+.prodlist .prodnums .icon {
+  text-align: left;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/number_s.png) no-repeat 0 3px;
+  width: 25%;
+  padding-left: 16px;
+}
+.prodlist .prodnums .icon-money {
+  background-position: 0 3px;
+}
+.prodlist .prodnums .icon-topic {
+  background-position: 0 -27px;
+}
+.prodlist .prodnums .icon-attention {
+  background-position: 0 -56px;
+}
+.prodlist .prodnums .icon-love {
+  background-position: 0 -86px;
+}
+.prodlist .noactivity .prodmate .add_date {
+  max-width: none;
+}
+.slogan {
+  height: 180px;
+  padding-top: 32px;
+  text-align: center;
+}
+.slogan .main {
+  font-size: 48px;
+  color: #434343;
+}
+.slogan .sub {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #434343;
+}
+/*筛选*/
+.filterbox {
+  margin-bottom: 15px;
+  border: 1px solid #eeeeee;
+}
+.filterbox .filterstatus {
+  height: 40px;
+  padding: 0 25px;
+  border-bottom: 1px solid #eee;
+}
+.filterbox .filterstatus .leftlabel {
+  line-height: 40px;
+}
+.filterbox .filterstatus a {
+  float: left;
+  height: 22px;
+  margin: 8px 10px 0 0;
+  padding: 0 25px 0 6px;
+  line-height: 22px;
+  color: #898b8d;
+  background: #ffffff url(http://static.idaiyan.cn/website/static/modules/home/images/home/close.gif) no-repeat 100% 50%;
+}
+.filterbox .leftlabel {
+  float: left;
+  color: #898b8d;
+  margin-right: 18px;
+}
+.filterbox .filteritems {
+  padding: 15px 25px;
+  background: #fff;
+}
+.filterbox li {
+  height: 36px;
+  border-top: 1px solid #eee;
+}
+.filterbox li .leftlabel {
+  line-height: 36px;
+}
+.filterbox li a {
+  float: left;
+  height: 22px;
+  margin: 6px 8px 0 0;
+  padding: 0 6px;
+  color: #898b8d;
+  line-height: 22px;
+}
+.filterbox li a:hover {
+  background: #f9f9f9;
+}
+.filterbox li:first-child {
+  border: none;
+}
+.filter-wrap {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  padding-top: 26px;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.filter-wrap .filter {
+  margin: 0 -15px;
+}
+.filter-wrap .filter .formitem {
+  margin: 0 12px;
+  float: left;
+}
+.filter-wrap .filter .formitem select {
+  width: 100px;
+  height: 34px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  background: #fcfcfc url(http://static.idaiyan.cn/website/static/modules/home/images/uc/selectarrow_D.png) no-repeat 92% 50%;
+}
+.filter-wrap .filter .formitem label {
+  margin-right: 5px;
+  float: left;
+  line-height: 32px;
+}
+.filter-wrap .filter .formitem #search-btn {
+  width: 92px;
+  height: 32px;
+}
+.filter-wrap .filter #province {
+  margin-right: 5px;
+}
+.filter-wrap .filter .place select {
+  width: 80px;
+}
+.founder_wrap {
+  padding-top: 15px;
+}
+.founder_wrap .founder-list {
+  margin: 0 -5px;
+  margin-bottom: 50px;
+}
+.founder_wrap .founder-list li {
+  width: 192px;
+  height: 316px;
+  float: left;
+  font-size: 14px;
+  border: 1px solid #c6c6c6;
+  margin: 5px;
+}
+.founder_wrap .founder-list li:hover {
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.founder_wrap .founder-list li .images {
+  font-size: 0;
+}
+.founder_wrap .founder-list li .images img {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+.founder_wrap .founder-list li .user-info {
+  padding: 10px;
+  position: relative;
+  background: #fff;
+}
+.founder_wrap .founder-list li .user-info .name a {
+  color: #434343;
+}
+.founder_wrap .founder-list li .user-info .desc {
+  color: #919191;
+  width: 145px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.founder_wrap .founder-list li .user-info .care-icon {
+  width: 24px;
+  height: 24px;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/home/follow.png) no-repeat 0 -29px;
+}
+.founder_wrap .founder-list li .user-info .care-icon:hover {
+  background-position: 0 -1px;
+}
+.founder_wrap .founder-list li .user-info .care-icon.hover {
+  background-position: 0 -85px;
+}
+.founder_wrap .founder-list li .user-info .care-icon.hover:hover {
+  background-position: 0 -58px;
+}
+.founder_wrap .founder-list li .num-wrap {
+  width: 100%;
+  height: 62px;
+  text-align: center;
+  border-top: 1px solid #e2e2e2;
+}
+.founder_wrap .founder-list li .num-wrap .num-wrap {
+  width: 63.33333333px;
+  height: 100%;
+  float: left;
+  color: #c6c6c6;
+  padding: 15px 0;
+}
+.founder_wrap .founder-list li .num-wrap .num-wrap .icon {
+  height: 17px;
+  background: url(http://static.idaiyan.cn/website/static/modules/home/images/icons/founder_number.png) no-repeat 24px 0;
+}
+.founder_wrap .founder-list li .num-wrap .num-wrap:hover {
+  color: #b0b0b0;
+  background: #fff;
+}
+.founder_wrap .founder-list li .num-wrap .share-num {
+  border-right: 1px solid #e2e2e2;
+}
+.founder_wrap .founder-list li .num-wrap .share-num .icon {
+  background-position: 23px -44px;
+}
+.founder_wrap .founder-list li .num-wrap .like-num .icon {
+  background-position: 24px -20px;
+}
+.founder_wrap .founder-list li .num-wrap .fans-num {
+  border-left: 1px solid #e2e2e2;
+}

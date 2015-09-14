@@ -1,0 +1,81 @@
+.sharepic {
+  display: none;
+}
+.swiper-container {
+  position: relative;
+  z-index: 12;
+}
+.swiper-slide {
+  overflow: visible;
+  color: #fff;
+  background: transparent;
+}
+.anim-bouncein {
+  -webkit-animation: bounceIn .7s linear 0 1;
+  -moz-animation: bounceIn .7s linear 0 1;
+  -ms-animation: bounceIn .7s linear 0 1;
+  animation: bounceIn .7s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* cover */
+.slide-cover.swiper-slide {
+  background: url(http://static.idaiyan.cn/special/h5_20150325_heimahui/img/p1-bg.jpg) no-repeat 50% 0;
+  background-size: cover;
+}
+/* intro */
+.slide-intro.swiper-slide {
+  background: url(http://static.idaiyan.cn/special/h5_20150325_heimahui/img/p2-bg.jpg) no-repeat 50% 0;
+  background-size: cover;
+}
+.gt1000 .slide-intro .ui-middle-space {
+  height: 10%;
+}
+.gt1000 .slide-intro .ui-small-space {
+  height: 8%;
+}
+/* mypage */
+.slide-mypage.swiper-slide {
+  background: url(http://static.idaiyan.cn/special/h5_20150325_heimahui/img/p3-bg.jpg) no-repeat 50% 0;
+  background-size: cover;
+}
+/* top5 */
+.slide-top5.swiper-slide {
+  background: url(http://static.idaiyan.cn/special/h5_20150325_heimahui/img/p4-bg.jpg) no-repeat 50% 0;
+  background-size: cover;
+  width: 100%;
+}
+.slide-top5.swiper-slide .space {
+  height: 67.14%;
+}
+.slide-top5.swiper-slide .title {
+  width: 100%;
+  height: 62px;
+  background: url(http://static.idaiyan.cn/special/h5_20150325_heimahui/img/title-bg.png) no-repeat;
+}
+.slide-top5.swiper-slide #verify {
+  width: 84.06%;
+  margin: auto;
+  color: #a0a0a0;
+}
+.slide-top5.swiper-slide #verify .tel-number {
+  width: 100%;
+  height: 60px;
+  border: none;
+  font-size: 23px;
+  padding-left: 25px;
+  border-radius: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+.slide-top5.swiper-slide #verify .verify-btn {
+  width: 100%;
+  height: 60px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 16px;
+  -webkit-appearance: none;
+  background: #ffffff url(http://static.idaiyan.cn/special/h5_20150325_heimahui/img/btn-bg.png) no-repeat;
+}

@@ -1,0 +1,25 @@
+{
+    "res": {
+        "css/style.less": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150416_zhaopin/css/style.css",
+            "type": "css"
+        },
+        "js/iscroll.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150416_zhaopin/js/iscroll.js",
+            "type": "js"
+        },
+        "js/platform.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150416_zhaopin/js/platform.js",
+            "type": "js"
+        },
+        "js/script.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150416_zhaopin/js/script.js",
+            "type": "js"
+        },
+        "js/zepto.js": {
+            "uri": "http://static.idaiyan.cn/special/h5_20150416_zhaopin/js/zepto.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

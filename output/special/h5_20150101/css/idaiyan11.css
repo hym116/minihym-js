@@ -1,0 +1,970 @@
+/* background */
+.swiper-slide {
+  color: #fff;
+  background: #2c3e52 url(http://static.idaiyan.cn/special/h5_20150101/img/bg.jpg) no-repeat top center;
+  overflow: visible;
+}
+.c-yellow {
+  color: #f2ff80;
+}
+#share-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/bg.jpg) no-repeat 50% 50%;
+  z-index: 1000;
+}
+#share-box:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7) url(http://static.idaiyan.cn/special/h5_20150101/img/sharebg.png) no-repeat 100% 0;
+  background-size: 480px 852px;
+}
+/* cover */
+.slide-cover .ui-top-space {
+  height: 8%;
+}
+.slide-cover .ui-center-space {
+  height: 5%;
+}
+.slide-cover .ui-logo {
+  width: 100%;
+  height: 391px;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/logo.png) no-repeat 50% 0;
+  opacity: 0;
+  -webkit-animation: bounceIn 0.3s linear 0 1;
+  -moz-animation: bounceIn 0.3s linear 0 1;
+  -ms-animation: bounceIn 0.3s linear 0 1;
+  animation: bounceIn 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-cover .ui-logo .ui-time {
+  bottom: 28px;
+  color: #05131c;
+}
+.slide-cover .ui-gift {
+  width: 100%;
+  height: 186px;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/gift.png) no-repeat 50% 0;
+  opacity: 0;
+  -webkit-animation: fadeInDown 0.3s linear 0 1;
+  -moz-animation: fadeInDown 0.3s linear 0 1;
+  -ms-animation: fadeInDown 0.3s linear 0 1;
+  animation: fadeInDown 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-cover .ui-swipertip {
+  width: 100%;
+  bottom: 10%;
+  opacity: 0;
+  -webkit-animation: fadeInUp 0.3s linear 0 1;
+  -moz-animation: fadeInUp 0.3s linear 0 1;
+  -ms-animation: fadeInUp 0.3s linear 0 1;
+  animation: fadeInUp 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* product */
+.slide-product .ui-top-space {
+  height: 5%;
+}
+.slide-product .ui-center-space {
+  height: 3%;
+}
+.slide-product .ui-product {
+  width: 500px;
+  padding-top: 74px;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation: swing .8s linear 0 1;
+  -moz-animation: swing .8s linear 0 1;
+  -ms-animation: swing .8s linear 0 1;
+  animation: swing .8s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-product .ui-product .ui-product-line {
+  height: 82px;
+  overflow: hidden;
+  top: -8px;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/line.png) no-repeat 50% 0;
+}
+.slide-product .ui-product .ui-product-img-bg {
+  width: 460px;
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #d3dae2;
+}
+.slide-product .ui-product .ui-product-img {
+  width: 460px;
+  height: 460px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5) inset;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.slide-product .ui-product-intro {
+  width: 460px;
+  line-height: 2;
+  opacity: 0;
+  -webkit-animation: fadeInUp 0.3s linear 0.6s 1;
+  -moz-animation: fadeInUp 0.3s linear 0.6s 1;
+  -ms-animation: fadeInUp 0.3s linear 0.6s 1;
+  animation: fadeInUp 0.3s linear 0.6s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* ceo */
+.slide-ceo .ui-top-space {
+  height: 12%;
+}
+.slide-ceo .ui-center-space {
+  height: 5%;
+}
+.slide-ceo .ui-row {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 5px;
+  -webkit-animation: fadeInRight 0.3s linear 0 1;
+  -moz-animation: fadeInRight 0.3s linear 0 1;
+  -ms-animation: fadeInRight 0.3s linear 0 1;
+  animation: fadeInRight 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-ceo .ui-row2 {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 5px;
+  -webkit-animation: bounceIn 0.3s linear 0.2s 1;
+  -moz-animation: bounceIn 0.3s linear 0.2s 1;
+  -ms-animation: bounceIn 0.3s linear 0.2s 1;
+  animation: bounceIn 0.3s linear 0.2s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* intro */
+.slide-intro .ui-top-space {
+  height: 5%;
+}
+.slide-intro .ui-center-space {
+  height: 2%;
+}
+.slide-intro .ui-title {
+  opacity: 0;
+  -webkit-animation: bounceInDown 0.3s linear 0 1;
+  -moz-animation: bounceInDown 0.3s linear 0 1;
+  -ms-animation: bounceInDown 0.3s linear 0 1;
+  animation: bounceInDown 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-intro .ui-desc {
+  padding: 0 70px;
+  line-height: 50px;
+  opacity: 0;
+  -webkit-animation: fadeInDown 0.3s linear 0 1;
+  -moz-animation: fadeInDown 0.3s linear 0 1;
+  -ms-animation: fadeInDown 0.3s linear 0 1;
+  animation: fadeInDown 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-intro .ui-desc2 {
+  padding: 0 70px;
+  line-height: 50px;
+  opacity: 0;
+  -webkit-animation: fadeInRight 0.3s linear 0.2s 1;
+  -moz-animation: fadeInRight 0.3s linear 0.2s 1;
+  -ms-animation: fadeInRight 0.3s linear 0.2s 1;
+  animation: fadeInRight 0.3s linear 0.2s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-intro .ui-button {
+  width: 212px;
+  height: 212px;
+  line-height: 212px;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/bluebutton.png) no-repeat 0 0;
+  -webkit-animation: flashIn 0.3s linear .5s 1;
+  -moz-animation: flashIn 0.3s linear .5s 1;
+  -ms-animation: flashIn 0.3s linear .5s 1;
+  animation: flashIn 0.3s linear .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-intro .ui-tips {
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  opacity: 0;
+  -webkit-animation: fadeInUp 0.3s linear .5s 1;
+  -moz-animation: fadeInUp 0.3s linear .5s 1;
+  -ms-animation: fadeInUp 0.3s linear .5s 1;
+  animation: fadeInUp 0.3s linear .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-intro .ui-supportrate {
+  margin-top: 5px;
+}
+/* total */
+.slide-total .ui-top-space {
+  height: 3%;
+}
+.slide-total .ui-center-space {
+  height: 2%;
+}
+.slide-total .ui-center-space-small {
+  height: 1%;
+}
+.slide-total .ui-logo2 {
+  height: 207px;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/logo2.png) no-repeat 50% 0;
+  -webkit-animation: bounceInDown 0.3s linear 0 1;
+  -moz-animation: bounceInDown 0.3s linear 0 1;
+  -ms-animation: bounceInDown 0.3s linear 0 1;
+  animation: bounceInDown 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-total .ui-num {
+  opacity: 0;
+  -webkit-animation: bounceIn 0.3s linear 0.5s 1;
+  -moz-animation: bounceIn 0.3s linear 0.5s 1;
+  -ms-animation: bounceIn 0.3s linear 0.5s 1;
+  animation: bounceIn 0.3s linear 0.5s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-total .ui-top-prod-title {
+  opacity: 0;
+  -webkit-animation: fadeInUp 0.6s linear 1s 1;
+  -moz-animation: fadeInUp 0.6s linear 1s 1;
+  -ms-animation: fadeInUp 0.6s linear 1s 1;
+  animation: fadeInUp 0.6s linear 1s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-total .ui-top-prod-item {
+  height: 70px;
+  line-height: 70px;
+  margin: 0;
+  padding: 0 50px;
+  opacity: 0;
+  -webkit-animation: fadeInUp 0.6s linear 1s 1;
+  -moz-animation: fadeInUp 0.6s linear 1s 1;
+  -ms-animation: fadeInUp 0.6s linear 1s 1;
+  animation: fadeInUp 0.6s linear 1s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-total .ui-top-prod-item .ui-top-prod-img {
+  display: inline-block;
+  width: 11.48148148%;
+  height: 62px;
+  margin-right: 2.22222222%;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  border-radius: 34px;
+  border: 3px solid #fff;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.slide-total .ui-top-prod-item .ui-top-prod-name {
+  width: 59.62962963%;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+.slide-total .ui-top-prod-item .ui-top-prod-name:after {
+  content: " --------------------------";
+}
+.slide-total .ui-top-prod-item .ui-top-prod-rank {
+  width: 24.07407407%;
+}
+.slide-total .ui-top-prod-item .ui-top-prod-num {
+  width: 24.07407407%;
+}
+.slide-total .ui-top-prod-item .ui-top-prod-num .ui-top-prod-num-num {
+  width: 76.92307692%;
+  letter-spacing: 1px;
+}
+.slide-total .ui-top-prod-item .ui-top-prod-num .ui-top-prod-num-unit {
+  width: 23.07692308%;
+}
+.slide-total .ui-top-prod-item:nth-child(8) {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.slide-total .ui-top-prod-item:nth-child(10) {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  -ms-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+.slide-total .ui-top-prod-item:nth-child(12) {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  -ms-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+.slide-total .ui-top-prod-item:nth-child(14) {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  -ms-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+.slide-total .ui-top-prod-item:nth-child(16) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.slide-total .ui-center-space-dot {
+  height: 46px;
+  width: 10px;
+  margin: -5px auto;
+  opacity: 0;
+  -webkit-animation: fadeInUp 0.6s linear 1.9s 1;
+  -moz-animation: fadeInUp 0.6s linear 1.9s 1;
+  -ms-animation: fadeInUp 0.6s linear 1.9s 1;
+  animation: fadeInUp 0.6s linear 1.9s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-total .ui-center-space-dot .ui-dot {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #d3dae2;
+}
+/* detail */
+.slide-detail .ui-top-space {
+  height: 4%;
+}
+.slide-detail .ui-center-space {
+  height: 1%;
+}
+.slide-detail .ui-imgtxt1 {
+  height: 151px;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/img-txt1.png) no-repeat 50% 0;
+  -webkit-animation: bounceIn 0.3s linear 0 1;
+  -moz-animation: bounceIn 0.3s linear 0 1;
+  -ms-animation: bounceIn 0.3s linear 0 1;
+  animation: bounceIn 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-detail .ui-imgtxt2 {
+  height: 140px;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/img-txt2.png) no-repeat 50% 0;
+  -webkit-animation: bounceIn 0.3s linear 0 1;
+  -moz-animation: bounceIn 0.3s linear 0 1;
+  -ms-animation: bounceIn 0.3s linear 0 1;
+  animation: bounceIn 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-detail .ui-logo3 {
+  width: 177px;
+  height: 144px;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/logo3.png) no-repeat 50% 50%;
+  -webkit-animation: bounceIn 0.3s linear 0 1;
+  -moz-animation: bounceIn 0.3s linear 0 1;
+  -ms-animation: bounceIn 0.3s linear 0 1;
+  animation: bounceIn 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-detail .c-bluel,
+.slide-detail .c-blued {
+  opacity: 0;
+  -webkit-animation: fadeInUp 0.6s linear 0 1;
+  -moz-animation: fadeInUp 0.6s linear 0 1;
+  -ms-animation: fadeInUp 0.6s linear 0 1;
+  animation: fadeInUp 0.6s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* apply */
+.slide-apply .ui-top-space {
+  height: 4%;
+}
+.slide-apply .ui-center-space {
+  height: 2%;
+}
+.slide-apply .ui-logo3 {
+  width: 177px;
+  height: 144px;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/logo3.png) no-repeat 50% 50%;
+  -webkit-animation: fadeInDown 0.3s linear 0 1;
+  -moz-animation: fadeInDown 0.3s linear 0 1;
+  -ms-animation: fadeInDown 0.3s linear 0 1;
+  animation: fadeInDown 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-apply .ui-feature {
+  position: relative;
+  opacity: 0;
+  -webkit-animation: fadeInRight 0.3s linear 0.2s 1;
+  -moz-animation: fadeInRight 0.3s linear 0.2s 1;
+  -ms-animation: fadeInRight 0.3s linear 0.2s 1;
+  animation: fadeInRight 0.3s linear 0.2s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-apply .ui-feature .ui-feature-item {
+  height: 1em;
+}
+.slide-apply .ui-feature .ui-feature-space {
+  height: 0.5em;
+}
+.slide-apply .ui-slogan {
+  opacity: 0;
+  -webkit-animation: flashIn 0.3s linear .2s 1;
+  -moz-animation: flashIn 0.3s linear .2s 1;
+  -ms-animation: flashIn 0.3s linear .2s 1;
+  animation: flashIn 0.3s linear .2s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-apply .ui-condition {
+  opacity: 0;
+  font-size: 42px;
+  -webkit-animation: bounceIn 0.3s linear 0.4s 1;
+  -moz-animation: bounceIn 0.3s linear 0.4s 1;
+  -ms-animation: bounceIn 0.3s linear 0.4s 1;
+  animation: bounceIn 0.3s linear 0.4s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-apply .ui-button2 {
+  width: 212px;
+  height: 212px;
+  line-height: 212px;
+  opacity: 0;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/bluebutton.png) no-repeat 0 0;
+  -webkit-animation: flashIn 0.3s linear .5s 1;
+  -moz-animation: flashIn 0.3s linear .5s 1;
+  -ms-animation: flashIn 0.3s linear .5s 1;
+  animation: flashIn 0.3s linear .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.slide-apply .ui-agreement-link {
+  padding: 10px 0;
+  text-decoration: underline;
+}
+.power-scroll-container .slide-gain {
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background: #2c3e52 url(http://static.idaiyan.cn/special/h5_20150101/img/bg.jpg) no-repeat 50% 0;
+}
+.power-scroll-container .slide-gain .ui-top-space {
+  height: 8%;
+}
+.power-scroll-container .slide-gain .ui-center-space {
+  height: 3%;
+}
+.power-scroll-container .slide-gain .ui-btn,
+.power-scroll-container .slide-gain .ui-swich-wrap {
+  opacity: 0;
+  -webkit-animation: flashIn 0.3s linear 0.3s 1;
+  -moz-animation: flashIn 0.3s linear 0.3s 1;
+  -ms-animation: flashIn 0.3s linear 0.3s 1;
+  animation: flashIn 0.3s linear 0.3s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.power-scroll-container .slide-gain .ui-next {
+  display: block;
+  width: 140px;
+  height: 140px;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/nextbtn.png) no-repeat 52% 50%;
+}
+.power-scroll-container .slide-gain .ui-field {
+  margin: 0 70px;
+}
+.power-scroll-container .slide-gain .ui-field button,
+.power-scroll-container .slide-gain .ui-field input[type="text"],
+.power-scroll-container .slide-gain .ui-field input[type="number"],
+.power-scroll-container .slide-gain .ui-field input[type="tel"],
+.power-scroll-container .slide-gain .ui-field .ui-input-txt {
+  width: 100%;
+  height: 60px;
+  opacity: 0;
+  font-size: 24px;
+  letter-spacing: 3px;
+  border: 1px solid #1ec6fe;
+  border-radius: 10px;
+  background: rgba(0, 161, 215, 0.1);
+  -webkit-animation: growUp 0.3s linear 0 1;
+  -moz-animation: growUp 0.3s linear 0 1;
+  -ms-animation: growUp 0.3s linear 0 1;
+  animation: growUp 0.3s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.power-scroll-container .slide-gain .ui-field button.disabled,
+.power-scroll-container .slide-gain .ui-field input[type="text"].disabled,
+.power-scroll-container .slide-gain .ui-field input[type="number"].disabled,
+.power-scroll-container .slide-gain .ui-field input[type="tel"].disabled,
+.power-scroll-container .slide-gain .ui-field .ui-input-txt.disabled {
+  border: 0;
+  background: rgba(211, 218, 226, 0.15);
+}
+.power-scroll-container .slide-gain .ui-field button {
+  border: 0;
+  background: #1ec6fe;
+  background: -moz-radial-gradient(45% -40px, ellipse cover, #1ec6fe 0%, #00a1d7 55%, #4f37b4 100%);
+  background: -webkit-gradient(radial, 45% -40px, 0px, 45% -40px, 100%, color-stop(0%, #1ec6fe), color-stop(55%, #00a1d7), color-stop(100%, #4f37b4));
+  background: -webkit-radial-gradient(45% -40px, ellipse cover, #1ec6fe 0%, #00a1d7 55%, #4f37b4 100%);
+  background: -o-radial-gradient(45% -40px, ellipse cover, #1ec6fe 0%, #00a1d7 55%, #4f37b4 100%);
+  background: -ms-radial-gradient(45% -40px, ellipse cover, #1ec6fe 0%, #00a1d7 55%, #4f37b4 100%);
+  background: radial-gradient(ellipse at 45% -40px, #1ec6fe 0%, #00a1d7 55%, #4f37b4 100%);
+}
+.power-scroll-container .slide-gain .ui-submit-btn {
+  width: 140px;
+  height: 140px;
+}
+.power-scroll-container .slide-gain .ui-validcode-wrap {
+  width: 250px;
+  float: left;
+}
+.power-scroll-container .slide-gain .ui-validcode-wrap input {
+  width: 248px;
+}
+.power-scroll-container .slide-gain .ui-validbtn-wrap {
+  width: 230px;
+  float: right;
+}
+.power-scroll-container .slide-gain .ui-next-btn {
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+}
+.power-scroll-container .slide-gain .ui-prev-btn {
+  margin-top: 60px;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 76px;
+  height: 76px;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/prev.png) no-repeat 0 0;
+}
+.power-scroll-container .slide-gain .ui-swich {
+  position: relative;
+  width: 88px;
+  height: 48px;
+  border-radius: 24px;
+  background: #fff;
+}
+.power-scroll-container .slide-gain .ui-swich .ui-swich-anim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background: #09bced;
+}
+.power-scroll-container .slide-gain .ui-swich .ui-swich-anim .ui-swich-ball {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  margin: -1px;
+  border: 1px solid #919191;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  background: #fff;
+}
+.power-scroll-container .slide-gain.js-form-valid .ui-prev-btn {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.power-scroll-container .slide-gain.js-form-valid .ui-swich-wrap {
+  margin: 0 70px;
+  line-height: 5em;
+  height: 5em;
+}
+.power-scroll-container .slide-gain.js-form-valid .ui-validinput-wrap {
+  height: 62px;
+  overflow: hidden;
+}
+.power-scroll-container .slide-gain.js-form-valid .ui-validbtn-wrap {
+  padding-top: 1px;
+}
+.power-scroll-container .slide-gain.js-form-valid .ui-swich {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-field input {
+  float: left;
+  width: 370px;
+  border: 0;
+  background: none;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-field input.disabled {
+  border: 0;
+  background: none;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-field label {
+  float: left;
+  height: 60px;
+  width: 110px;
+  margin-left: 19px;
+  font-size: 24px;
+  line-height: 60px;
+  color: #fff;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-field .ui-address {
+  overflow: hidden;
+  min-height: 100px;
+  height: auto;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-field .ui-textarea-wrap {
+  overflow: hidden;
+  padding: 10px 0;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-field .ui-textarea {
+  overflow: hidden;
+  float: left;
+  height: 80px;
+  width: 360px;
+  padding: 0 10px 0 0;
+  border: 0;
+  line-height: 40px;
+  background: none;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-prev-btn {
+  margin-left: 70px;
+}
+.power-scroll-container .slide-gain.js-form-infos .ui-pay-btn a {
+  display: block;
+  width: 212px;
+  line-height: 212px;
+}
+.power-scroll-container .ui-agreement-wrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.power-scroll-container .slide-agreement {
+  margin: 40px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.power-scroll-container .slide-agreement .ui-center-space {
+  height: 40px;
+}
+.power-scroll-container .slide-agreement .c-43 {
+  color: #434343;
+}
+.power-scroll-container .slide-agreement .c-69 {
+  color: #696969;
+}
+.power-scroll-container .slide-agreement .ui-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 64px;
+  height: 64px;
+  background: url(http://static.idaiyan.cn/special/h5_20150101/img/close.png) no-repeat 50% 50%;
+}
+.power-scroll-container .slide-agreement .ui-title {
+  padding: 50px;
+  line-height: 1.16666667;
+}
+.power-scroll-container .slide-agreement .ui-content {
+  position: relative;
+  overflow: hidden;
+  max-height: 575px;
+  padding: 0 50px;
+  line-height: 1.58333333;
+}
+.swiper-scrollbar {
+  border-radius: 10px;
+  -ms-touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 43px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+.ui-css3loading {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+#floatingCirclesG {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 128px;
+  height: 128px;
+  margin: auto;
+  -moz-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.f_circleG {
+  position: absolute;
+  background-color: #000000;
+  height: 23px;
+  width: 23px;
+  -moz-border-radius: 12px;
+  -moz-animation-name: f_fadeG;
+  -moz-animation-duration: 1.04s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: linear;
+  -webkit-border-radius: 12px;
+  -webkit-animation-name: f_fadeG;
+  -webkit-animation-duration: 1.04s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  -ms-border-radius: 12px;
+  -ms-animation-name: f_fadeG;
+  -ms-animation-duration: 1.04s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: linear;
+  -o-border-radius: 12px;
+  -o-animation-name: f_fadeG;
+  -o-animation-duration: 1.04s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: linear;
+  border-radius: 12px;
+  animation-name: f_fadeG;
+  animation-duration: 1.04s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+#frotateG_01 {
+  left: 0;
+  top: 52px;
+  -moz-animation-delay: 0.39s;
+  -webkit-animation-delay: 0.39s;
+  -ms-animation-delay: 0.39s;
+  -o-animation-delay: 0.39s;
+  animation-delay: 0.39s;
+}
+#frotateG_02 {
+  left: 15px;
+  top: 15px;
+  -moz-animation-delay: 0.52s;
+  -webkit-animation-delay: 0.52s;
+  -ms-animation-delay: 0.52s;
+  -o-animation-delay: 0.52s;
+  animation-delay: 0.52s;
+}
+#frotateG_03 {
+  left: 52px;
+  top: 0;
+  -moz-animation-delay: 0.65s;
+  -webkit-animation-delay: 0.65s;
+  -ms-animation-delay: 0.65s;
+  -o-animation-delay: 0.65s;
+  animation-delay: 0.65s;
+}
+#frotateG_04 {
+  right: 15px;
+  top: 15px;
+  -moz-animation-delay: 0.78s;
+  -webkit-animation-delay: 0.78s;
+  -ms-animation-delay: 0.78s;
+  -o-animation-delay: 0.78s;
+  animation-delay: 0.78s;
+}
+#frotateG_05 {
+  right: 0;
+  top: 52px;
+  -moz-animation-delay: 0.91s;
+  -webkit-animation-delay: 0.91s;
+  -ms-animation-delay: 0.91s;
+  -o-animation-delay: 0.91s;
+  animation-delay: 0.91s;
+}
+#frotateG_06 {
+  right: 15px;
+  bottom: 15px;
+  -moz-animation-delay: 1.04s;
+  -webkit-animation-delay: 1.04s;
+  -ms-animation-delay: 1.04s;
+  -o-animation-delay: 1.04s;
+  animation-delay: 1.04s;
+}
+#frotateG_07 {
+  left: 52px;
+  bottom: 0;
+  -moz-animation-delay: 1.17s;
+  -webkit-animation-delay: 1.17s;
+  -ms-animation-delay: 1.17s;
+  -o-animation-delay: 1.17s;
+  animation-delay: 1.17s;
+}
+#frotateG_08 {
+  left: 15px;
+  bottom: 15px;
+  -moz-animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+  -ms-animation-delay: 1.3s;
+  -o-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+@-moz-keyframes f_fadeG {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+@-webkit-keyframes f_fadeG {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+@-ms-keyframes f_fadeG {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+@-o-keyframes f_fadeG {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+@keyframes f_fadeG {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
