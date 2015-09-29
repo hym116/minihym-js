@@ -1,0 +1,79 @@
+html,div,span,em,img,strong,sub,sup,tt,label,table,caption,tbody,tfoot,thead,tr,
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,blockquote,form,fieldset,legend,button,input,textarea,dl,dt,dd,ul,ol,li,th,td{margin:0px;padding:0px;}
+/* <<<<<<<<清除浮动* >>>>>>>>*/
+.clearfix:after{  
+   content: " ";  
+   display: block;  
+   height: 0;  
+   clear: both;  
+   visibility: hidden;   
+} 
+.clearfix {  
+   zoom: 1; /* 触发 hasLayout */ 
+}
+.fl{float:left;}
+.fr{float:right;}
+.fn{float:none;}
+
+/*<<<<<<<<对齐>>>>>>>>*/
+/*.tc{
+    text-align: center;
+}
+.tl{
+    text-align: left;
+}
+.tr{
+    text-align: right;
+}*/
+
+/*数据中心common.css ---start----*/
+.wrap{
+    background:#f9f9f9;
+}
+.content-wrap{
+    width: 780px;
+    margin:50px auto;
+    border:1px solid #e2e2e2;
+    background:#fff;
+}
+.content-wrap .title{
+    height: 60px;
+    color: #434343;
+    font-size: 16px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.formitem{
+    padding-bottom: 20px;
+}
+.formitem input{
+    width: 320px;
+    height: 40px;
+    border:1px solid #e2e2e2;
+}
+.formitem button{
+    width: 320px;
+    height: 40px;
+    background:#e60039;
+}
+/*头部公共样式*/
+.header-wrap {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    font-size: 12px;
+    line-height: 70px;
+    font-family: "Microsoft Yahei";
+    border-bottom: 1px solid #ddd;
+}
+.header{
+    width: 1200px;
+    margin:auto;
+}
+.header .logo{
+    float: left;
+    width: 170px;
+    height: 27px;
+    margin-top: 21px;
+    background: url(../images/logo.png) no-repeat;
+}
+/*数据中心common.css ---end----*/
