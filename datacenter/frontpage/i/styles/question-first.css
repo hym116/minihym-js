@@ -1,0 +1,101 @@
+.register{
+    font:normal 14px "Microsoft Yahei";
+}
+.register-box{
+    margin-top: 95px;
+    height: 530px;
+
+}
+.log-out{
+    display: block;
+    float: right;
+    padding-top: 30px;
+    font-size: 18px;
+    color: #414141;
+
+}
+.register-title p{
+    padding-left: 38px;
+    line-height: 22px;
+    text-align: left;
+
+}
+.p1{
+    padding-top: 28px;
+    font-size: 22px;
+    color: #221815;
+}
+.p1 span{
+    display: inline-block;
+    padding-left: 22px;
+    color: #e3063e;
+}
+.p2{
+    font-size: 20px;
+}
+.question-box{
+    margin: 23px 0 0 40px;
+    width: 935px;
+    height: 380px;
+    overflow: hidden;
+}
+.register .question-box ul.questions{
+    float: left;
+    margin: 0;
+    width: 340px;
+    height: 380px;
+    border-right: 1px solid #e6e6e6;
+}
+ul.questions li{
+    padding-left: 20px;
+    margin:0 0 46px 62px;
+    width: 236px;
+    background: url(../images/icons/list-style.png) no-repeat ;
+    background-position: 0 5px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6b6b6b;
+    cursor: pointer;
+}
+.question-box ul.questions li.li-click{
+    color: #e3063e;
+    background-position: 0 -74px;
+}
+ul.questions li.question-for-what{
+    padding: 0 0 38px 0;
+    margin: 0;
+    font-size: 18px;
+    color: #221815;
+    background:none;
+    cursor: auto;
+}
+.answer-title{
+    margin-bottom: 22px;
+    line-height: 22px;
+}
+.answer-list{
+    float: right;
+    margin-top: 32px;
+    width: 545px;
+}
+.list-2,
+.list-3{
+    display: none;
+}
+ol.answer{
+    font-size: 14px;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+ol.answer li{
+    margin-bottom: 22px;
+    line-height: 22px;
+}
+ol.answer li p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #898989;
+}
+.paragraph-top{
+    margin-top: 12px;
+}

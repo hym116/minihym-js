@@ -1,0 +1,131 @@
+.content {
+    padding-top: 15px;
+}
+.addr-itemwrap {
+    color: #c6c6c6;
+    padding: 15px;
+    line-height: 22px;
+    position: relative;
+    position: relative;
+}
+.addr-item {
+    height: 185px;
+    padding: 30px;
+    background: #fcfcfc;
+    border: 1px solid #e2e2e2;
+}
+.addr-item .name {
+    color: #919191;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.row {
+    padding-bottom: 45px;
+}
+.mod-del {
+    bottom: 30px;
+    right: 35px;
+    color: #f39065;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    text-align: right;
+}
+.mod-del .mod{
+    margin-right: 15px;
+}
+.addr-itemwrap:hover  .addr-item {
+    border-color: #f39065;
+}
+.addr-itemwrap:hover .mod-del {
+    display: block;
+}
+.add-item {
+    font-size: 13px;
+    padding-top: 115px;
+    text-align: center;
+    background: url(../images/add.png) no-repeat center 45%;
+}
+#add-del {
+    display: none;
+}
+#add-del .mask-content {
+    width: 380px;
+    height: 545px;
+    padding: 0;
+}
+#add-del  .title {
+    position: relative;
+    line-height: 76px;
+    font-size: 16px;
+    color: #434343;
+}
+#add-del  .closebtn {
+    width: 40px;
+    height: 76px;
+    font-size: 28px;
+    position: absolute;
+    right: 2px;
+    top: -8px;
+    cursor: pointer;
+    color: #929292;
+    font-weight: 200;          
+}
+#addinfo {
+    color: #c6c6c6;
+    padding: 0 30px 30px;
+}
+.select-wrap {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    position: relative;
+    background:url(../images/downarrow.png) no-repeat right 0px;
+}
+.select-wrap select {
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.select-wrap:hover{
+    border-color: #919191;
+    background-position-y:-42px;
+}
+.select-wrap .selected-item {
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    color: #c6c6c6;
+    text-align: left;
+    padding-left: 20px;
+    position: absolute;
+}
+.province {
+    margin-right: 20px;
+}
+.province, .city {
+    width: 46%;
+}
+.town {
+    width: 100%;
+    margin-top: 20px;
+}
+#detail-addr {
+    height: 80px;
+}
+.formitem .save {
+    margin-right: 20px;
+}
+.formitem button {
+    width: 46%;
+}

@@ -1,0 +1,110 @@
+/*! common */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 62.5%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body,
+button,
+input,
+select,
+textarea {
+    color: #666;
+    font-family:Helvetica;
+    font-weight:400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fl {float: left;}
+.fr {float: right;}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.form-item label{
+    display: block;
+    font-size:1.4rem;
+    line-height: 2.2;
+    color:#919191;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type=search],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="color"]{  
+    height:44px;
+    width:100%;
+    padding:0 .5em;
+    border:1px solid #e3e4e8;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 1.4rem;
+    font-weight: normal;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+textarea {
+  height: auto;
+}
+select{
+    width: auto;
+}
+button{
+    border:none;
+    background:transparent;
+}

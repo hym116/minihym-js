@@ -1,0 +1,47 @@
+ ul.success-information{
+    margin: 68px auto 0;
+    width: 280px;
+}
+.success-tips{
+    padding-left: 50px;
+    width: 280px;
+    height: 38px;
+    font:normal 20px "Microsoft Yahei";
+    line-height: 38px;
+    color: #221815;
+    background: url(../images/icons/success.png) no-repeat;
+}
+li.wait{
+    padding-left: 42px;
+    margin-top: 38px;
+    font:normal 12px "Microsoft Yahei";
+}
+li.wait span{
+    color: #e3063e;
+}
+li.go-back{
+    margin:50px 0 0 55px;
+    width: 168px;
+    height: 44px;
+}
+li.go-back a{
+    display: block;
+    width: 100%;
+    background-color: #e3063e;
+    font:normal 14px "Microsoft Yahei";
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+li.go-back a:hover{
+    background-color: #f2174e;
+}
+.log-out{
+    display: block;
+    float: right;
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #414141;
+}

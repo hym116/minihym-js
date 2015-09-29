@@ -1,0 +1,536 @@
+body{
+    padding-bottom:42px;
+    overflow-x: hidden;
+}
+.left_arrow {
+    position: fixed;
+    left: 0;
+    top:0;
+    height:100%;
+    width:75px;
+    background:rgba(0, 0, 0, .1) url(/images/365/arrow_left.png) no-repeat 50% 50%;
+    z-index: 100;
+    cursor:pointer;
+}
+.right_arrow {
+    position: fixed;
+    right: 0;
+    top:0;
+    height:100%;
+    width:75px;
+    background:rgba(0, 0, 0, .1) url(/images/365/arrow_right.png) no-repeat 50% 50%;
+    z-index: 100;
+    cursor:pointer;
+}
+.main_content {
+    width: 100%;
+    height: 945px;
+    overflow: hidden;
+    left:0;
+    top:0;
+    background: url(/images/365/bg.jpg) no-repeat center center;
+    background-size:cover;
+    .arrows {
+        position: absolute;
+        z-index: 50;
+        height: 100%;
+        width: 100%;
+
+        li {
+            position: absolute;
+            z-index: 12;
+            top: 0;
+            width: 75px;
+            height: 100%;
+            background: rgba(0, 0, 0, .1);
+        }
+        .arrow_box {
+            display: inline-block;
+            width: 24px;
+            height: 47px;
+            vertical-align: middle;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+}
+.wrap {
+    img {
+        display: block;
+        margin: 74px auto 0;
+    }
+    .calendar_logo {
+        margin: 60px auto 0;
+        width: 570px;
+        height: 200px;
+
+        .month_week {
+            width: 150px;
+            height: 100%;
+
+            .calendar {
+                width: 126px;
+                height: 146px;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+            .contents {
+                margin-top: 10px;
+                padding-top:10px;
+                width: 100%;
+                height: 44px;
+                background: url(/images/365/black_line.png) no-repeat;
+                text-align: center;
+            }
+        }
+        .by_month {
+            float: left;
+
+            .month_logo {
+                background: url(/images/365/month.png);
+                opacity: 0.5;
+            }
+            &.active,&:hover{
+                .month_logo {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .by_week {
+            float: right;
+
+            .week_logo {
+                background: url(/images/365/week.png);
+                opacity: 0.5;
+            }
+            &.active,&:hover{
+                .week_logo {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .check_today {
+            float: left;
+            margin: 32px 38px 23px;
+            width: 194px;
+            height: 44px;
+            border: 1px solid #fff;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, .2);
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 44px;
+            text-align: center;
+            color: #fff;
+            cursor:pointer;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
+.hand_week {
+    margin: -93px auto 0;
+    padding: 54px 0 0 213px;
+    width: 632px;
+    height: 625px;
+    background: url(/images/365/hand.png) no-repeat 100% 0;
+
+    .screen {
+        position: absolute;
+        padding-top: 13px;
+        margin-top: 3px;
+        width: 208px;
+        height: 370px;
+        z-index: 10;
+
+        .product_pic {
+            margin: 3px auto 0;
+            padding-top: 1px;
+            width: 182px;
+            height: 118px;
+            background: rgba(255, 255, 255, .4);
+            border-radius: 3px;
+
+            img {
+                margin: 3px;
+            }
+        }
+        .price_band {
+            margin: 10px auto 0;
+            width: 198px;
+            height: 65px;
+            background: url(/images/365/band.png) no-repeat;
+            text-align: center;
+            font-weight: bold;
+            padding: 3px 5px;
+            .origin_price {
+                text-align: left;
+                margin-left: 10px;
+                font-size: 14px;
+
+                .del {
+                    display: block;
+                    width: 100%;
+                    height: 16px;
+                    line-height: 21px;
+                    text-decoration: line-through;
+                }
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 21px;
+                    line-height: 21px;
+                }
+            }
+            .new_price {
+                margin-left: 10px;
+                text-align: left;
+                font-size: 30px;
+                height:18px;
+                line-height:20px;
+                font-family: Impact;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        .eassy {
+            margin: 2px auto 0;
+            width: 186px;
+            height: 150px;
+            text-align: center;
+            line-height: 18px;
+            color: #fff;
+
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            p {
+                margin-top: 7px;
+                font-size: 12px;
+            }
+        }
+    }
+    .week_scroll {
+        position: absolute;
+        z-index: 9;
+        top: 550px;
+        left: 50%;
+        right: 0;
+        width: 100%;
+        height: 145px;
+
+        .products_thisweek {
+            width: 1600px;
+            height: 100%;
+            margin: 0 auto;
+            position: absolute;
+            left:-800px;
+            background: url(/images/365/dash.png) 0 112px repeat-x;
+
+            li {
+                float: left;
+                width: 77px;
+                height: 100%;
+                margin: 0 50px;
+                cursor: pointer;
+
+                .brief {
+                    width: 66px;
+                    height: 54px;
+                    color: #fff;
+                    font-size: 12px;
+                    margin: 18px auto 0;
+                    text-align: center;
+
+                    .price {
+                        height: 18px;
+                        line-height: 18px;
+                        font-size: 18px;
+                    }
+                }
+                .circles {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 8px;
+                    margin: 34px auto 0;
+                }
+                .dot_grey {
+                    background: #fff;
+                    box-shadow: 0 0 0 3px rgba(253, 253, 253, .4);
+                }
+                .dot_green {
+                    background: #9cdc03;
+                    box-shadow: 0 0 0 3px rgba(156, 220, 3, .4);
+                }
+                .dot_blue {
+                    background: #0ab6f6;
+                    box-shadow: 0 0 0 3px rgba(10, 182, 246, .4);
+                }
+                .dot_orange {
+                    background: #f14501;
+                    box-shadow: 0 0 0 3px rgba(242, 69, 1, .4);
+                }
+                .dot_red {
+                    background: #ee194b;
+                    box-shadow: 0 0 0 3px rgba(238, 25, 75, .4);
+                }
+                .dot_yellow {
+                    background: #ffb400;
+                    box-shadow: 0 0 0 3px rgba(255, 180, 0, .4);
+                }
+                .dot_purple {
+                    background: #b52ef4;
+                    box-shadow: 0 0 0 3px rgba(181, 46, 244, .4);
+                }
+                .dot_cyan {
+                    background: #0bcdb8;
+                    box-shadow: 0 0 0 3px rgba(11, 205, 184, .4);
+                }
+                .dot_lightgrey {
+                    background: #fff;
+                    box-shadow: 0 0 0 3px rgba(255, 255, 255, .4);
+                }
+            }
+            .price_bg1 {
+                background: url(/images/365/price.png) no-repeat;
+            }
+            .price_bg2 {
+                background: url(/images/365/price.png) -77px 0 no-repeat;
+            }
+            .price_bg3 {
+                background: url(/images/365/price.png) -154px 0 no-repeat;
+            }
+            .price_bg4 {
+                background: url(/images/365/price.png) -231px 0 no-repeat;
+            }
+            .price_bg5 {
+                background: url(/images/365/price.png) -308px 0 no-repeat;
+            }
+            .price_bg6 {
+                background: url(/images/365/price.png) -385px 0 no-repeat;
+            }
+            .price_bg7 {
+                background: url(/images/365/price.png) -462px 0 no-repeat;
+            }
+            .price_bg8 {
+                background: url(/images/365/price.png) -539px 0 no-repeat;
+            }
+            .price_bg9 {
+                background: url(/images/365/price.png) -616px 0 no-repeat;
+            }
+        }
+    }
+    .green {
+        background-image: -webkit-linear-gradient(108deg, #ffff06, #396900);
+        background-image: linear-gradient(108deg, #ffff06, #396900);
+    }
+    .blue {
+        background-image: -webkit-linear-gradient(108deg, #14ffff, #006ded);
+        background-image: linear-gradient(108deg, #14ffff, #006ded);
+    }
+    .orange {
+        background-image: -webkit-linear-gradient(108deg, #ffc000, #ff0000);
+        background-image: linear-gradient(108deg, #ffc000, #ff0000);
+    }
+    .red {
+        background-image: -webkit-linear-gradient(108deg, #ff3296, #dd0000);
+        background-image: linear-gradient(108deg, #ff3296, #dd0000);
+    }
+    .yellow {
+        background-image: -webkit-linear-gradient(108deg, #ffff00, #ff6900);
+        background-image: linear-gradient(108deg, #ffff00, #ff6900);
+    }
+    .purple {
+        background-image: -webkit-linear-gradient(108deg, #ff5cff, #6600e9);
+        background-image: linear-gradient(108deg, #ff5cff, #6600e9);
+    }
+    .cyan {
+        background-image: -webkit-linear-gradient(108deg, #16ffff, #009b71);
+        background-image: linear-gradient(108deg, #16ffff, #009b71);
+    }
+}
+.hand_month {
+    margin: -93px auto 0;
+    padding: 54px 0 0 213px;
+    width: 632px;
+    height: 625px;
+    background: url(/images/365/hand.png) no-repeat 100% 0;
+
+    .screen {
+        position: absolute;
+        padding-top: 13px;
+        margin-top: 3px;
+        width: 208px;
+        height: 370px;
+        z-index: 10;
+
+        .product_pic {
+            margin: 3px auto 0;
+            padding-top: 1px;
+            width: 182px;
+            height: 118px;
+            background: rgba(255, 255, 255, .4);
+            border-radius: 3px;
+
+            img {
+                margin: 3px;
+            }
+        }
+        .price_band {
+            margin: 10px auto 0;
+            width: 198px;
+            height: 65px;
+            padding: 3px 5px;
+            background: url(/images/365/band.png) no-repeat;
+            text-align: center;
+            font-weight: bold;
+
+            .origin_price {
+                text-align: left;
+                margin-left: 10px;
+                font-size: 14px;
+
+                .del {
+                    display: block;
+                    width: 100%;
+                    height: 16px;
+                    line-height: 21px;
+                    text-decoration: line-through;
+                }
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 21px;
+                    line-height: 21px;
+                }
+            }
+            .new_price {
+                margin-left: 10px;
+                text-align: left;
+                font-size: 30px;
+                height:18px;
+                line-height:20px;
+                font-family: Impact;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        .eassy {
+            margin: 2px auto 0;
+            width: 186px;
+            height: 150px;
+            text-align: center;
+            line-height: 18px;
+            color: #fff;
+
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            p {
+                margin-top: 7px;
+                font-size: 12px;
+            }
+        }
+    }
+    .month_scroll {
+        position: absolute;
+        z-index: 9;
+        top: 590px;
+        left: 50%;
+        width: 1680px;
+        height: 145px;
+        .products_thismonth {
+            position: absolute;
+            margin: 0 auto;
+            width: 1680px;
+            height: 76px;
+            left:-840px;
+            background: url(/images/365/dash.png) 0 72px repeat-x;
+            padding:0 20px;
+            li {
+                float: left;
+                width: 56px;
+                height: 100%;
+                cursor: pointer;
+
+                .dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                }
+                span {
+                    display: block;
+                    width: 40px;
+                    height: 35px;
+                    margin: 13px 0 0 8px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 14px;
+                }
+                .start_stop {
+                    width: 25px;
+                    height: 63px;
+                    background: rgba(255, 255, 255, .1);
+                    color: #fff;
+
+                    .num {
+                        display: block;
+                        width: 25px;
+                        height: 21px;
+                        margin: 0;
+                        line-height: 21px;
+                    }
+                }
+            }
+            li:nth-child(even) {
+                margin: 68px -16px 0;
+                background: url(/images/365/white_box_bottom.png) no-repeat 50% 16px;
+
+                .dot {
+                    margin: 0 auto 23px;
+                }
+            }
+            li:nth-child(odd) {
+                margin: 0 -6px 0;
+                background: url(/images/365/white_box.png) no-repeat 50% 0;
+
+                span {
+                    margin: 13px 0 0 8px;
+                }
+                .dot {
+                    margin: 20px auto 0;
+                }
+                .dot_special {
+                    margin: 68px auto 0;
+                }
+            }
+            li.begin,li.end{
+                background:none;
+                width:25px;
+                cursor: default;
+            }
+            li.end{
+                margin:82px -16px 0 10px;
+                .start_stop{
+                    margin-left:-32px;
+                }
+            }
+            li.mid-date{
+                margin-right:258px;
+            }
+            li.noapply{
+                opacity: .3;
+            }
+        }
+    }
+    .blue {
+        background-image: -webkit-linear-gradient(108deg, #14ffff, #006ded);
+        background-image: linear-gradient(108deg, #14ffff, #006ded);
+    }
+}

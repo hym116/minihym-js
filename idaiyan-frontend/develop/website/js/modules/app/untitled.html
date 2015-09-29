@@ -1,0 +1,26 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>no escape-demo</title>
+<script src="../../dist/template-native.js"></script>
+</head>
+
+<body>
+    <h1>不转义HTML</h1>
+    <div id="content"></div>
+    <script id="test" type="text/html">
+    <p>不转义：<%=#value%></p>
+    <p>默认转义： <%=value%></p>
+    </script>
+
+    <script>
+    var data = {
+        value: '回复<a href=\"http:\/\/dev03.idaiyan.cn\/home-page\/lists?uid=241766\">黄越敏<\/a>&nbsp;23456好是大法官'
+    };
+    var html = template('test', data);
+    document.getElementById('content').innerHTML = html;
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.dv_dateCalendar{
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #fff;
+    .dc_header{
+        position: relative;
+        h4{
+            line-height: 46px;
+            text-align: center;
+        }
+        .dc_button{
+            position: absolute;
+            top: 10px;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            background: url(/images/icons/calendar-arrow.png) no-repeat 50% 50%;
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+        .dc_btn_prev{
+            left: 10px;
+            cursor: pointer;
+            background-position: 8px 50%;
+        }
+        .dc_btn_prev_year{
+            display: none;
+            left: 10px;
+        }
+        .dc_btn_next{
+            right: 10px;
+            cursor: pointer;
+            background-position: -35px 50%;
+        }
+        .dc_btn_next_year{
+            display: none;
+            right: 10px;
+        }
+        .dc_btn_backToday{
+            display: none;
+        }
+        .btn_close{
+            display: none;
+        }
+    }
+    .dv_calendarBox{
+        table{
+            .colHeader{
+                line-height: 22px;
+                color: #8d9395;
+            }
+            tr{
+                &.dc_last{
+                    td{
+                        border-bottom: none;
+                    }
+                }
+            }
+            td{
+                line-height: 34px;
+                height: 34px;
+                text-align: center;
+                border: 1px solid #dbe0e0;
+                cursor: pointer;
+            }
+            &:first-child{
+                td.dc_first{
+                    border-left: none;
+                }
+            }
+            &:last-child{
+                td.dc_last{
+                    border-right: none;
+                }
+            }
+            .dc_past_date,
+            .dc_other_month,
+            .dc_unclick{
+                color: #dce0e0;
+                background-color: #f9f9f9;
+                cursor: text;
+            }
+            .dc_selected_date{
+                color: #fff;
+                background-color: #ff8062;
+            }
+            .dc_today{
+            }
+        }
+    }
+    .dc_cleanlink{
+        clear:both;
+        border-top:1px solid #dbe0e0;
+        line-height: 30px;
+        padding-left:10px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

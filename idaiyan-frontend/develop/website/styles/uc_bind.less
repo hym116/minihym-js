@@ -1,0 +1,147 @@
+@color91:#919191;
+@color43:#434343;
+@colorc6:#c6c6c6;
+.bind_wrap {
+    margin-top: 50px;
+    border-radius: 3px;
+    border: 1px solid @colorc6;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    .header {
+        width: 100%;
+        padding-left: 70px;
+        height: 70px;
+        border-bottom: 1px solid @colorc6;
+        background: #f9f9f9;
+        .title {
+            color: @color91;
+            font-size: 24px;
+            line-height: 70px;
+        }
+    }
+    .bind_content {
+        width: 100%;
+        padding: 60px 75px 0;
+        background: #fff;
+        .tip {
+            font-size: 13px;
+            color: #c6c6c6;
+        }
+        .rank {
+            margin-bottom: 25px;
+            .item_title {
+                color: @color91;
+                font-size: 18px;
+                span {
+                    color: #87c80a;
+                }
+            }
+            .line {
+                padding: 10px 15px 0 10px;
+                float: left;
+                .green {
+                    width: 180px;
+                    height: 6px;
+                    background-color: #87c80a;
+                }
+                .gray {
+                    width: 52px;
+                    height: 6px;
+                    background-color: #ececec;
+                }
+            }
+            .tip{
+                line-height: 30px;
+            }
+        }
+        .info_wrap {
+            font-size: 14px;
+            line-height: 1.5;
+            .binditem {
+                background: url(/images/icons/many_icon.png) no-repeat;
+                height: 50px;
+                width:848px;
+                display: table;
+
+                padding-left: 95px;
+                margin-bottom: 25px;
+                .tablecell{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                &.email {
+                    background-position: 0 -505px;
+                    &.bind {
+                        background-position: 0 0;
+                    }
+                }
+                &.tel {
+                    background-position: 0 -401px;
+                    &.bind {
+                        background-position: 0 -50px;
+                    }
+                }
+                &.weibo {
+                    background-position: 0 -453px;
+                    &.bind {
+                        background-position: 0 -100px;
+                    }
+                }
+                &.msg {
+                    background-position: 0 -250px;
+                    &.bind {
+                        background-position: 0 -150px;
+                    }
+                }
+                &.qq {
+                    background-position: 0 -200px;
+                    &.bind {
+                        background-position: 0 -350px;
+                    }
+                }
+                &.none_msg {
+                    background-position: 0 -250px;
+                    &.bind {
+                        background-position: 0 -150px;
+                    }
+                }
+                &.pay {
+                    background-position: 0 -556px;
+                    &.bind {
+                        background-position: 0 -300px;
+                    }
+                }
+            }
+            .label {
+                width: 100%;
+                color: @color43;
+            }
+            .binded {
+                background: url(/images/icons/yes.png) no-repeat;
+                width: 20px;
+                height: 15px;
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .change {
+                a{
+                    text-align: right;
+                    display: block;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .section1 {
+            padding-bottom: 50px;
+            border-bottom: 1px solid #ececec;
+        }
+        .section2 {
+            padding: 45px 0 50px 0;
+            border-bottom: 1px solid #ececec;
+        }
+        .section3 {
+            padding: 45px 0 50px 0;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="ui-form-wrap" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="我们的团队成熟稳定，福利多多，众神具备，只差设计，有兴趣请速速来电！">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <title>全民创业云孵化</title>
+    <script>
+        var SITE_URL  = location.origin + location.pathname;
+        //var static_mpath = "http://static.idaiyan.cn/special/h5_20150320_yunmantou";
+        var static_mpath = "";
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        wx.config({
+            debug: false,
+            appId: 'wxf8b4f85f3a794e77',
+            timestamp: 1421726467,
+            nonceStr: 'V3xOrtKUZO5OXW13',
+            signature: '7e43af635eb90f3b355503aa17027712e2d14e89',
+            jsApiList: [
+              'checkJsApi',
+              'onMenuShareTimeline',
+              'onMenuShareAppMessage',
+              'onMenuShareQQ',
+              'onMenuShareWeibo'
+            ]
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/aio.min.css">
+    <script src="js/aio.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/yunmantou.less">
+    <script src="js/yunmantou.js"></script>
+    <script>
+        var _shareData = {
+                imgUrl: "",
+                title: "全民创业云孵化",
+                desc: "全民创业云孵化-上传产品信息"
+            };
+        navigator.userAgent.match( /micromessenger/gi ) && Share.WeChat.setData( _shareData );
+    </script>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="content">
+            <div class="content-body">
+
+                <form action="" class="center">
+                    <div class="picture-upload">
+                        <div class="picture-uploader center">
+                            <div class="picture-preview"></div>
+                            <input type="file">
+                        </div>
+                        <div class="picture-upload-text">上传产品照片</div>
+                    </div>
+                    <div class="formitem">
+                        <div class="leftlabel">企业名称</div>
+                        <div class="formobject"><input type="text" placeholder="请输入企业名称"></div>
+                    </div>
+                    <div class="formitem">
+                        <div class="leftlabel">项目名称</div>
+                        <div class="formobject"><input type="text" placeholder="请输入项目名称"></div>
+                    </div>
+                    <div class="formitem product-intro">
+                        <div class="leftlabel">项目介绍</div>
+                        <div class="formobject">
+                            <textarea name="" id="" placeholder="请输入项目介绍"></textarea>
+                        </div>
+                    </div>
+                    <div class="formitem">
+                        <div class="leftlabel">行业分类</div>
+                        <div class="formobject"><input type="text" placeholder="请输入行业分类"></div>
+                    </div>
+                    <div class="formitem">
+                        <div class="leftlabel">融资情况</div>
+                        <div class="formobject"><input type="text" placeholder="请输入融资情况"></div>
+                    </div>
+                    <div class="formitem check">
+                        <div class="leftlabel"><input type="checkbox" id="agree1"></div>
+                        <div class="formobject"><label for="agree1">是否参与众筹</label></div>
+                    </div>
+                    <!-- <div class="formitem check">
+                        <div class="leftlabel"><input type="checkbox" id="agree2"></div>
+                        <div class="formobject"><label for="agree2">如果最终进入孵化营，承诺将托管2%的股份到导师与云馒头平台上，导师与黑马学院将共同对你的项目进行指导与帮助。</label></div>
+                    </div> -->
+                    <div class="formitem submit">
+                        <button>下一步</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

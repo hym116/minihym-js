@@ -1,0 +1,7 @@
+.register .register-box ul.success-information{
+    margin: 54px auto 0; 
+}
+.register-box ul.success-information .success-tips{
+    padding-left: 32px;
+    background: none;
+}

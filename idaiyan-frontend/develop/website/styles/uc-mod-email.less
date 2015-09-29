@@ -1,0 +1,449 @@
+body{
+    -min-height: 1351px;
+    padding-bottom: 0;
+}
+#modify_form {
+    margin-bottom: 80px;
+    position: relative;
+}
+.emailmod-wrap,.phone-wrap,#edit_img,#mod_password{
+    display: none;
+    margin-bottom: 80px;
+}
+
+.modify_wrap{
+    margin-top: 50px;
+}
+.edit_wrap{
+    border: 1px solid #c6c6c6;
+    background-color: #fff;
+}
+.email_wrap{
+    width: 752px;
+    margin: 0 auto;
+    padding: 77px 0 0px 0;
+}
+
+.change_line{
+    height: 70px;
+    .line{
+        position: relative;
+        float: left;
+        width: 250px;
+        height: 6px;
+        text-align: center;
+        span{
+            display: inline-block;
+        }
+        .text{
+            font-size: 13px;
+            margin-top: 22px;
+        }
+    }
+    .num{
+        font-size: 18px;
+        position: absolute;
+        left: 108px;
+        width: 35px;
+        height: 35px;
+        margin-top: -17.5px;
+        padding-top: 5px;
+        color: #fff;
+        border-radius: 17.5px;
+    }
+    .green{
+        background-color: #87c80a;
+        .num{
+            background-color: #87c80a;
+        }
+        .text{
+            color: #87c80a;
+        }
+    }
+    .gray{
+        z-index: 1;
+        background-color: #ececec;
+        .num{
+            background-color: #ececec;
+        }
+        .text{
+            color: #c6c6c6;
+        }
+    }
+}
+
+
+.formitem_wrap{
+    &.step1,&.phone-step1{
+        margin-top: 30px;
+        margin-bottom: 42px;
+        .formobject {
+            border-radius: 5px;
+            text-align: center;
+            color: #c6c6c6;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            width: 400px;
+            margin:0 auto;
+            padding-left: 35px;
+            background: url(/images/uc/notice.png) no-repeat 6% center #f9f9f9; 
+            .green-text {
+                color: #87c80a;
+            }
+        }
+        .mobile-wrap {
+            margin-top: 43px;
+            width: 1000px;
+            .mobile-left {
+               font-size: 16px;
+               color: #434343;
+               width: 580px;
+               padding-left: 74px;
+               .formitem {
+                position: relative;
+                margin-bottom: 48px;
+                margin-top: 0;
+                .formlabel {
+                        line-height: 42px;
+                        float: left;
+                        width: 86px;
+                        min-height: 42px;
+                        margin-right: 20px;
+                        text-align: right;
+                        color: #434343;
+                    }
+                }
+                .has-send {
+                    position: absolute;
+                    bottom: -36px;
+                    height: 25px;
+                    line-height: 25px;
+                    color: #919191;
+                    font-size: 12px;
+                    padding-left: 35px;
+                    background: url(/images/icons/su.png) no-repeat 0 0 ; 
+                }
+                .margin-b10 {
+                    margin-bottom: 10px;
+                }
+            }
+            .mobile-right {
+                font-size: 12px;
+                color: #c6c6c6;
+                width: 290px;
+                padding-left: 54px;
+                border-left: solid 1px #e2e2e2;
+                .title {
+                    color: #919191;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    height: 44px;
+                    line-height: 44px;
+                    font-weight: bold;
+                }
+                p {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+    &.email-step1{
+        margin-top: 30px;
+        .formobject {
+            border-radius: 5px;
+            text-align: center;
+            color: #c6c6c6;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            width: 400px;
+            margin:0 auto;
+            padding-left: 35px;
+            background: url(/images/uc/notice.png) no-repeat 6% center #f9f9f9; 
+            .green-text {
+                color: #87c80a;
+            }
+        }
+        .email-wrap {
+            margin-top: 43px;
+            width: 1000px;
+            .email-left {
+               font-size: 16px;
+               color: #434343;
+               width: 580px;
+               padding-left: 74px;
+               .formitem {
+                position: relative;
+                margin-bottom: 48px;
+                margin-top: 0;
+                .formlabel {
+                        line-height: 42px;
+                        float: left;
+                        width: 86px;
+                        min-height: 42px;
+                        margin-right: 20px;
+                        text-align: right;
+                        color: #434343;
+                    }
+                }
+                .has-send {
+                    position: absolute;
+                    bottom: -36px;
+                    height: 25px;
+                    line-height: 25px;
+                    color: #919191;
+                    font-size: 12px;
+                    padding-left: 35px;
+                    background: url(/images/icons/su.png) no-repeat 0 0 ; 
+                }
+                .margin-b10 {
+                    margin-bottom: 10px;
+                }
+            }
+            .email-right {
+                font-size: 12px;
+                color: #c6c6c6;
+                width: 290px;
+                padding-left: 54px;
+                border-left: solid 1px #e2e2e2;
+                .title {
+                    color: #919191;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    height: 44px;
+                    line-height: 44px;
+                    font-weight: bold;
+                }
+                p {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+    &.step2,&.phone-step2{
+        margin-top: 30px;
+        margin-bottom:35px;
+        .formobject {
+            border-radius: 5px;
+            text-align: center;
+            color: #c6c6c6;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            width: 250px;
+            margin:0 auto;
+            padding-left: 35px;
+            background: url(/images/uc/notice.png) no-repeat 9% center #f9f9f9; 
+            .green-text {
+                color: #87c80a;
+            }
+        }
+        .mobile-wrap {
+            margin-top: 43px;
+            width: 1000px;
+            .mobile-left {
+               font-size: 16px;
+               color: #434343;
+               width: 580px;
+               padding-left: 74px;
+               .formitem {
+                position: relative;
+                margin-bottom: 48px;
+                margin-top: 0;
+                .formlabel {
+                        line-height: 42px;
+                        float: left;
+                        width: 86px;
+                        min-height: 42px;
+                        margin-right: 20px;
+                        text-align: right;
+                        color: #434343;
+                    }
+                }
+                
+                .has-send {
+                    position: absolute;
+                    bottom: -36px;
+                    height: 25px;
+                    line-height: 25px;
+                    color: #919191;
+                    font-size: 12px;
+                    padding-left: 35px;
+                    background: url(/images/icons/su.png) no-repeat 0 0 ; 
+                }
+                .margin-b10 {
+                    margin-bottom: 10px;
+                }
+            }
+            .mobile-right {
+                font-size: 12px;
+                color: #c6c6c6;
+                width: 290px;
+                padding-left: 54px;
+                border-left: solid 1px #e2e2e2;
+                .title {
+                    color: #919191;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    height: 44px;
+                    line-height: 44px;
+                    font-weight: bold;
+                }
+                p {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+    &.step3,&.phone-step3{
+        position: relative;
+        padding: 50px 0 0 195px;
+        margin-bottom: 119px;
+        margin-top: 2px;
+        &.stepshow{
+            display: block;
+        }
+        .formitem{
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .labletxt{
+            font-size: 18px;
+            line-height: 50px;
+            color: #87c80a;
+        }
+        .formobject{
+            font-size: 18px;
+            line-height: 50px;
+            color: #434343;
+        }
+        .emil_txt{
+            font-size: 13px;
+            line-height: 20px;
+            color: #919191;
+        }
+        .red_txt{
+            line-height: 30px;
+            color: #ff8062;
+        }
+        .bingo{
+            position: absolute;
+            top: 65px;
+            left: 125px;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background: url(/images/icons/bingo.png) no-repeat #87c80a;
+        }
+    }
+    
+    .formitem{
+        line-height: 40px;
+        margin-bottom: 15px;
+        input{
+            background-color: #fcfcfc;
+        }
+        .formlabel{
+            width: 100px;
+            margin-right: 15px;
+            text-align: right;
+        }
+        .check_img{
+            width: 135px;
+            height: 42px;
+            margin: 0 15px 0 25px;
+            border: 1px solid #e2e2e2;
+        }
+        .change{
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .send-code {
+            color: #c6c6c6;
+            width: 180px;
+            font-size: 14px;
+            border: 1px solid #e2e2e2;
+            border-radius: 3px;
+            outline-style: none;
+            vertical-align: middle;
+            box-shadow: none;
+            height: 44px;
+            line-height: 44px;
+        }
+        .code{
+            float: left;
+            width: 180px;
+            height: 42px;
+            background-color: #fcfcfc;
+            color:#c6c6c6;
+            font-size: 14px;
+        }
+        .email {
+            width: 340px;
+            color: #c6c6c6;
+        }
+    }
+}
+
+.opacity{
+    opacity: .5;
+}
+.formsubmit{
+    height: 72px;
+    padding-top: 15px;
+    border: 1px solid #c6c6c6;
+    border-top: none;
+    background: #f9f9f9;
+    position: relative;
+    width: 1000px;
+    .middle {
+        width: 360px;
+        position: absolute;
+        margin-left: 304px;
+        .savebtn{
+        font-size: 16px;
+        width: 245px;
+        height: 42px;
+        margin: 0;
+        }
+        .change {
+            height: 42px;
+            line-height: 42px;
+            margin-left: 10px;
+        }       
+    }   
+}
+.disablebtn{
+    line-height: 42px;
+    text-align: center;
+    color: #6a6a6a;
+    border-radius: 3px;
+    background-color: #e2e2e2;
+} 
+
+.Validform_checktip{
+    margin-left: 10px;
+}
+.Validform_wrong{
+    color: #ff8062;
+}
+.Validform_right{
+    display: none;
+}
+.none {
+    display: none;
+}
+.oformobject .Validform_wrong{
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 13px;
+}
+.oformobject .Validform_loading{
+    color: #ff8062;
+    display: block;
+    font-size: 13px;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/js/modules/pkgs/ajax-form/ajax-form.less">
+</head>
+<body style="background:#ccc;">
+    <div class="ajax_form">
+        <div class="reg_wrap">
+            <div class="register">
+                <div class="header">
+                    <div class="head">
+                        <span>注册i代言账号</span>
+                    </div>
+                    <div class="icon">
+                        <a class="msg icon-msg fl" href="#">
+                        </a>
+                        <a class="weibo icon-weibo fl" href="#">
+                        </a>
+                        <a class="qq icon-qq fl" href="#">
+                        </a>
+                    </div>
+                    <div class="head bottom">
+                        <span>或</span>
+                    </div>
+                </div>
+                <div class="form_wrap">
+                    <form class="form_item">
+                        <div class="formitem number">
+                            <input type="text" name="number" placeholder="输入邮箱/手机号"/>
+                        </div>
+
+                        <div class="formitem pass">
+                            <input type="password"  name="password" class="inputxt" datatype="*6-20" placeholder="输入密码(至少6个字符)"/>
+                        </div>
+                        <div class="formitem rewrite">
+                            <input type="password" name="repassword" placeholder="确认密码(至少6个字符)"/>
+                        </div>
+                        <div class="formitem notice">
+                            <input type="checkbox" name="notice" id="notice" />
+                            <label for="notice">告知我关于i代言的新闻</label>
+                        </div>
+                        <div class="formitem puretxt">
+                            <p>注册即代表我同意服务条款、隐私政策、退款政策及产品信息保障计划条款。</p>
+                        </div>
+                        <div class="formitem sign greenbtn">快速注册</div>
+                    </form>
+                </div>
+                <div class="footer">
+                    已有iDaiyan账号？
+                    <a href="">登陆</a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <!--登陆页面开始-->
+        <div class="log_wrap">
+            <div class="register">
+                <div class="header">
+                    <div class="head">
+                        <span>登陆i代言</span>
+                    </div>
+                    <div class="icon">
+                        <a class="msg icon-msg fl" href="#">
+                        </a>
+                        <a class="weibo icon-weibo fl" href="#">
+                        </a>
+                        <a class="qq icon-qq fl" href="#">
+                        </a>
+                    </div>
+
+                    <div class="head bottom">
+                        <span>或</span>
+                    </div>
+
+                </div>
+                <div class="form_wrap">
+                    <form class="form_item">
+                        <div class="formitem number">
+                            <input type="text" name="number" placeholder="输入邮箱/手机号"/>
+                        </div>
+                        <div class="formitem pass">
+                            <input type="password" name="password" placeholder="输入密码(至少6个字符)"/>
+                        </div>
+                        <div class="formitem check">
+                            <input type="text" name="check" placeholder="验证码"/>
+                            <div class="checkcode fl">
+                                <img src=""></div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="formitem notice">
+                            <input type="checkbox" name="autologin" id="autologin"/>
+                            <label for="autologin">自动登录</label>
+                            <a href="">忘记密码？</a>
+                        </div>
+                        <!-- <div class="formitem puretxt">
+                        <p>注册即代表我同意服务条款、隐私政策、退款政策及产品信息保障计划条款。</p>
+                    </div>
+                    -->
+                    <div class="formitem sign bluebtn">登陆</div>
+                </form>
+            </div>
+            <div class="footer">
+                还没有账号？
+                <a href="">注册</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!--重置密码页面1开始-->
+    <div class="recode_wrap1">
+        <div class="register">
+            <div class="header">
+                <div class="head">
+                    <span>重置密码</span>
+                </div>
+
+            </div>
+            <div class="form_wrap">
+                <form class="form_item">
+                    <div class="formitem puretxt">
+                        <p>输入与您账号关联的电子邮箱地址/手机号码，验证您的身份，以重置您的密码。</p>
+                    </div>
+                    <div class="formitem number">
+                        <input type="text" name="number" placeholder="输入邮箱/手机号"/>
+                    </div>
+                    <div class="formitem check">
+                        <input type="text" name="check" placeholder="验证码"/>
+                        <div class="checkcode fl">
+                            <img src=""></div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="formitem sign greenbtn">继续</div>
+                </form>
+            </div>
+            <div class="footer">
+                已有iDaiyan账号？
+                <a href="">登陆</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!--重置密码页面2开始-->
+    <div class="recode_wrap2">
+        <div class="register">
+            <div class="header">
+                <div class="head">
+                    <span>重置密码</span>
+                </div>
+
+            </div>
+            <div class="form_wrap">
+                <form class="form_item">
+                    <div class="formitem puretxt">
+                        <p>
+                            您的手机号：
+                            <span>12345678900</span>
+                            <a href="javascript:;" title="返回修改"><img src="/images/pen.png" alt="返回修改"></a>
+                        </p>
+                    </div>
+                    <div class="formitem check">
+                        <input type="text" name="check" placeholder="验证码"/>
+                        <div class="checkcode fl greenbtn">发送验证码</div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="formitem pass">
+                        <input type="password" name="password" placeholder="设置密码"/>
+                    </div>
+                    <div class="formitem rewrite">
+                        <input type="password" name="repassword" placeholder="确认密码"/>
+                    </div>
+                    <div class="formitem sign pinkbtn">确认重置</div>
+                </form>
+            </div>
+            <div class="footer">
+                已有iDaiyan账号？
+                <a href="">登陆</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="hello_wrap">
+        <div class="hello">
+            <p class="ps1">你好！</p>
+            <p class="ps2">你已经成功提交邮箱找回密码申请。</p>
+            <p class="ps3">
+                请前往您的邮箱
+                <a href="">hym1@126.com</a>
+                查收邮件，点击邮件内容的链接进行身份验证，验证成功后可以立即重置账号密码。
+            </p>
+        </div>
+        <div class="close graybtn">关闭窗口</div>
+    </div>
+    <br/>
+    <div class="success_wrap">
+        <div class="hello">
+            <p class="ps1">密码重置成功！</p>
+            <p class="ps3">
+                <span>3秒</span>
+                自动关闭窗口！如果浏览器没有反应，请点击关闭窗口到浏览页面。
+            </p>
+        </div>
+        <div class="close graybtn">关闭窗口</div>
+    </div>
+
+</div>
+<link rel="import" href="/blocks/_html_footer.html?__inline">

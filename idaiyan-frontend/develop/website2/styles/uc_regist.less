@@ -1,0 +1,438 @@
+body {
+    background: #F8F8F8;
+}
+.Validform_wrong {
+    color: #ff8062;
+}
+.Validform_right {
+    display: none;
+}
+
+.regist_wrap {
+    font-size: 15px;
+    width: 600px;
+    margin: auto;
+    .header {
+        height:160px;
+        text-align: center;
+        padding:30px 0;
+        margin: 0 auto;
+        .title {
+            font-size: 36px;
+            color: #434343;
+            line-height: 50px;
+            font-weight:lighter;
+        }
+        .subtitle {
+            font-size: 13px;
+            color: #919191;
+            width: 490px;
+            margin: 5px auto;
+        }
+        .sub_title {
+            color: #919191;
+            font-size:16px;
+            line-height: 44px;
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        .underline {
+            color: #6a6a6a;
+        }
+    }
+    .pass_head {
+        .sub_title {
+            font-size:13px;
+            width: 375px;
+            line-height: 20px;
+            margin: 10px auto;
+        }
+    }
+    .regist_form {
+        width: 600px;
+        margin-left: 10px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        .regist_left {
+            position: relative;
+            padding-top: 15px;
+            width: 285px;
+            height: 335px;
+            text-align: left;
+            .formitem {
+                display: block;
+                width: 240px;
+                height: 42px;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                line-height: 40px;
+                cursor: pointer;
+                padding-left: 70px;
+                background: #fff;
+            }
+            .mcromsg {
+                background: url(/images/icons/tplogin.png) 10px 0 no-repeat #FFF;
+                border: 1px solid #87c80a;
+                color: #87c80a;
+                &:hover {
+                    color: #fff;
+                    background-color: #69c41f;
+                    background-position: 10px -120px;
+                }
+            }
+            .weibo {
+                background: url(/images/icons/tplogin.png) 10px -40px no-repeat #FFF;
+                border: 1px solid #fc605c;
+                color: #fc605c;
+                &:hover {
+                    color: #fff;
+                    background-color: #fc605c;
+                    background-position: 10px -160px;
+                }
+            }
+            .qq {
+                background: url(/images/icons/tplogin.png) 10px -80px no-repeat #FFF;
+                border: 1px solid #12b6eb;
+                color: #12b6eb;
+                &:hover {
+                    color: #fff;
+                    background-color: #12b6eb;
+                    background-position: 10px -200px;
+                }
+            }
+            .text {
+                width: 240px;
+                color: #c6c6c6;
+                font-size: 12px;
+                margin-top: -10px;
+            }
+        }
+        .regist_right {
+            position: relative;
+            width: 305px;
+            padding-left: 44px;
+            color: #c6c6c6;
+            font-size: 13px;
+            padding-top: 15px;
+            border-left: 1px solid #e2e2e2;
+            .formitem {
+                margin-bottom: 10px;
+
+                input {
+                    width: 260px;
+                    height: 42px;
+                    color: #6a6a6a;
+                    padding-left: 10px;
+                    border: 1px solid #c6c6c6;
+                    &:focus {
+                        background-color: #f2fafd;
+                        border-color: #00a1d7;
+                    }
+                }
+            }
+            .number input {
+                background: url(/images/icon.png) no-repeat 230px 6px #fff;
+            }
+            .pass input {
+                background: url(/images/icon.png) no-repeat 230px -48px #fff;
+            }
+            .rewrite input {
+                background: url(/images/icon.png) no-repeat 230px -48px #fff;
+            }
+            .notice {
+                position: relative;
+                color: #3c4452;
+                a {
+                    position: absolute;
+                    top: -2px;
+                    right: -4px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                label {
+                    position: absolute;
+                    top: 0;
+                    left: 25px;
+                }
+                input {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    color: #123ade;
+                }
+            }
+            .puretxt{
+                font-size: 12px;
+            }
+            .sign {
+                width: 260px;
+                height: 42px;
+                text-align: center;
+                color: #fff;
+                line-height: 42px;
+                font-size: 16px;
+            }
+            .check {
+                input {
+                    width: 130px;
+                    float: left;
+                }
+                .checkcode {
+                    display: inline-block;
+                    width: 120px;
+                    height: 42px;
+                    margin-left: 10px;
+                }
+            }
+            .or {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -15px;
+                z-index: 2;
+                height: 40px;
+                width: 29px;
+                text-align: center;
+                margin: auto;
+                line-height: 40px;
+                color: #c6c6c6;
+                background: #f8f8f8;
+            }
+        }
+        .password {
+            padding: 0;
+            margin: 0 auto;
+            margin-bottom: 250px;
+            border: 0;
+            width: 260px;
+            left: -15px;
+        }
+        .rewrite input {
+            background: url(/images/icon.png) no-repeat 230px -48px;
+        }
+        .notice {
+            position: relative;
+            color: #3c4452;
+            a {
+                position: absolute;
+                top: -2px;
+                right: -4px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            label {
+                position: absolute;
+                top: -2px;
+                left: 25px;
+            }
+            input {
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+                color: #123ade;
+            }
+        }
+        .sign {
+            width: 260px;
+            height: 42px;
+            text-align: center;
+            color: #fff;
+            line-height: 42px;
+            font-size: 16px;
+        }
+        .check {
+            input {
+                width: 130px;
+                float: left;
+            }
+            .checkcode {
+                display: inline-block;
+                width: 120px;
+                height: 40px;
+                border:1px solid #c6c6c6;
+                border-radius:3px;
+                margin-left: 10px;
+                overflow:hidden;
+                img{}
+            }
+        }
+        .login {
+            height: 290px;
+            margin-bottom: 160px;
+        }
+        .password {
+            margin: 0 auto;
+            margin-bottom: 250px;
+        }
+    }
+    .complete1 {
+        .regist_left {
+            position: relative;
+            .pre_text {
+                text-align: center;
+                color: #919191;
+                font-size: 16px;
+                width: 240px;
+            }
+            .text {
+                margin-top: 5px;
+                width: 240px;
+            }
+            .portrait {
+                width: 240px;
+                text-align: center;
+                .avatar {
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 31px;
+                }
+            }
+            .three_icon {
+                width: 240px;
+                height: 30px;
+                border-bottom: 1px solid #e2e2e2;
+                text-align: center;
+                a {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    border-radius: 15px;
+                    border: 1px solid #cbcbcb;
+                    margin: 0 5px -25px;
+                    &.qq_icon {
+                        background: url(/images/icons/miniqq.png) no-repeat 0 -1px  #fff;
+                        &:hover {
+                            background: url(/images/icons/miniqq.png) no-repeat -90px -2px  #fff;
+                            border-color: #12b6eb;
+                        }
+                    }
+                    &.msg_icon {
+                        background: url(/images/icons/miniqq.png) no-repeat -30px 0  #fff;
+                        &:hover {
+                            background: url(/images/icons/miniqq.png) no-repeat -119px 0 #fff;
+                            border-color: #6bc423;
+                        }
+                    }
+                    &.weibo_icon {
+                        background: url(/images/icons/miniqq.png) no-repeat -60px -1px  #fff;
+                        &:hover {
+                            background: url(/images/icons/miniqq.png) no-repeat -150px -1px  #fff;
+                            border-color: #FC605C;
+                        }
+                    }
+                }
+            }
+        }
+        .regist_right {
+            .sign {
+                margin-top: 25px;
+            }
+            .puretxt {
+                color: #919191;
+                font-size: 12px;
+                span {
+                    color: #7d879b;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .complete2 {
+        .regist_left {
+            .sign {
+                margin-top: 5px;
+            }
+            .com2 {
+                color: #c6c6c6;
+            }
+            .text {
+                border-bottom: none;
+                padding-bottom: 18px;
+            }
+        }
+    }
+    #reset_form {
+        .puretxt {
+            color: #919191;
+            font-size: 15px;
+            span {
+                letter-spacing: 1.1px;
+                color: #434343;
+                font-size: 19px;
+            }
+            a {
+                padding-top: 4px;
+            }
+        }
+        .Validform_checktip{
+            display: block;
+            clear:left;
+        }
+        .checkcode {
+            border:none;
+            height: 40px;
+        }
+    }
+}
+.forget {
+    width: 600px;
+    height: 260px;
+    margin: 60px auto;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    color: #919191;
+    background: #fff;
+    .btn {
+        line-height: 44px;
+        margin-top: 30px;
+        padding-left: 130px;
+        font-size: 16px;
+        a {
+            width: 110px;
+            height: 44px;
+            line-height: 44px;
+        }
+    }
+.forget_wrap{
+    text-align: left;
+    padding:30px 50px 0 50px;
+    
+    .hello{
+        font-size: 18px;
+    }
+    .txt2{
+        line-height: 40px;
+    }
+    
+    .back{
+        margin-right:25px;
+    }
+    
+}
+.success_wrap{
+    text-align: center;
+    padding-top: 40px;
+
+    .btn{
+        padding-left: 220px;
+        .login{
+            width: 160px;
+            height:44px;
+        }
+    }
+    .hello{
+        font-size: 30px;
+        line-height: 70px;
+
+    }
+    .txt1{
+        span{
+            color:#ff7300;
+            }
+        }
+    }
+}

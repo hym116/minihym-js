@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="ui-viewport-640" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="我们的团队成熟稳定，福利多多，众神具备，只差设计，有兴趣请速速来电！">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <title>全民创业云孵化</title>
+    <script>
+        var SITE_URL  = location.origin + location.pathname;
+        //var static_mpath = "http://static.idaiyan.cn/special/h5_20150320_yunmantou";
+        var static_mpath = "";
+    </script>
+    <script>
+        // class
+        ! function( navigator ) {
+            var userAgent = navigator.userAgent;
+                documentElement = document.documentElement;
+            if ( userAgent.match( /micromessenger\/5/gi ) ) {
+                documentElement.className += " mobile wx_mobile wx_mobile_5";
+            } else if ( userAgent.match( /micromessenger/gi ) ) {
+                documentElement.className += " mobile wx_mobile";
+            } else if ( userAgent.match( /ucbrowser/gi ) ) {
+                documentElement.className += " mobile uc_mobile";
+            } else if ( /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test( userAgent.toLowerCase() ) ) {
+                documentElement.className += " mobile";
+            } else if ( userAgent.toLowerCase().match( /msie/gi ) && ( parseFloat( userAgent.toLowerCase().match( /msie ([0-9]{1,}[\.0-9]{0,})/i )[1] || 999 ) < 9 ) ) {
+                documentElement.className += " pc pc-ie pc-ie8";
+            } else if ( userAgent.toLowerCase().match( /msie/gi ) || navigator.msPointerEnabled || navigator.pointerEnabled ) {
+                 documentElement.className += " pc pc-ie";
+            } else {
+                documentElement.className += " pc";
+            }
+        }( navigator );
+        // meta
+        ! function( userAgent ) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 640;
+            if ( /Android (\d+\.\d+)/.test( userAgent ) ) {
+                var version = parseFloat( RegExp.$1 );
+                document.write( version > 2.3
+                    ? '<meta name="viewport" content="width=640, minimum-scale = ' + scale + ", maximum-scale = " + scale + ', target-densitydpi=device-dpi">'
+                    : '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">' );
+            } else {
+                document.write( '<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">' );
+            }
+        }( navigator.userAgent );
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        wx.config({
+            debug: false,
+            appId: 'wxf8b4f85f3a794e77',
+            timestamp: 1421726467,
+            nonceStr: 'V3xOrtKUZO5OXW13',
+            signature: '7e43af635eb90f3b355503aa17027712e2d14e89',
+            jsApiList: [
+              'checkJsApi',
+              'onMenuShareTimeline',
+              'onMenuShareAppMessage',
+              'onMenuShareQQ',
+              'onMenuShareWeibo'
+            ]
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/aio.min.css">
+    <script src="js/aio.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/yunmantou.less">
+    <script src="js/yunmantou.js"></script>
+    <script>
+        var _shareData = {
+                imgUrl: static_mpath + "/img/sharepic.jpg",
+                title: "全民创业云孵化",
+                desc: "全民创业云孵化"
+            };
+        navigator.userAgent.match( /micromessenger/gi ) && Share.WeChat.setData( _shareData );
+    </script>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="content">
+            <div class="content-body">
+                <div class="ui-loading js-loading"> <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+                </div>
+                <div class="power-scroll-container js-power-scroll-container">
+                    <div class="hide js-arrow"></div>
+                    <div class="swiper-container js-power-scroll" data-options='{"loop":true,"hashNav":true}'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-cover" data-hash="cover">
+                                <div class="slide-wrapper">
+                                    <div class="ui-small-space"></div>
+                                    <div class="ui-logo">
+                                        <div class="ui-logo-left"></div>
+                                        <div class="ui-logo-right"></div>
+                                    </div>
+                                    <div class="ui-main-image center">
+                                        <!-- if非分享时 -->
+                                        <!-- <div class="ui-main-text bounceInUp center"></div> -->
+                                        <!-- if导师分享时 -->
+                                        <div class="ui-main-text-share center">
+                                            <div class="ui-avatar bounceInUp">
+                                                <img src="1/img/company.jpg" alt="">
+                                            </div>
+                                            <div class="ui-name bounceInUp">联想集团</div>
+                                            <div class="ui-text bounceIn delay0040"></div>
+                                        </div>
+                                        <!-- endif -->
+                                    </div>
+                                    <div class="ui-middle-space"></div>
+                                    <div class="ui-date-image bounceInDown"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-intro" data-hash="intro">
+                                <div class="slide-wrapper">
+                                    <div class="ui-middle-space"></div>
+                                    <div class="ui-text fadeInUp"></div>
+                                    <div class="ui-middle-space"></div>
+                                    <div class="ui-step fadeInDown "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-mypage" data-hash="mypage">
+                                <div class="slide-wrapper">
+                                    <div class="ui-mini-space"></div>
+                                    <div class="ui-avatar text-center anim-bouncein">
+                                        <img src="1/img/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="ui-mini-space"></div>
+                                    <div class="ui-title fadeInDown delay0020">
+                                        王力宏 目前排名：3298
+                                    </div>
+                                    <div class="ui-mini-space"></div>
+                                    <div class="ui-desc fadeInDown delay0060">
+                                        已成功报名4月11日于北京举办的万马云孵化
+                                    </div>
+                                    <div class="ui-line fadeInDown delay0060"></div>
+                                    <div class="ui-choose-teacher fadeInDown delay0060">
+                                        他期望的导师是：邓超
+                                    </div>
+                                    <div class="ui-min-space"></div>
+                                    <div class="ui-info fadeInDown delay0100">
+                                        <span class="tt">【公司名称】</span><br>
+                                        北京创业未来传媒技术有限公司<br>
+                                        <span class="tt">【项目名称】</span><br>
+                                        云馒头APP<br>
+                                        <span class="tt">【拜师宣言】</span><br>
+                                        给我一个支杆，我能翘起整个地球！<br>
+                                        <span class="tt">【项目介绍】</span><br>
+                                        给我一个支杆，我能翘起整个地球！给我一个支杆，我能翘起整个地球！给我一个支杆，我能翘起整个地球！给我一个支杆，我能翘起整个地球！
+                                    </div>
+                                    <!-- if别人分享的 -->
+                                    <!-- <div class="ui-min-space"></div>
+                                    <div class="ui-like-btn center anim-bouncein"></div>
+                                    <div class="ui-like-text anim-bouncein">支持一下</div>
+                                    <div class="ui-min-space"></div>
+                                    <div class="ui-bottons othershare cf anim-bouncein">
+                                        <div class="js-share ui-botton fl">分享</div>
+                                        <div class="js-apply ui-botton fr">我也要报名</div>
+                                    </div> -->
+                                    <!-- if自己分享的 -->
+                                    <div class="ui-big-space"></div>
+                                    <div class="ui-bottons myshare cf delay0140 zoomIn">
+                                        <div class="js-share ui-botton center">立刻分享</div>
+                                    </div>
+                                    <!-- endif -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-top5" data-hash="top5">
+                                <div class="slide-wrapper">
+                                    <div class="ui-mini-space"></div>
+                                    <div class="ui-text fadeInDown">王力宏 偶像派歌手</div>
+                                    <div class="ui-min-space"></div>
+                                    <div class="ui-order fadeInDown">目前排名：48</div>
+                                    <div class="ui-min-space"></div>
+                                    <div class="ui-top5-list-wrap ">
+                                        <ul class="ui-top5-list center">
+                                            <li class="cf fadeInRight">
+                                                <div class="num">56</div>
+                                                <img class="avatar" src="1/img/avatar.jpg" alt="">
+                                                <div class="info">
+                                                    <div class="name">张三丰</div>
+                                                    <div class="likenum">3423</div>
+                                                    <div class="prodname">孵化项目：全民健身</div>
+                                                </div>
+                                            </li>
+                                            <li class="ui-min-space"></li>
+                                            <li class="cf fadeInLeft">
+                                                <div class="num">56</div>
+                                                <img class="avatar" src="1/img/avatar.jpg" alt="">
+                                                <div class="info">
+                                                    <div class="name">张三丰</div>
+                                                    <div class="likenum">3423</div>
+                                                    <div class="prodname">孵化项目：全民健身</div>
+                                                </div>
+                                            </li>
+                                            <li class="ui-min-space"></li>
+                                            <li class="cf fadeInRight">
+                                                <div class="num">56</div>
+                                                <img class="avatar" src="1/img/avatar.jpg" alt="">
+                                                <div class="info">
+                                                    <div class="name">张三丰</div>
+                                                    <div class="likenum">3423</div>
+                                                    <div class="prodname">孵化项目：全民健身</div>
+                                                </div>
+                                            </li>
+                                            <li class="ui-min-space"></li>
+                                            <li class="cf fadeInLeft">
+                                                <div class="num">56</div>
+                                                <img class="avatar" src="1/img/avatar.jpg" alt="">
+                                                <div class="info">
+                                                    <div class="name">张三丰</div>
+                                                    <div class="likenum">3423</div>
+                                                    <div class="prodname">孵化项目：全民健身</div>
+                                                </div>
+                                            </li>
+                                            <li class="ui-min-space"></li>
+                                            <li class="cf fadeInRight">
+                                                <div class="num">56</div>
+                                                <img class="avatar" src="1/img/avatar.jpg" alt="">
+                                                <div class="info">
+                                                    <div class="name">张三丰</div>
+                                                    <div class="likenum">3423</div>
+                                                    <div class="prodname">孵化项目：全民健身</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ui-middle-space"></div>
+                                    <div class="ui-bottons othershare cf pulse-opacity delay0060">
+                                        <div class="js-share ui-botton fl" id="js-share">分享</div>
+                                        <div class="js-apply ui-botton fr">我也要报名</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-choose" data-hash="choose">
+                                <div class="slide-wrapper">
+                                    <div class="ui-middle-space"></div>
+                                    <div class="ui-title fadeInLeft"></div>
+                                    <div class="ui-middle-space"></div>
+                                    <div class="ui-choose-teacher bounceIn delay0060">
+                                        <ul class="ui-teacher-list">
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="1/img/company.jpg" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-detail" data-hash="detail">
+                                <div class="slide-wrapper">
+                                    <div class="ui-middle-space"></div>
+                                    <div class="ui-detail-card center anim-bouncein">
+                                        <div class="ui-avatar-wrap">
+                                            <div class="ui-big-space"></div>
+                                            <div class="ui-name center">联想集团</div>
+                                            <div class="ui-big-space"></div>
+                                            <div class="ui-avatar text-center">
+                                                <img src="1/img/company.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="ui-slider">
+                                            <ul class="ui-slider-main">
+                                                <li class="on">
+                                                    <div class="ui-title"></div>
+                                                    <div class="ui-small-space"></div>
+                                                    <div class="ui-line center"></div>
+                                                    <div class="ui-mini-space"></div>
+                                                    <div class="ui-text center">
+                                                        投资出身一旦结成师徒关系保证领投100万<br>
+                                                        帮助团队配置人才<br>
+                                                        熟悉tnt行业，善于整体掌控
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="ui-title"></div>
+                                                    <div class="ui-small-space"></div>
+                                                    <div class="ui-line center"></div>
+                                                    <div class="ui-mini-space"></div>
+                                                    <div class="ui-text center">
+                                                        <span class="tt">行业选择</span><br>
+                                                        限定在移动互联网行业，O2O优先。<br>
+                                                        <span class="tt">项目阶段</span><br>
+                                                        初创期最优。<br>
+                                                        <span class="tt">融资情况</span><br>
+                                                        种子期，不要超过A轮。<br>
+                                                        徒儿技术出身，90后优先。
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="ui-title"></div>
+                                                    <div class="ui-small-space"></div>
+                                                    <div class="ui-line center"></div>
+                                                    <div class="ui-mini-space"></div>
+                                                    <div class="ui-text center">
+                                                        我会在我的徒儿之中设定奖学金100万元<br>
+                                                        我承诺在万马云孵化当天与徒儿共同私密聚会一次。（不论是否结成师徒）<br>
+                                                        我将带着我的徒儿出国游学一次<br>
+                                                        我将为我的徒儿提供至少3个月的贴身指导<br>
+                                                        我将和我的朋友共同为你诊断项目一次
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="ui-slider-nav center">
+                                                <li class="on"></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ui-bottom-button">拜他为师</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>(new MobileSlider()).init();</script>
+    <script>
+    $(function(){
+        $("#js-share").on("click",function(){
+            console.log(33);
+            alert(1);
+        });
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" href="styles/login.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login-top">
+            <img class="logo" src="images/logo-chuangyejia.png">
+            <p class="title">一个账号，体验所有创业家旗下产品</p>
+            <p class="products">i黑马，I代言，黑马会，黑马营，黑马大赛</p>
+        </div>
+        <form>
+        <div class="input_wrap"> 
+            <span class="input_icon icon_key"></span>
+            <input type="text" placeholder="邮箱／手机／号码" class="account login-icons">
+        </div>
+          
+            <div class="right-wrong">
+                <div class="bubble-left"></div>
+                <div class="bubble-center">输入密码错误</div>
+                <div class="bubble-right"></div>
+            </div>
+             <div class="input_wrap psd_wrap"> 
+                <span class="input_icon icon_lock"></span>
+                <input type="password" placeholder="密码" class="password login-icons" id="password">
+            </div>
+            <div class="right-wrong wrong-password">
+                <div class="bubble-left"></div>
+                <div class="bubble-center">输入密码错误</div>
+                <div class="bubble-right"></div>
+            </div>
+
+            <div id ="code">
+                <input type="text" placeholder="请输入验证码" class="identify-code">
+                <img id="register_code" src="images/identify-code.jpg" width="124" height="46" />
+                <div class="right-wrong wrong-verification-code">
+                    <div class="bubble-left"></div>
+                    <div class="bubble-center">输入密码错误</div>
+                    <div class="bubble-right"></div>
+                </div>
+            </div>
+
+            <a class="forget-password" href="#">忘记密码?</a>
+            <button>立即登陆</button>
+            <a class="register" href="#">注册账号</a>
+          <!--   <div class="other">
+                其他登陆方式&nbsp;
+                <div class="triangle triangle-right"></div>
+            </div> -->
+            <div class="other-way">
+                <div class="box-title">
+                    其他登录方式&nbsp;
+                    <div class="triangle triangle-bottom"></div>
+                </div>
+                <div class="third-agent">
+                    <a class="tencent" href="#"></a>
+                    <a class="wexin" href="#"></a>
+                    <a class="weibo" href="#"></a>
+                </div>
+            </div>
+        </form>
+        <p class="login-bottom">
+            常见问题<br>
+            Copyright © 2014-2015 i代言(idaiyan.cn) 版权所有
+        </p>
+    </div>
+    <script type="text/javascript" src="js/modules/libs/jquery/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/modules/app/login.js"></script>
+<!-- 前端静态页js，请勿嵌套 -->
+<script type="text/javascript" src="js/floatmenu.js"></script>
+<!-- 前端静态页js，请勿嵌套 end--> 
+</body>
+</html>

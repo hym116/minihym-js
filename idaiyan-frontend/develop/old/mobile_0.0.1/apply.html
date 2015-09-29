@@ -1,0 +1,109 @@
+<link rel="import" href="/blocks/_header.html?__inline">
+<link rel="stylesheet" href="/styles/topnav.less">
+<link rel="stylesheet" href="/styles/productitem.less">
+
+
+<header id="head">
+
+</header>
+
+<div id="body">
+    <div class="header applyheader">
+        <h1>我要上代言</h1>
+        <p>中小企业的线上发布平台</p>
+    </div>
+    <div class="applyfrom-wrap">
+        <form action="" id="applyfrom">
+            <div class="form-item prod-logo">
+                <div class="uploadbtn-wrap">
+                    <div class="uploadbtn">
+                        <input type="file" name="logo" id="prod-logo">
+                        <img class="preview" src="" alt="">
+                    </div>
+                </div>
+                <label for="prod-logo">点击产品logo</label>
+            </div>
+            <div class="form-item prod-name">
+                <label for="prod-name">产品名称</label>
+                <input type="text" name="name" id="prod-name">
+            </div>
+            <div class="form-item prod-desc">
+                <label for="prod-desc">产品介绍</label>
+                <textarea name="desc" id="prod-desc" cols="18" rows="5"></textarea>
+                <div class="text-num">0/30</div>
+            </div>
+            <div class="form-item prod-company">
+                <label for="prod-company">公司名称</label>
+                <input type="text" name="company" id="prod-company">
+            </div>
+            <div class="form-item prod-contect">
+                <label for="prod-contect">联系人姓名</label>
+                <input type="text" name="contect" id="prod-contect">
+            </div>
+            <div class="form-item prod-phone">
+                <label for="prod-phone">手机号</label>
+                <input type="text" name="phone" id="prod-phone">
+            </div>
+            <div class="form-item prod-trophy">
+                <label for="prod-trophy">所发福利</label>
+                <input type="text" name="trophy" id="prod-trophy">
+            </div>
+            <div class="form-item prod-num">
+                <label for="prod-num">福利数量</label>
+                <div class="prod-num-input-wrap">
+                    <input type="text" name="num" id="prod-num" value="1">
+                    <div class="minusbtn"></div>
+                    <div class="plusbtn"></div>
+                </div>
+            </div>
+            <div class="tips">
+                提示：在72小时内集满200个抢购者才能进入满盐！<br/>你总得让身边的人支持你吧
+            </div>
+            <div class="paybtn">提交</div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="/js/require.js"></script>
+<!--SCRIPT_PLACEHOLDER-->
+<!--RESOURCEMAP_PLACEHOLDER-->
+    <script>
+        require.config({
+            paths: {
+                "jquery": "js/modules/libs/jquery/jquery"
+            }
+        });
+        require(['jquery','pkgs/uploadpreview'], function ($,up) {
+
+            $("#prod-logo").uploadPreview({
+                maxSize:3000,
+                imgType: ["gif", "jpeg", "jpg", "bmp", "png"],
+                callback: function(img) {
+                    $(".preview").attr("src",img).show();
+                }
+            });
+            (function(){
+                var TimeOut;
+                $(".plusbtn").on("touchstart",function(e){
+                    e.preventDefault();
+                    add();
+                    function add(){
+                        TimeOut = setTimeout(function(){
+                            $("#prod-num").val($("#prod-num").val()-0+1);
+                            add();
+                        },200);
+                    }
+                });
+                $(".plusbtn").on("touchmove",function(){
+                    clearTimeout(TimeOut);
+                    var val = $(".prod-num").val();
+                    $(".prod-num").val(val-0+1);
+                });
+                $(".plusbtn").on("touchend",function(){
+                    clearTimeout(TimeOut);
+                    var val = $(".prod-num").val();
+                    $(".prod-num").val(val-0+1);
+                });
+            })();
+        });
+    </script>
+<link rel="import" href="/blocks/_footer.html?__inline">

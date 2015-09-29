@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="ui-viewport-640" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="黑马运动会！">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <title>黑马运动会又来啦！！！</title>
+    <script>
+        var SITE_URL  = location.origin + location.pathname;
+        //var static_mpath = "http://static.idaiyan.cn/special/h5_20150320_yunmantou";
+        var static_mpath = "";
+    </script>
+    <script>
+        // class
+        ! function( navigator ) {
+            var userAgent = navigator.userAgent;
+                documentElement = document.documentElement;
+            if ( userAgent.match( /micromessenger\/5/gi ) ) {
+                documentElement.className += " mobile wx_mobile wx_mobile_5";
+            } else if ( userAgent.match( /micromessenger/gi ) ) {
+                documentElement.className += " mobile wx_mobile";
+            } else if ( userAgent.match( /ucbrowser/gi ) ) {
+                documentElement.className += " mobile uc_mobile";
+            } else if ( /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test( userAgent.toLowerCase() ) ) {
+                documentElement.className += " mobile";
+            } else if ( userAgent.toLowerCase().match( /msie/gi ) && ( parseFloat( userAgent.toLowerCase().match( /msie ([0-9]{1,}[\.0-9]{0,})/i )[1] || 999 ) < 9 ) ) {
+                documentElement.className += " pc pc-ie pc-ie8";
+            } else if ( userAgent.toLowerCase().match( /msie/gi ) || navigator.msPointerEnabled || navigator.pointerEnabled ) {
+                 documentElement.className += " pc pc-ie";
+            } else {
+                documentElement.className += " pc";
+            }
+        }( navigator );
+        // meta
+        ! function( userAgent ) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 640;
+            if ( /Android (\d+\.\d+)/.test( userAgent ) ) {
+                var version = parseFloat( RegExp.$1 );
+                document.write( version > 2.3
+                    ? '<meta name="viewport" content="width=640, minimum-scale = ' + scale + ", maximum-scale = " + scale + ', target-densitydpi=device-dpi">'
+                    : '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">' );
+            } else {
+                document.write( '<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">' );
+            }
+        }( navigator.userAgent );
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        wx.config({
+            debug: false,
+            appId: 'wxf8b4f85f3a794e77',
+            timestamp: 1421726467,
+            nonceStr: 'V3xOrtKUZO5OXW13',
+            signature: '7e43af635eb90f3b355503aa17027712e2d14e89',
+            jsApiList: [
+              'checkJsApi',
+              'onMenuShareTimeline',
+              'onMenuShareAppMessage',
+              'onMenuShareQQ',
+              'onMenuShareWeibo'
+            ]
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/aio.min.css">
+    <script src="js/aio.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/yunmantou.less">
+    <script src="js/yunmantou.js"></script>
+    <script>
+        var _shareData = {
+                imgUrl: static_mpath + "/img/sharepic.jpg",
+                title: "全民创业云孵化",
+                desc: "全民创业云孵化"
+            };
+        navigator.userAgent.match( /micromessenger/gi ) && Share.WeChat.setData( _shareData );
+    </script>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="content">
+            <div class="content-body">
+                <div class="ui-loading js-loading"> <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+                </div>
+                <div class="power-scroll-container js-power-scroll-container">
+                    <div class="hide js-arrow"></div>
+                    <div class="swiper-container js-power-scroll" data-options='{"loop":true,"hashNav":true}'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-cover anim-bouncein" data-hash="cover">
+                            </div>
+                            <div class="swiper-slide slide-intro anim-bouncein" data-hash="intro">
+                                
+                            </div>
+                            <div class="swiper-slide slide-mypage anim-bouncein" data-hash="mypage">
+                                
+                            </div>
+                            <div class="swiper-slide slide-top5 anim-bouncein" data-hash="top5">
+                            <div class="slide-wrapper">
+                                    <div class="space"></div>
+                                    <form id="verify">
+                                    <button class="verify-btn"></button>
+                                     </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>(new MobileSlider()).init();</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.register-box{
+    height: 510px;
+}
+.register ul{
+    margin: 0 auto;
+    width: 344px;
+    color: #221815;
+}
+.register .steps{
+    margin: 44px auto 0;
+    width: 360px;
+    height: 40px;
+}
+.register .steps ul.step1{
+    position: relative;
+    margin-bottom: 9px;
+    overflow: hidden;
+    height: 19px;
+    font-size: 14px;
+    color: #3c3837;
+}
+.register .steps ul.step1 li{
+    float: left;
+    position: absolute;
+}
+.left-txt{
+    left: 0;
+}
+.center-txt{
+    left: 141px;
+}
+.right-txt{
+    left: 310px;
+}
+.red-txt{
+    color: #e3063e;
+}
+div.steps ul.bar{
+    position: relative;
+    width: 303px;
+    height: 6px;
+    background-color: #e5e5e5;
+    border-radius: 3px;
+}
+.left,
+.center,
+.right{
+    position: absolute;
+}
+.left{
+    top: -3px;
+    left: -4px;
+}
+.center{
+    top: -3px;
+}
+.right{
+    top: -3px;
+    left: 297px;
+}
+.dot{
+    width: 12px;
+    height: 12px;
+    background: url(../images/icons/list-style.png) no-repeat;
+}
+.dot-red{
+    background-position: 0 -79px;
+    
+}
+.dot-gray{
+    background-position: 0 0;
+}
+.tip-for-email{
+    margin: 36px 0 22px;
+}
+ul li.phone input.phone-number{
+    float: left;
+    width: 343px;
+    font-size: 16px;
+    box-shadow: 1px 2px 7px -3px #e0e0e0 inset;
+
+}
+li.identify img{
+    margin-left: 25px;
+}

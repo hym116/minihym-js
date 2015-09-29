@@ -1,0 +1,57 @@
+ul.phone-verification{
+    width: 342px;
+    height: 194px;
+    color: #221815;
+}
+li.verifiy-code-tip{
+    font:normal 12px "Microsoft Yahei";
+}
+li.identify{
+    margin-top: 30px;
+}
+.get-code{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    width: 137px;
+    height: 42px;
+    color: #e3063e;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    border: 1px solid #e3063e;
+    border-radius: 3px;
+}
+.get-code:hover{
+    color:#ff4861;
+}
+.phone-verification .identify .get-code-gray{
+    color: #fff;
+    border: 1px solid #e0e0e0;
+    background-color: #959595;
+}
+li.get-fail{
+    margin-top: 18px;
+    overflow: hidden;
+}
+a.failure-reason{
+    display: block;
+    float: left;
+    color: #221815;
+}
+a.failure-reason:hover{
+    color: #e3063e;
+}
+.wrong{
+    float: left;
+    margin-left: 67px;
+    width: 145px;
+    color: #959595;
+}
+a.once-again{
+    display: inline-block;
+    color: #221815;
+}
+a.once-again:hover{
+    color: #e3063e;
+}

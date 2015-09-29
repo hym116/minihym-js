@@ -1,0 +1,26 @@
+/*! topnav */
+@import "color.less";
+.mynav{
+    padding:percentage(25/640) 0;
+    background-color:@bggray5;
+    li{
+        float: left;
+        width: 100%/3;
+        border-right:1px solid @clgray1;
+        a{
+            display: block;
+            margin-top:-12.5px;
+            margin-bottom:-12.5px;
+            font-size:1.2rem;
+            line-height: 45/12;
+            color:@bggray3;
+            text-align:center;
+        }
+        &.active a{
+            color:@clorange;
+        }
+        &:last-child{
+            border:none;
+        }
+    }
+}

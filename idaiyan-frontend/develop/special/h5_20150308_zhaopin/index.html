@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="ui-viewport-640" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="我们的团队成熟稳定，福利多多，众神具备，只差设计，有兴趣请速速来电！">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <title>就差你了！求设计大神！</title>
+    <script>
+        var SITE_URL  = location.origin + location.pathname;
+        var static_mpath = "http://static.idaiyan.cn/special/h5_20150308";
+    </script>
+    <script>
+        // class
+        ! function( navigator ) {
+            var userAgent = navigator.userAgent;
+                documentElement = document.documentElement;
+            if ( userAgent.match( /micromessenger\/5/gi ) ) {
+                documentElement.className += " mobile wx_mobile wx_mobile_5";
+            } else if ( userAgent.match( /micromessenger/gi ) ) {
+                documentElement.className += " mobile wx_mobile";
+            } else if ( userAgent.match( /ucbrowser/gi ) ) {
+                documentElement.className += " mobile uc_mobile";
+            } else if ( /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test( userAgent.toLowerCase() ) ) {
+                documentElement.className += " mobile";
+            } else if ( userAgent.toLowerCase().match( /msie/gi ) && ( parseFloat( userAgent.toLowerCase().match( /msie ([0-9]{1,}[\.0-9]{0,})/i )[1] || 999 ) < 9 ) ) {
+                documentElement.className += " pc pc-ie pc-ie8";
+            } else if ( userAgent.toLowerCase().match( /msie/gi ) || navigator.msPointerEnabled || navigator.pointerEnabled ) {
+                 documentElement.className += " pc pc-ie";
+            } else {
+                documentElement.className += " pc";
+            }
+        }( navigator );
+        // meta
+        ! function( userAgent ) {
+            var screen_w = parseInt(window.screen.width),
+                scale = screen_w / 640;
+            if ( /Android (\d+\.\d+)/.test( userAgent ) ) {
+                var version = parseFloat( RegExp.$1 );
+                document.write( version > 2.3
+                    ? '<meta name="viewport" content="width=640, minimum-scale = ' + scale + ", maximum-scale = " + scale + ', target-densitydpi=device-dpi">'
+                    : '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">' );
+            } else {
+                document.write( '<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">' );
+            }
+        }( navigator.userAgent );
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        wx.config({
+            debug: false,
+            appId: 'wxf8b4f85f3a794e77',
+            timestamp: 1421726467,
+            nonceStr: 'V3xOrtKUZO5OXW13',
+            signature: '7e43af635eb90f3b355503aa17027712e2d14e89',
+            jsApiList: [
+              'checkJsApi',
+              'onMenuShareTimeline',
+              'onMenuShareAppMessage',
+              'onMenuShareQQ',
+              'onMenuShareWeibo'
+            ]
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/aio.min.css">
+    <script src="js/aio.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/2015zhaopin.less">
+    <script src="js/2015zhaopin.js"></script>
+    <script>
+        var _shareData = {
+                imgUrl: static_mpath + "/img/sharepic.jpg",
+                title: "就差你了！求设计大神！",
+                desc: "我们的团队成熟稳定，福利多多，众神具备，只差设计，有兴趣请速速来电！"
+            };
+        navigator.userAgent.match( /micromessenger/gi ) && Share.WeChat.setData( _shareData );
+    </script>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="content">
+            <div class="content-body">
+                <div class="ui-loading js-loading"> <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+                </div>
+                <div class="power-scroll-container js-power-scroll-container">
+                    <div class="hide js-arrow"></div>
+                    <div class="swiper-container js-power-scroll" data-options='{"loop":true,"hashNav":false}'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-cover" data-hash="cover">
+                                <div class="slide-wrapper">
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-logos">
+                                        <div class="ui-logo-left"></div>
+                                        <div class="ui-logo-right"></div>
+                                    </div>
+                                    <div class="ui-main-image"></div>
+                                    <!-- <div class="ui-main-recruit "></div> -->
+                                    <div class="ui-center-space"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-product" data-hash="product">
+                                <div class="slide-wrapper">
+                                    <div class="ui-top-largerspace"></div>
+                                    <div class="ui-center-man"></div>
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-bottom-text">
+                                        <p><b>为了找你这个大神</b></p>
+                                        <p>我们要在百忙之中设计这个页面</p>
+                                        <p>求前端大神制作，求工程师放到服务器</p>
+                                        <p>还要亲自为你介绍我们的公司....</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-product1" data-hash="product1">
+                                <div class="slide-wrapper">
+                                    <div class="ui-top-largerspace"></div>
+                                    <div class="ui-center-man"></div>
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-bottom-text">
+                                        <p><b>PHP攻城师</b></p>
+                                        <ul>
+                                        <li>对OOP、MVC以及常用设计模式了解深入，<br>掌握常用的MVC框架（Thinkphp／Yii等）</li>
+                                        <li>了解MySQL数据库的性能优化，了解NOSQL</li>
+                                        <li>熟悉Linux操作系统和Shell，<br>并能在其环境进行开发</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-product2" data-hash="product2">
+                                <div class="slide-wrapper">
+                                    <div class="ui-top-largerspace"></div>
+                                    <div class="ui-center-man"></div>
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-bottom-text">
+                                        <p><b>前端攻城师</b></p>
+                                        <ul>
+                                        <li>熟练使用前端开发工具，独立完成前端开发工作</li>
+                                        <li>熟练使用至少一种JS框架，掌握其原理，<br>能独立开发常用组件</li>
+                                        <li>熟悉h5、css3相关的及http协议</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-product3" data-hash="product3">
+                                <div class="slide-wrapper">
+                                    <div class="ui-top-largerspace"></div>
+                                    <div class="ui-center-man"></div>
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-bottom-text">
+                                        <p><b>UI社稷师</b></p>
+                                        <ul>
+                                        <li>对web以及移动界面设计模式有深入的了解，<br>掌握常用的相关规范和技巧</li>
+                                        <li>了解当前潮流以及主流设计元素，<br>对于用户视觉体验有较好的理解</li>
+                                        <li>熟悉各种辅助工具或对新颖的工具保持热忱的态度</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-ceo" data-hash="ceo">
+                                <div class="slide-wrapper">
+                                    <div class="ui-top-space"></div>
+                                    <div class="ui-top-image"></div>
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-center-text">
+                                        <p>我们有超过200名员工</p>
+                                        <p>分别服务于4个移动互联网项目</p>
+                                    </div>
+                                    <div class="ui-center-smallspace"></div>
+                                    <div class="ui-team-group">
+                                        <div class="ui-team-idy"></div>
+                                        <div class="ui-team-tauren"></div>
+                                        <div class="ui-team-darkhorse"></div>
+                                        <div class="ui-team-mentor"></div>
+                                    </div>
+                                    <div class="ui-team-bg"></div>
+                                    <div class="ui-center-space"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-intro" data-hash="intro">
+                                <div class="slide-wrapper">
+                                    <div class="ui-top-space"></div>
+                                    <div class="ui-top-image"></div>
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-center-text">
+                                        我们有正规的五险一金、免费的餐食和<br>
+                                        星巴克咖啡;我们有定期的培训、<br>
+                                        免费参考资料、imac电脑办公
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-total" data-hash="total">
+                                <div class="slide-wrapper">
+                                    <div class="ui-top-space"></div>
+                                    <div class="ui-top-image"></div>
+                                    <div class="ui-center-space"></div>
+                                    <div class="ui-center-text">
+                                        <p>如果你觉得自己还不错、或者看上了我们免费的食物<br>
+                                        还等什么呢？再不联系我，可就真没位置了！</p>
+                                    </div>
+                                    <div class="ui-bottom-space"></div>
+                                    <div class="ui-contact-us-text"></div>
+                                    <div class="ui-center-text2">
+                                        <p>
+                                        <a href="mailto:tuoshaohua@chuangyejia.com">tuoshaohua@chuangyejia.com</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="ui-bottom-btn"><a href="tel:13611359859" ></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anim-bg-width">
+                        <div class="anim-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>(new MobileSlider()).init();</script>
+    <!-- <script>
+        // URL 二维码图
+        setTimeout( function() {
+            /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test( navigator.userAgent.toLowerCase() ) || $( "#qr-code" ).html( '<img width="158" height="158" src="http://s.jiathis.com/qrcode.php?url=' + window.location.href.split( "#" )[0] + '">' ).closest( ".js-content-sidebar" ).show();
+        }, 0 );
+    </script> -->
+<!--     <div class="hide">
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc580c75c82a5948490305350dae2e114' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    </div> -->
+</body>
+</html>

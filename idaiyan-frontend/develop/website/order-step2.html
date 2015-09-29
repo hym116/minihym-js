@@ -1,0 +1,88 @@
+<link rel="import" href="/blocks/_html_header.html?__inline">
+<link rel="import" href="/blocks/_header.html?__inline">
+  <!--
+            @require "/styles/home.less"
+            @require "/styles/order-step2.less"
+   -->
+
+<div class="settlement-wrap respons_wp">
+    <div class="my-support">
+        我的支持
+    </div>
+    <div class="item-wrap">
+        <input type="hidden" name="max_num" id="max_num" value="8"/>
+        <form action="" id="settlement" method="post">
+            <ul class="name-wrap cf">
+                <li class="li-1">产品名称</li>
+                <li class="li-2">单价</li>
+                <li class="li-3">数量</li>
+                <li class="li-4">小计</li>
+            </ul> 
+            <div class="info-wrap cf">
+                <table>
+                    <tr>
+                        <td class="prodimg">
+                            <img src="/images/temp/orange.png" alt=""/>
+                        </td>
+                        <td class="descinfo">
+                            <div class="title">褚橙-热血版-云冠牌冰糖橙（L型）2.5kg</div>
+                            <div class="desc">励志橙，有着中国人欣赏的甜，褚时健75岁再创业，精神终可传承</div>
+                        </td>
+                        <!-- <div class="numinfo fl"> -->
+                            <td class="single-price">
+                            <span class="singleprice">499</span><span>元</span>
+                            </td>
+                            <td class="quantity">
+                                <a id="minus">－</a>
+                                <input type="text" readonly class="num" name="num" id="num" value="1" />
+                                <a id="addbtn">+</a>
+                            </td>
+                            <td class="subtotal">
+                            <span class="sub_total">499</span><span>元</span>
+                            </td>
+                           
+                        <!-- </div> -->
+                    </tr>
+                    </table>
+            </div>
+            <div class="price-wrap cf">
+                <div class="right-wrap fr">
+                    <div class="price-item">
+                        <div class="price-name name fl">产品总价:</div>
+                        <div class="value-wrap">
+                            <span class="price-value value">499</span><span>元</span>
+                        </div>
+                    </div>
+                    <div class="sale-item cf">
+                        <div class="sale-name name fl">活动优惠:</div>
+                        <div class="value-wrap">
+                            <span class="sale-value value">-1</span><span>元</span>
+                        </div>
+                    </div>
+                    <div class="total-item cf">
+                        <div class="total-name name fl">产品总计:</div>
+                        <div class="value-wrap">
+                            <span class="total-value value">301</span><span>元</span>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <div class="right-wrap fr">
+                    <a href="#" class="continue graybtn">继续看货</a>
+                    <button class="confirm orangebtn">确认付款</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<link rel="import" href="/blocks/_footer_front.html?__inline">
+<script type="text/javascript" src="/js/require.js"></script>
+<!--SCRIPT_PLACEHOLDER-->
+<!--RESOURCEMAP_PLACEHOLDER-->
+<script>
+/*fis async*/
+require(["app/order-step2"]);
+</script>
+<link rel="import" href="/blocks/_html_footer.html?__inline">

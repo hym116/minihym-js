@@ -1,0 +1,53 @@
+<link rel="import" href="/blocks/_header.html?__inline">
+<link rel="stylesheet" href="/styles/topnav.less">
+<link rel="stylesheet" href="/styles/login.less">
+
+<script type="text/javascript" src="/js/require.js"></script>
+
+<header id="head">
+</header>
+
+<div id="body">
+    <div class="header">
+        <h1>登录</h1>
+        <p class="description">保存后我们将自动将手机号与微信绑定</p>
+    </div>
+    <div class="loginform-wrap">
+        <form action="" id="loginform">
+            <div class="form-item login-username">
+                <label for="login-username">用户名</label>
+                <input type="text" name="username" id="login-username" placeholder="请填写您的用户名">
+            </div>
+            <div class="form-item login-phone">
+                <label for="login-phone">手机号</label>
+                <input type="text" name="phone" id="login-phone" placeholder="请填写您的手机号码">
+            </div>
+            <div class="form-item">
+                <label for="login-valid">验证码</label>
+                <div class="valid-wrap cf">
+                    <div class="input-wrap">
+                        <input type="text" name="valid" id="login-valid">
+                    </div>
+                    <div class="valid-btn">
+                        <div class="bigbtn">重新发送验证码</div>
+                    </div>
+                </div>
+            </div>
+            <button class="paybtn">保存</button>
+        </form>
+    </div>
+</div>
+    <script>
+        // require.config({
+        //     paths: {
+        //         "jquery": "js/modules/libs/jquery/jquery"
+        //     }
+        // });
+        // require(['jquery'], function ($) {
+        //     $(function(){
+        //         var width= $(".new-icon").width();
+        //         alert(width);
+        //     });
+        // });
+    </script>
+<link rel="import" href="/blocks/_footer.html?__inline">

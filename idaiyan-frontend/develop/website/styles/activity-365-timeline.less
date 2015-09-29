@@ -1,0 +1,645 @@
+body{
+    padding-bottom:42px;
+    overflow-x: hidden;
+}
+.left_arrow {
+    position: fixed;
+    left: 0;
+    top:0;
+    height:100%;
+    width:75px;
+    background:rgba(0, 0, 0, .1) url(/images/365/arrow_left.png) no-repeat 50% 50%;
+    z-index: 100;
+    cursor:pointer;
+    &:hover{
+        background-color:rgba(0, 0, 0, .2);
+    }
+}
+.right_arrow {
+    position: fixed;
+    right: 0;
+    top:0;
+    height:100%;
+    width:75px;
+    background:rgba(0, 0, 0, .1) url(/images/365/arrow_right.png) no-repeat 50% 50%;
+    z-index: 100;
+    cursor:pointer;
+    &:hover{
+        background-color:rgba(0, 0, 0, .2);
+    }
+}
+.main_content {
+    width: 100%;
+    height: 945px;
+    overflow: hidden;
+    left:0;
+    top:0;
+    background: url(/images/365/bg.jpg) no-repeat center center;
+    background-size:cover;
+    .arrows {
+        position: absolute;
+        z-index: 50;
+        height: 100%;
+        width: 100%;
+
+        li {
+            position: absolute;
+            z-index: 12;
+            top: 0;
+            width: 75px;
+            height: 100%;
+            background: rgba(0, 0, 0, .1);
+        }
+        .arrow_box {
+            display: inline-block;
+            width: 24px;
+            height: 47px;
+            vertical-align: middle;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+}
+.wrap {
+    .logo {
+        width:529px;
+        height:79px;
+        display: block;
+        margin: 74px auto 0;
+    }
+    .calendar_logo {
+        margin: 60px auto 0;
+        width: 570px;
+        height: 200px;
+
+        .month_week {
+            width: 150px;
+            height: 100%;
+
+            .calendar {
+                width: 126px;
+                height: 146px;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+            .contents {
+                margin-top: 10px;
+                padding-top:10px;
+                width: 100%;
+                height: 44px;
+                background: url(/images/365/black_line.png) no-repeat;
+                text-align: center;
+            }
+        }
+        .by_month {
+            float: left;
+
+            .month_logo {
+                background: url(/images/365/month.png);
+                opacity: 0.5;
+            }
+            &.active,&:hover{
+                .month_logo {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .by_week {
+            float: right;
+
+            .week_logo {
+                background: url(/images/365/week.png);
+                opacity: 0.5;
+            }
+            &.active,&:hover{
+                .week_logo {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .check_today {
+            float: left;
+            margin: 32px 38px 23px;
+            width: 194px;
+            height: 44px;
+            border: 1px solid #fff;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, .2);
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 44px;
+            text-align: center;
+            color: #fff;
+            cursor:pointer;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
+.screen-wrap{
+    position: relative;
+    margin: 3px auto 0;
+    width: 208px;
+    height: 370px;
+    z-index: 10;
+    background-color: #fff;
+}
+.screen {
+    width: 208px;
+    height: 370px;
+    padding-top: 13px;
+    background-color: #fff;
+    a{
+        display: block;
+        color:#434343;
+    }
+    .product_pic {
+        margin: 3px auto 0;
+        padding-top: 1px;
+        width: 182px;
+        height: 118px;
+        background: rgba(255, 255, 255, .4);
+        border-radius: 3px;
+
+        img {
+            width: 176px;
+            height: 112px;
+            margin: 3px;
+        }
+    }
+    .price_band {
+        margin: 10px auto 0;
+        width: 198px;
+        height: 65px;
+        background: url(/images/365/band.png) no-repeat;
+        text-align: center;
+        font-weight: bold;
+        padding: 3px 5px;
+        .origin_price {
+            text-align: left;
+            margin-left: 10px;
+            font-size: 14px;
+
+            .del {
+                display: block;
+                width: 100%;
+                height: 16px;
+                line-height: 21px;
+                text-decoration: line-through;
+            }
+            span {
+                display: block;
+                width: 100%;
+                height: 21px;
+                line-height: 21px;
+            }
+        }
+        .new_price {
+            margin-left: 10px;
+            text-align: left;
+            font-size: 22px;
+            height:18px;
+            line-height:20px;
+            font-family: Impact;
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    .eassy {
+        margin: 2px auto 0;
+        width: 186px;
+        height: 150px;
+        text-align: center;
+        line-height: 18px;
+        color: #fff;
+
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p {
+            margin-top: 7px;
+            font-size: 12px;
+            height: 108px;
+            overflow: hidden;
+        }
+    }
+    .noapply{
+        text-align: center;
+        font-weight: 700;
+        margin-top: 6px;
+        background: url(/images/365/noapply.png) no-repeat 50% 0;
+        .month{
+            font-size:26px;
+            color:#6a6a6a;
+            height:40px;
+            line-height: 40px;
+        }
+        .day{
+            font-size:74px;
+            color:#fff;
+            font-family: Arial;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+            height:98px;
+            line-height: 84px;
+        }
+        .tip{
+            color:#fff;
+            font-size:14px;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+            height:32px;
+            line-height: 32px;
+        }
+        .applybtn{
+            color:#fff;
+            font-size:18px;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+            line-height: 120px;
+            width: 120px;
+            height: 120px;
+            margin: 29px auto;
+            cursor:pointer;
+        }
+    }
+
+    &.green {
+        background-image: -webkit-linear-gradient(108deg, #ffff06, #396900);
+        background-image: linear-gradient(108deg, #ffff06, #396900);
+    }
+    &.blue {
+        background-image: -webkit-linear-gradient(108deg, #14ffff, #006ded);
+        background-image: linear-gradient(108deg, #14ffff, #006ded);
+    }
+    &.orange {
+        background-image: -webkit-linear-gradient(108deg, #ffc000, #ff0000);
+        background-image: linear-gradient(108deg, #ffc000, #ff0000);
+    }
+    &.red {
+        background-image: -webkit-linear-gradient(108deg, #ff3296, #dd0000);
+        background-image: linear-gradient(108deg, #ff3296, #dd0000);
+    }
+    &.yellow {
+        background-image: -webkit-linear-gradient(108deg, #ffff00, #ff6900);
+        background-image: linear-gradient(108deg, #ffff00, #ff6900);
+    }
+    &.purple {
+        background-image: -webkit-linear-gradient(108deg, #ff5cff, #6600e9);
+        background-image: linear-gradient(108deg, #ff5cff, #6600e9);
+    }
+    &.cyan {
+        background-image: -webkit-linear-gradient(108deg, #16ffff, #009b71);
+        background-image: linear-gradient(108deg, #16ffff, #009b71);
+    }
+}
+.hand_week {
+    display: none;
+    margin: -93px auto 0;
+    padding: 54px 0 0 0;
+    width: 630px;
+    height: 625px;
+    background: url(/images/365/hand.png) no-repeat 100% 0;
+    &.active{
+        display: block;
+    }
+    .week_scroll {
+        position: absolute;
+        z-index: 9;
+        top: 553px;
+        left: 50%;
+        right: 0;
+        width: 3010px;
+        height: 145px;
+
+        .products_thisweek {
+            width: 3010px;
+            height: 100%;
+            margin: 0 auto;
+            position: absolute;
+            left:-1505px;
+            background: url(/images/365/dash.png) 0 112px repeat-x;
+            font-size:0;
+            text-align: center;
+            white-space: nowrap;
+            li {
+                display: inline-block;
+                width: 77px;
+                height: 100%;
+                margin: 0 50px;
+                cursor: pointer;
+                vertical-align: top;
+                .brief {
+                    position: relative;
+                    width: 66px;
+                    height: 100%;
+                    color: #fff;
+                    font-size: 12px;
+                    margin: 0 auto;
+                    padding-top:18px;
+                    text-align: center;
+
+                    .price {
+                        height: 18px;
+                        line-height: 18px;
+                        font-size: 18px;
+                    }
+                    .info{
+                        height:36px;
+                        overflow: hidden;
+                    }
+                    .date{
+                        position: absolute;
+                        bottom:0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .circles{
+                        position: absolute;
+                        bottom:25px;
+                        left:0;
+                        right:0;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 8px;
+                        margin: 0 auto 0;
+                    }
+                }
+            }
+            .li0 {//蓝
+                background: url(/images/365/price.png) -154px 0 no-repeat;
+                .circles{
+                    background: #0ab6f6;
+                    box-shadow: 0 0 0 3px rgba(10, 182, 246, .4);
+                }
+            }
+            .li1 {//橘
+                background: url(/images/365/price.png) -231px 0 no-repeat;
+                .circles{
+                    background: #f14501;
+                    box-shadow: 0 0 0 3px rgba(242, 69, 1, .4);
+                }
+            }
+            .li2 {//红
+                background: url(/images/365/price.png) -308px 0 no-repeat;
+                .circles{
+                    background: #ee194b;
+                    box-shadow: 0 0 0 3px rgba(238, 25, 75, .4);
+                }
+            }
+            .li3 {//黄
+                background: url(/images/365/price.png) -385px 0 no-repeat;
+                .circles{
+                    background: #ffb400;
+                    box-shadow: 0 0 0 3px rgba(255, 180, 0, .4);
+                }
+            }
+            .li4 {//紫
+                background: url(/images/365/price.png) -462px 0 no-repeat;
+                .circles{
+                    background: #b52ef4;
+                    box-shadow: 0 0 0 3px rgba(181, 46, 244, .4);
+                }
+            }
+            .li5 {//青
+                background: url(/images/365/price.png) -539px 0 no-repeat;
+                .circles{
+                    background: #0bcdb8;
+                    box-shadow: 0 0 0 3px rgba(11, 205, 184, .4);
+                }
+            }
+            .li6 {//绿
+                background: url(/images/365/price.png) -77px 0 no-repeat;
+                .circles{
+                    background: #9cdc03;
+                    box-shadow: 0 0 0 3px rgba(156, 220, 3, .4);
+                }
+            }
+            .gray {
+                background: url(/images/365/price.png) no-repeat;
+                .circles{
+                    background: #fff;
+                    box-shadow: 0 0 0 3px rgba(253, 253, 253, .4);
+                }
+            }
+            .hidden{
+                opacity: 0;
+            }
+        }
+    }
+}
+.hand_month {
+    display: none;
+    margin: -93px auto 0;
+    padding: 54px 0 0 0;
+    width: 630px;
+    height: 625px;
+    background: url(/images/365/hand.png) no-repeat 100% 0;
+    &.active{
+        display: block;
+    }
+    .month_scroll {
+        position: absolute;
+        z-index: 9;
+        top: 665px;
+        left: 50%;
+        width: 1680px;
+        .products_thismonth {
+            position: absolute;
+            margin: 0 auto;
+            width: 1680px;
+            height: 2px;
+            left:-840px;
+            background: url(/images/365/dash.png) 0 0 repeat-x;
+            text-align: center;
+            font-size:0;
+            li {
+                position: relative;
+                display: inline-block;
+                width: 56px;
+                height: 76px;
+                cursor: pointer;
+                font-size:12px;
+                vertical-align: top;
+                .dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                }
+                .title {
+                    position: absolute;
+                    width: 56px;
+                    height: 60px;
+                    padding: 16px 8px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 14px;
+                    overflow: hidden;
+                    span{
+                        display: block;
+                        height:28px;
+                        overflow: hidden;
+                    }
+                }
+                .start_stop {
+                    width: 25px;
+                    height: 63px;
+                    background: rgba(255, 255, 255, .1);
+                    color: #fff;
+
+                    .num {
+                        display: block;
+                        width: 25px;
+                        height: 21px;
+                        margin: 0;
+                        line-height: 21px;
+                    }
+                }
+                .date{
+                    position: absolute;
+                    display: none;
+                    width: 80px;
+                    left: -12px;
+                    color:#fff;
+                    text-shadow:0 0 2px rgba(0, 0, 1px, .8);
+                }
+            }
+
+
+            .other-l1 .title,.other-l2 .title{
+                opacity: .5;
+                cursor:auto;
+            }
+            .other-l3 .title,.other-l4 .title{
+                opacity: .25;
+                cursor:auto;
+            }
+            .other-l5 .title,.other-l6 .title{
+                opacity: .13;
+                cursor:auto;
+            }
+            li.active{
+                .date{
+                    display: block;
+                }
+                span{
+                    color:#fff;
+                }
+            }
+            li:nth-child(odd),li.other:nth-child(even) {
+                position: relative;
+                top:-4px;
+                margin: 0 -13px 0;
+                .dot {
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    margin: auto;
+                    bottom: auto;
+                }
+                .title{
+                    top:16px;
+                    padding: 19px 8px 13px;
+                    background: url(/images/365/white_box_bottom.png) no-repeat 50% 0;
+                }
+                .start_stop{
+                    position: absolute;
+                    top:-90%;
+                }
+                .date{
+                    bottom:-20px;
+                }
+            }
+            li:nth-child(even),li.other:nth-child(odd) {
+                position: relative;
+                top:-70px;
+                margin: 0 -13px 0;
+                .dot {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    top: auto;
+                }
+                .title{
+                    top: 0px;
+                    background: url(/images/365/white_box.png) no-repeat 50% 0;
+                }
+                .start_stop{
+                    position: absolute;
+                    top:105%;
+                }
+                .date{
+                    top:-20px;
+                }
+            }
+            li.active:nth-child(even){
+                .li0.title{
+                    background: url(/images/365/blue_box.png) no-repeat 50% 0;
+                }
+                .li1.title{
+                    background: url(/images/365/blue_box.png) no-repeat 50% -60px;
+                }
+                .li2.title{
+                    background: url(/images/365/blue_box.png) no-repeat 50% -120px;
+                }
+                .li3.title{
+                    background: url(/images/365/blue_box.png) no-repeat 50% -180px;
+                }
+                .li4.title{
+                    background: url(/images/365/blue_box.png) no-repeat 50% -240px;
+                }
+                .li5.title{
+                    background: url(/images/365/blue_box.png) no-repeat 50% -300px;
+                }
+                .li6.title{
+                    background: url(/images/365/blue_box.png) no-repeat 50% -360px;
+                }
+            }
+            li.active:nth-child(odd){
+                .li0.title{
+                    background: url(/images/365/blue_box_bottom.png) no-repeat 50% 0;
+                }
+                .li1.title{
+                    background: url(/images/365/blue_box_bottom.png) no-repeat 50% -60px;
+                }
+                .li2.title{
+                    background: url(/images/365/blue_box_bottom.png) no-repeat 50% -120px;
+                }
+                .li3.title{
+                    background: url(/images/365/blue_box_bottom.png) no-repeat 50% -180px;
+                }
+                .li4.title{
+                    background: url(/images/365/blue_box_bottom.png) no-repeat 50% -240px;
+                }
+                .li5.title{
+                    background: url(/images/365/blue_box_bottom.png) no-repeat 50% -300px;
+                }
+                .li6.title{
+                    background: url(/images/365/blue_box_bottom.png) no-repeat 50% -360px;
+                }
+            }
+            li.begin{
+                margin-left:18px;
+                .start_stop{
+                    left:2px;
+                }
+            }
+            li.end{
+                margin-right:18px;
+                .start_stop{
+                    right:2px;
+                }
+            }
+            li.mid-date, li.mid-date.other{
+                margin-right:240px;
+            }
+            li.noapply .title{
+                opacity: .5;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="http://www.idaiyan.cn/weixin/jssdk"></script>
+<script src="/js/zepto.js"></script>
+<script src="/js/iscroll.js"></script>
+<script src="/js/script.js"></script>
+<script>
+    var _shareData = {
+            imgUrl: "http://static.idaiyan.cn/special/h5_20150416_zhaopin/img/share.jpg",
+            title: "创业家15年第二季度招聘",
+            desc: "创业家致力于为创业者们提供平台式创业服务，包括《创业家》杂志、i黑马网、黑马大赛、黑马会、黑马学院、i代言、黑马基金、整合营销、全球路演中心等"
+        };
+    navigator.userAgent.match( /micromessenger/gi ) && Share.WeChat.setData(_shareData);
+</script>

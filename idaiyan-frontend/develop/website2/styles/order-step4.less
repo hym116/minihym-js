@@ -1,0 +1,243 @@
+body{
+    padding-bottom: 0;
+    background-color: #fff;
+
+}
+.orange{
+    color: #ff8062;
+}
+#orange-box{
+    border-color: #ff8062;
+    background-color: #fff;
+    .special-orange{
+        color: #ff8062;
+    }
+}
+#disabled-box{
+    border-color: #e2e2e2;
+    background-color: #f9f9f9;
+    .title, .price, .just-title{
+        color: #e2e2e2;
+    }
+}
+#common-box{
+    border-color:#c6c6c6;
+    background-color: #f9f9f9;
+}
+
+
+
+.success{
+    width: 1000px;
+    height: 182px;
+    margin: 50px auto 0;
+    border:1px solid #c6c6c6;
+    box-shadow: 0 0 2px #c6c6c6;
+    .mark{
+        float: left;
+        width: 180px;
+        height: 180px;
+        border-right: 1px solid #c6c6c6;
+        background: url(../images/icons/mark.png) 55px 55px no-repeat #f9f9f9;
+    }
+    .error{
+        background: url(../images/icons/error-mark.png) 55px 55px no-repeat #f9f9f9;
+    }
+    .success-information{
+        float: right;
+        width: 816px;
+        height: 100%;
+        padding-left: 23px;
+        h1{
+            height: 30px;
+            line-height: 30px;
+            margin-top: 26px;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        p{
+            height: 22px;
+            line-height: 22px;
+            margin-top: 4px;
+            font-size: 18px;
+            color: #919191;
+
+        }
+        ul{
+            
+            height: 51px;
+            margin-top: 24px;
+            li{
+
+                line-height: 17px;
+                color: #6a6a6a;
+            } 
+        }
+    }
+
+}
+.choose-payment-type{
+    width: 1000px;
+    margin: 50px auto 0;
+    
+    
+    h2{
+        line-height: 18px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .choose-payment-box{
+        width: 100%;
+        border:1px solid #c6c6c6;
+        box-shadow: 0 0 2px #c6c6c6;
+        background-color: #f9f9f9;
+        .main-choice{
+            width: 100%;
+            height: 504px;
+            border-bottom: 1px solid #c6c6c6;
+            .left-bar{
+                float: left;
+                width: 184px;
+                height: 100%;
+                border-right: 1px solid #c6c6c6;
+                h3{
+
+                    width: 136px;
+                    margin: 28px auto 0; 
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+                p{
+                    width: 136px;
+                    margin: 12px auto 0;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #919191;
+                }
+            }
+            .select-flexible{
+                float: right;
+                width: 814px;
+                height: 100%;
+                .select{
+                    position: relative;
+                    height: 121px;
+                    border-bottom: 1px solid #c9c9c9;
+                    background-color: #fff;
+                    .label-outer{
+                        width: 670px;
+                        padding: 50px 0 0 30px;
+                        .label{
+                            position: relative;
+                            display: inline-block;
+                            cursor: pointer;
+                            width: 180px;
+                            input{
+                                margin-righ: 30px;
+                            }
+                            .payment_logo{
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-top: -10px;
+                                width: 132px;
+                                img{
+                                    border:1px solid #c6c6c6;
+                                    cursor: pointer;
+                                } 
+                            }
+                        }
+                    }
+                    .triangle-box{
+                        position: absolute;
+                        bottom: 0;
+                        left: 100px;
+                        width: 21px;
+                        height: 20px;
+                        .triangle-border{
+                            width: 0;
+                            height: 0;
+                            overflow: hidden;
+                            border-width: 10px;
+                            border-style:  dashed dashed solid dashed;
+                        }
+                        .tb-border{
+                            
+                            bottom: -20px;
+                            border-color:  transparent transparent #aeaeae transparent;
+                        }
+                        .tb-background{
+                            margin-top: -19px;
+                            border-color: transparent transparent #f8f8f8  transparent;
+                        }
+
+                    } 
+                }
+                .QR_code_box{
+                    width: 272px;
+                    height: 320px;
+                    margin: 30px 0 0 30px;
+                    background-color: #fff;
+                    h4{
+                        padding-top: 20px;
+                        font-size: 18px;
+                        font-weight: normal;
+                        text-align: center;
+                    }
+                    img{
+                        display: block;
+                        margin:12px auto 0;
+                    }
+                    p{
+                        margin-top: 9px;
+                        text-align: center;
+                    }
+                    .tips{
+                        overflow: hidden;
+                        margin: 4px 0  0 54px;
+                        a{
+                            display: block;
+                            float: left;
+                            color: #3ebde0;
+                            span{
+                                display: block;
+                                float: right;
+                                text-align: center;
+                                width: 18px;
+                            }
+                        }
+                    }
+                }
+                .wx{
+                    .tips{
+                       margin: 4px 0  0 75px; 
+                    }
+                }
+            }
+        }
+        .choose-button-box{
+            width: 100%;
+            height: 70px;
+            a{
+                display: block;
+                float: right;
+                width: 140px;
+                height: 35px;
+                line-height: 35px;
+                margin: 20px 18px 0 0;
+                font-size: 16px;
+
+            }
+            .edit-btn{
+                color: #6a6a6a;
+                &:hover{
+                    color: #fff;
+                }
+            }
+            .confirm-btn{
+                margin-right: 58px;
+                color: #fff;
+            }
+        }
+    }
+}

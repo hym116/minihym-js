@@ -1,0 +1,236 @@
+body{
+    background: #f9f9f9;
+    font-family: "Microsoft Yahei";
+}
+.login{
+    margin: 106px auto 0;
+    width: 360px;
+    height: 800px;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+.title{
+    margin-top: 52px;
+    font:normal 22px "Microsoft Yahei";
+    color: #2d2c2c;
+    text-align: center;
+}
+.products{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #909090;
+    text-align: center;
+}
+.login form{
+    position: relative;
+    width: 360px;
+}
+.login input{
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    height: 46px;
+    line-height: 44px;
+    padding-left: 50px;
+    font-size: 16px;
+    color: #2d2c2c;
+    
+}
+.login input.account{
+    /*margin: 44px auto 15px;*/
+}
+.login input.login-icons{
+    border:0;
+    height: 44px;
+    margin-top: 0;
+    /*background:#fff url(../images/icons/login-icons.png) no-repeat;*/
+    /*background-position: 17px 12px;*/
+}
+.login input.password{
+     /*background:#fff url(../images/icons/uc-icon.png) 18px -639px no-repeat;*/
+}
+.login input.password:focus{
+     /*background:#fff url(../images/icons/uc-icon.png) 18px -675px no-repeat;*/
+}
+
+.forget-password{
+    display: block;
+    float: right;
+    margin: 10px 0 15px;
+    font-size: 16px;
+    color: #989898;
+    text-align: right;
+}
+.login button{
+    display: block;
+    margin: 0 auto;
+    width: 343px;
+    height: 44px;
+    background: #e3063e;
+    font:normal 16px "Microsoft Yahei";
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.login button:hover{
+    background-color: #f2174e;
+}
+.login .register{
+    display: block;
+    margin: 15px auto 0;
+    width: 343px;
+    height: 40px;
+    background: #fff;
+    font-size: 16px;
+    color: #e3063e;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #e3063e;
+    border-radius: 3px;
+}
+.other{
+    padding:10px 0 0 9px;
+    margin: 5px 0 0 8px;
+    height: 83px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #989898;
+    cursor: pointer;
+}
+.triangle{
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+.triangle-right{
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #989898;
+}
+.other-way{
+    /*display: none;*/
+    padding-left: 9px;
+    margin: 5px 0 0 8px;
+    width: 179px;
+    height: 83px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #989898;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+}
+.triangle-bottom{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #989898;
+}
+.box-title{
+    margin-top: 9px;
+}
+.third-agent{
+    margin-top: 12px;
+    width: 146px;
+    height: 33px;
+    background: url(../images/icons/third-agent.png) no-repeat;
+}
+.third-agent a{
+    display:inline-block;
+    width: 35px;
+    height: 34px;
+    margin:0 19px 0 -2px;
+}
+.other-way .third-agent a.weibo{
+    margin:0 0 0 -2px;
+}
+.login-bottom{
+    margin-top: 160px;
+    text-align: center;
+    font-size: 12px;
+    color: #848484;
+    line-height: 25px;
+}
+.right-wrong{
+    position: absolute;
+    right: -118px;
+    top: 2px;
+    padding-left: 36px;
+    width: auto;
+    height: 44px;
+    font-size: 12px;
+    color: #e3063e;
+    line-height: 44px;
+}
+.right-wrong div.inner-txt{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -21px; 
+}
+.wrong-password{
+    right: -119px;
+    top: 64px;
+}
+.wrong-verification-code{
+    right: -119px;
+    top: 124px;
+}
+.bubble-left{
+    float: left;
+    width: 34px;
+    height: 44px;
+    background: url(../images/bubble-left.png) no-repeat;
+}
+.bubble-center{
+    float: left;
+    background: url(../images/bubble-center.png);
+}
+.bubble-right{
+    float: right;
+    width: 11px;
+    height: 44px;
+    background: url(../images/bubble-right.png) no-repeat;
+}
+#code{
+    margin: 15px 0 0 8px;
+}
+#code input{
+    float: left;
+    padding: 0.8em;
+    width: 195px;
+    height: 46px;
+    box-shadow: 1px 2px 7px -3px #e0e0e0 inset;
+}
+#code img{
+    display: block;
+    float: left;
+    margin-left: 24px;
+}
+.input_wrap{
+    margin: 44px 0 15px 8px;
+    border: 1px solid #e2e2e2;
+    height: 46px;
+    position: relative;
+    width: 342px;
+}
+.input_wrap .input_icon{
+    width: 66px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/icons/login-icons.png) no-repeat;
+    background-position: 17px 12px;
+}
+.input_wrap .icon_lock{
+     background:url(../images/icons/uc-icon.png) 18px -639px no-repeat
+}
+.input_wrap .icon_lock.active{
+    background-position: 18px -675px;
+}
+.psd_wrap{
+    margin-top: 0;
+}

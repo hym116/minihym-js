@@ -1,0 +1,322 @@
+<link rel="import" href="/blocks/_html_header.html?__inline">
+<link rel="stylesheet" href="/styles/uc.less">
+<link rel="stylesheet" href="/styles/activity_365_step2.less">
+<link rel="import" href="/blocks/_uc_header.html?__inline">
+<div class="respons_wp cf">
+    <div class="activity_apply cf">
+        <div class="sidebar fl">
+            <nav class="steps">
+                <ul>
+                    <li>
+                        <a href="#">时间</a>
+                        <div class="status right"></div>
+                    </li>
+                    <li>
+                        <a href="#">价格</a>
+                        <div class="status"></div>
+                    </li>
+                    <li>
+                        <a href="#">数量</a>
+                        <div class="status"></div>
+                    </li>
+                    <li>
+                        <a href="#">评价</a>
+                        <div class="status"></div>
+                    </li>
+                    <li>
+                        <a href="#">视频</a>
+                        <div class="status ignore"></div>
+                    </li>
+                    <li class="active">
+                        <a href="#">图片</a>
+                        <div class="status"></div>
+                    </li>
+                    <li>
+                        <a href="#">特性</a>
+                        <div class="status"></div>
+                    </li>
+                    <li>
+                        <a href="#">伙伴</a>
+                        <div class="status ignore"></div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="steptip">
+                <div class="laststep">
+                    <div class="title">
+                        还差 <b class="num">6</b> 步
+                    </div>
+                    <p>即可发布您的代言活动</p>
+                </div>
+                <div class="allready">
+                    <div class="title">你已准备好</div>
+                    <p>审核通过后便会</p>
+                    <p>出现在搜索结果中</p>
+                    <div class="button bluebtn">发布</div>
+                </div>
+            </div>
+        </div>
+        <div class="main fr">
+            <div class="saving">保存中...</div>
+            <div class="step step1 active">
+                <h3 class="title">活动周期</h3>
+                <div class="desc">选择日历，填写您活动的开始时间与结束时间</div>
+                <div class="formitem">
+                    <input type="text" readonly datatype="*" class="start_date js-start-date-calendar fl" placeholder="开始时间">
+                    <span class="dash">至</span>
+                    <input type="text" readonly datatype="*" class="start_date js-start-date-calendar fl" placeholder="结束时间">
+                </div>
+            </div>
+            <div class="step step2">
+                <h3 class="title">基础价格</h3>
+                <div class="desc">输入您产品的基础价格</div>
+                <div class="formitem cf">
+                    <div class="unedit_box">
+                        <span class="">&#165;2600/件</span>
+                    </div>
+                </div>
+                <h3 class="title">活动价格</h3>
+                <div class="desc">您产品参与活动的优惠价格</div>
+                <div class="formitem cf">
+                    <div class="unedit_box">
+                        <span class="">&#165;2600/件</span>
+                    </div>
+                </div>
+                <div class="pic_box">
+                    <h3 class="title">对应图片</h3>
+                    <div class="desc">此价格所对应的颜色，型号，规格等说明图片</div>
+                    <img src="images/365/product.jpg" width="120" height="120" alt="产品图片">
+                </div>
+            </div>
+            <div class="step step3">
+                <h3 class="title">产品数量</h3>
+                <div class="desc">您参与活动愿意提供的产品福利数量</div>
+                <div class="formitem">
+                    <span class="inp_head leftradius fl">件</span>
+                    <input type="text" datatype="/^\d+$/" class="prodnum pubinput fl" value="999" />
+                </div>
+
+            </div>
+            <div class="step step4">
+                <h3 class="title">产品评价</h3>
+                <div class="desc">您作为产品的代言人，是如何看待您的产品呢？</div>
+                <div class="formitem">
+                    <textarea name="comment" datatype="*" id="comment" cols="30" rows="10" placeholder="写上您的评价"></textarea>
+                    <div class="tips">还可输入<span>140</span>个字</div>
+                </div>
+                
+            </div>
+            <div class="step step5">
+                <h3 class="title">视频</h3>
+                <div class="desc">显示在您代言页面上的视频标题和摘要</div>
+                <div class="formitem">
+                    <label>视频地址</label>
+                    <input type="text" datatype="*" name="videourl" class="videourl" placeholder="可选,输入视频地址(支持,优酷,土豆...)"/>
+                </div>
+                <div class="formitem">
+                    <label>视频标题</label>
+                    <input type="text" datatype="*" name="videotitle" class="videotitle" placeholder="不超过20个字"/>
+                    <div class="tips">还可输入<span>20</span>字</div>
+                </div>
+                <div class="formitem">
+                    <label>视频概述</label>
+                    <textarea name="videodescription" datatype="*" id="description" placeholder="写上您的概述"></textarea>
+                    <div class="tips">还可输入<span>140</span>字</div>
+                </div>
+                <div class="formitem">
+                    <div class="notice">注：如果没有视频，则直接点击跳过即可。</div>
+                    <div>此代言可申请视频拍摄服务的条件。 <a href="#">立即申请</a> </div>
+                </div>
+            </div>
+            <div class="step step6">
+                <h3 class="title">首屏背景</h3>
+                <div class="desc">
+                    您作为活动页面首屏的背景图片，请使用 <b> 非白底的不带文字 </b> 图片
+                </div>
+                <div class="formitem cover">
+                    <div class="formobject">
+                        <div class="imgselect">
+                            <div class="preview"></div>
+                            <div class="filewrap">
+                                <input type="file" name="image" id="image">
+                            </div>
+                            <div class="tip">
+                                <p>支持 JPG, JPEG, PNG格式的图片,<br>
+                                尺寸为 <b>2560x1440</b>, 大小不超过 <b>5M</b>.</p>
+                            </div>
+                            <input type="hidden" class="cover-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="formitem">
+                    <h3 class="title">详细图文介绍</h3>
+                    <div class="desc">
+                        显示在您代言页面上产品图片，最多 <b>9</b> 张，请使用 <b>非白底的不带文字</b> 图片
+                    </div>
+                </div>
+                <div class="formitem image-and-text">
+                    <ul class="image-and-text-list cf">
+                        <li>
+                            <div class="image-and-text-item">
+                                <div class="delbtn"></div>
+                                <div class="image">
+                                    <div class="filewrap"></div>
+                                    <div class="image-preview">
+                                        <img src="" alt="">
+                                    </div>
+                                    <input type="hidden" class="imgtxt-image">
+                                </div>
+                                <div class="text">
+                                    <textarea placeholder="这张图片的亮点是什么？" name=""></textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image-and-text-item">
+                                <div class="delbtn"></div>
+                                <div class="image">
+                                    <div class="filewrap"></div>
+                                    <div class="image-preview">
+                                        <img src="" alt="">
+                                    </div>
+                                    <input type="hidden" class="imgtxt-image">
+                                </div>
+                                <div class="text">
+                                    <textarea placeholder="这张图片的亮点是什么？" class="imgtxt-text"></textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgselect">
+                                <div class="filewrap">
+                                    <input type="file" name="image" id="image">
+                                </div>
+                                <div class="tip">
+                                    <p>添加一张图片</p>
+                                    <p>支持 JPG, JPEG格式的图片<br>
+                                    尺寸为 <b>800x500</b></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step step7">
+                <h3 class="title">产品特性</h3>
+                <div class="desc">
+                    输入您代言的产品特性，
+                    <b>3 - 9</b>
+                    个
+                </div>
+                <div class="formitem title-and-desc">
+                    <ul class="title-and-desc-list cf">
+                        <li>
+                            <div class="title-and-desc-item">
+                                <div class="delbtn"></div>
+                                <div class="title">
+                                    <input type="text" value="快速无线充电技术" class="feature-title">
+                                </div>
+                                <div class="desc">
+                                    <textarea class="feature-desc textee">只要把智能足球放在无限充电底座上，黄色指示灯亮起即表示足球正在充电。充满电后，指示灯会转换为绿色，整个过程只需30分钟。</textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-and-desc-item">
+                                <div class="delbtn"></div>
+                                <div class="title">
+                                    <input type="text" placeholder="输入特性标题，不超过12字" class="feature-title">
+                                </div>
+                                <div class="desc">
+                                    <textarea placeholder="输入特性概述，最多75字" class="feature-desc textee"></textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-and-desc-item">
+                                <div class="delbtn"></div>
+                                <div class="title">
+                                    <input type="text" placeholder="输入特性标题，不超过12字" class="feature-title">
+                                </div>
+                                <div class="desc">
+                                    <textarea placeholder="输入特性概述，最多75字" class="feature-desc textee"></textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="add-new-item imgselect">
+                                <div class="tip">
+                                    <p>添加一条特性</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="step step8">
+                <h3 class="title">合作伙伴</h3>
+                <div class="desc">添加您的合作伙伴的LOGO图片和名称，请使用尺寸为 200x65 的 白底无色 图片，最多 12 个</div>
+                <div class="formitem image-and-text">
+                    <ul class="image-and-text-list cf">
+                         <li>
+                            <div class="image-and-text-item">
+                                <div class="delbtn"></div>
+                                <div class="image" >
+                                    <div class="filewrap" ></div>
+                                    <div class="image-preview" >
+                                        <img src="images/365/logo_icon.jpg" alt="">
+                                    </div>
+                                    <input type="hidden" class="partner-logo">
+                                </div>
+                                <div class="text">
+                                    <input type="text" placeholder="输入伙伴的名称"  class="partner-name">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image-and-text-item">
+                                <div class="delbtn"></div>
+                                <div class="image">
+                                    <div class="filewrap"></div>
+                                    <div class="image-preview">
+                                        <div class="tip2">
+                                            <span>添加伙伴的LOGO</span>
+                                        </div>
+                                        <img src="" alt="">
+                                    </div>
+                                    <input type="hidden" class="partner-logo">
+                                </div>
+                                <div class="text">
+                                    <input type="text" placeholder="输入伙伴的名称"  class="partner-name">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgselect">
+                                <div class="filewrap">
+                                    <input type="file" name="image" id="image">
+                                </div>
+                                <div class="tip">
+                                    <p>添加一名伙伴</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="import" href="/blocks/_footer.html?__inline">
+<script type="text/javascript" src="/js/require.js"></script>
+<!--SCRIPT_PLACEHOLDER-->
+<!--RESOURCEMAP_PLACEHOLDER-->
+<script>
+/*fis async*/
+require(['app/activity-365-add-step2']);
+</script>
+
+<link rel="import" href="/blocks/_html_footer.html?__inline">
